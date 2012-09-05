@@ -5,3 +5,9 @@ test-output
 .project
 .clover
 .externalToolBuilders
+MANIFEST.MF
+dependency-reduced-pom.xml
+*.orig
+.checkstyle
+rebel.xml
+.faces-config.xml.jsfdia
