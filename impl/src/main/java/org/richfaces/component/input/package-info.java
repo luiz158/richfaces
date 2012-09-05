@@ -20,5 +20,5 @@
  * 02110-1301 USA, or see the FSF site: http://www.fsf.org.
  */
 @org.richfaces.cdk.annotations.TagLibrary(uri = "http://richfaces.org/input", shortName = "input")
-package org.richfaces.component;
+package org.richfaces.component.input;
 
