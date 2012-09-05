@@ -35,10 +35,6 @@
     <dependencies>
         <!-- Runtime Dependencies -->
         <dependency>
-            <groupId>org.richfaces.core</groupId>
-            <artifactId>richfaces-core-api</artifactId>
-        </dependency>
-        <dependency>
             <groupId>net.sourceforge.cssparser</groupId>
             <artifactId>cssparser</artifactId>
         </dependency>
