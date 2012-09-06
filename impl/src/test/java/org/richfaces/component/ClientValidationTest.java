@@ -15,7 +15,7 @@ import com.gargoylesoftware.htmlunit.html.HtmlPage;
  * @author asmirnov
  *
  */
-public class ClientValidationTest extends IntegrationTestBase {
+public class ClientValidationTest extends ValidatorIntegrationTestBase {
 
     protected String getFacesConfig() {
         return "faces-config.xml";

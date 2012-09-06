@@ -9,6 +9,10 @@ import org.hamcrest.Matcher;
 import org.jboss.test.faces.htmlunit.HtmlUnitEnvironment;
 import org.junit.After;
 import org.junit.Before;
+import org.junit.Rule;
+import org.junit.rules.MethodRule;
+import org.junit.rules.TestWatchman;
+import org.junit.runners.model.FrameworkMethod;
 
 import com.gargoylesoftware.htmlunit.html.HtmlElement;
 import com.gargoylesoftware.htmlunit.html.HtmlForm;
@@ -16,11 +20,12 @@ import com.gargoylesoftware.htmlunit.html.HtmlInput;
 import com.gargoylesoftware.htmlunit.html.HtmlPage;
 
 
-public abstract class IntegrationTestBase {
+public abstract class ValidatorIntegrationTestBase {
 
     protected HtmlUnitEnvironment environment;
+    protected HtmlPage page;
 
-    public IntegrationTestBase() {
+    public ValidatorIntegrationTestBase() {
         super();
     }
 
@@ -40,6 +45,15 @@ public abstract class IntegrationTestBase {
     protected abstract String getFacesConfig();
 
     protected abstract String getPageName();
+    
+    @Rule
+    public MethodRule watchment = new TestWatchman() {
+        public void failed(Throwable e, org.junit.runners.model.FrameworkMethod method) {
+            if (page != null) {
+                System.out.println(page.asXml());
+            }
+        };
+    };
 
     @After
     public void thearDown() throws Exception {
@@ -48,7 +62,7 @@ public abstract class IntegrationTestBase {
     }
 
     protected HtmlPage submitValueAndCheckMessage(String value, Matcher<String> matcher) throws Exception {
-        HtmlPage page = requestPage();
+        page = requestPage();
         HtmlInput input = getInput(page);
         page = (HtmlPage) input.setValueAttribute(value);
         page = submit(page);

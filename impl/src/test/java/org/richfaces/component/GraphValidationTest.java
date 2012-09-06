@@ -6,6 +6,7 @@ import static org.junit.matchers.JUnitMatchers.containsString;
 
 import java.io.IOException;
 
+import org.jboss.test.faces.htmlunit.HtmlUnitEnvironment;
 import org.junit.Test;
 
 import com.gargoylesoftware.htmlunit.html.HtmlElement;
@@ -18,7 +19,7 @@ import com.gargoylesoftware.htmlunit.html.HtmlPage;
  * @author asmirnov
  *
  */
-public class GraphValidationTest extends IntegrationTestBase {
+public class GraphValidationTest extends ValidatorIntegrationTestBase {
 
     protected String getFacesConfig() {
         return "graph-faces-config.xml";
