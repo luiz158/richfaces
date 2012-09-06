@@ -10,4 +10,4 @@ dependency-reduced-pom.xml
 *.orig
 .checkstyle
 rebel.xml
-.faces-config.xml.jsfdia
+*.faces-config.xml.jsfdia

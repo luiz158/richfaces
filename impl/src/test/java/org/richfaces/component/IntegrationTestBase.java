@@ -18,7 +18,7 @@ import com.gargoylesoftware.htmlunit.html.HtmlPage;
 
 public abstract class IntegrationTestBase {
 
-    private HtmlUnitEnvironment environment;
+    protected HtmlUnitEnvironment environment;
 
     public IntegrationTestBase() {
         super();

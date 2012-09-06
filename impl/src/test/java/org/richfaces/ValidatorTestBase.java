@@ -2,6 +2,7 @@ package org.richfaces;
 
 import javax.el.ValueExpression;
 
+import org.jboss.test.faces.FacesEnvironment;
 import org.jboss.test.faces.mock.Environment;
 import org.jboss.test.faces.mock.Environment.Feature;
 import org.jboss.test.faces.mock.Mock;

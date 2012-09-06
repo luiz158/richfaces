@@ -13,7 +13,7 @@ import org.richfaces.resource.ResourceKey;
 
 import com.google.common.collect.ImmutableMap;
 
-public class RendererTestBase extends BehaviorTestBase {
+public class ValidatorRendererTestBase extends BehaviorTestBase {
     protected static final String CLIENT_VALIDATORS_JS = "clientValidators.js";
     protected static final String ORG_RICHFACES = "org.richfaces";
     protected static final String REGEX_VALIDATOR = "regexValidator";
@@ -26,7 +26,7 @@ public class RendererTestBase extends BehaviorTestBase {
     @Mock
     protected ClientValidatorBehavior mockBehavior;
 
-    public RendererTestBase() {
+    public ValidatorRendererTestBase() {
         super();
     }
 }
