@@ -66,8 +66,8 @@ public class InplaceInputRendererTest extends InplaceRendererTestBase {
         text = page.getFirstByXPath("//*[@id = '" + withControlsComponentId + "Label']/text()");
         assertNotNull(text);
         assertEquals("Another Test String", text.getTextContent());
-        
-        new Wait().failWith("span's class attribute hasn't changed to 'rf-ii rf-ii-chng'").until(new Condition() { 
+
+        new Wait().failWith("span's class attribute hasn't changed to 'rf-ii rf-ii-chng'").until(new Condition() {
             @Override
             public boolean isTrue() {
                 HtmlElement span = page.getFirstByXPath("//*[@id = '" + withControlsComponentId + "']");

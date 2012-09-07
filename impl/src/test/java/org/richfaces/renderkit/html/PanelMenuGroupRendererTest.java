@@ -32,14 +32,14 @@ import org.xml.sax.SAXException;
  * @since 2010-10-25
  */
 public class PanelMenuGroupRendererTest extends RendererTestBase {
-    
+
     @Override
     public void setUp() throws URISyntaxException {
         super.setUp();
 
         environment.getWebClient().setJavaScriptEnabled(false);
     }
-    
+
     @Test
     public void testEmpty() throws IOException, SAXException {
         doTest("panelMenuGroup", "f:panelMenuGroup");

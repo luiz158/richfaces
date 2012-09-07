@@ -12,13 +12,11 @@ import org.junit.Before;
 import org.junit.Rule;
 import org.junit.rules.MethodRule;
 import org.junit.rules.TestWatchman;
-import org.junit.runners.model.FrameworkMethod;
 
 import com.gargoylesoftware.htmlunit.html.HtmlElement;
 import com.gargoylesoftware.htmlunit.html.HtmlForm;
 import com.gargoylesoftware.htmlunit.html.HtmlInput;
 import com.gargoylesoftware.htmlunit.html.HtmlPage;
-
 
 public abstract class ValidatorIntegrationTestBase {
 
@@ -33,7 +31,7 @@ public abstract class ValidatorIntegrationTestBase {
     public void setUp() {
         this.environment = new HtmlUnitEnvironment();
         this.environment.withResource("/" + getPageName() + ".xhtml", "org/richfaces/component/" + getPageName() + ".xhtml")
-            .withResource("/WEB-INF/faces-config.xml", "org/richfaces/component/" + getFacesConfig());
+                .withResource("/WEB-INF/faces-config.xml", "org/richfaces/component/" + getFacesConfig());
         setupEnvironment(environment);
         this.environment.start();
     }
@@ -45,7 +43,7 @@ public abstract class ValidatorIntegrationTestBase {
     protected abstract String getFacesConfig();
 
     protected abstract String getPageName();
-    
+
     @Rule
     public MethodRule watchment = new TestWatchman() {
         public void failed(Throwable e, org.junit.runners.model.FrameworkMethod method) {

@@ -111,7 +111,7 @@ public abstract class RendererTestBase {
             Assert.fail("XML was not similar:" + xmlDiff.toString());
         }
     }
-    
+
     private InputStream getExpectedPageCode(String xmlunitPageName) {
         return this.getClass().getResourceAsStream(xmlunitPageName + ".xmlunit.xml");
     }
