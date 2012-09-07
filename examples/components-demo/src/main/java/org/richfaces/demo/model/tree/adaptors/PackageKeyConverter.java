@@ -24,6 +24,7 @@ package org.richfaces.demo.model.tree.adaptors;
 import javax.faces.component.UIComponent;
 import javax.faces.context.FacesContext;
 import javax.faces.convert.Converter;
+import javax.faces.convert.FacesConverter;
 
 import com.google.common.base.Strings;
 
@@ -31,6 +32,7 @@ import com.google.common.base.Strings;
  * @author Nick Belaevski
  *
  */
+@FacesConverter("PackageKeyConverter")
 public class PackageKeyConverter implements Converter {
     public Object getAsObject(FacesContext context, UIComponent component, String value) {
         if (Strings.isNullOrEmpty(value)) {

@@ -1,6 +1,10 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:h="http://java.sun.com/jsf/html" xmlns:f="http://java.sun.com/jsf/core"
-    xmlns:ui="http://java.sun.com/jsf/facelets" xmlns:pn="http://richfaces.org/pn">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:c="http://java.sun.com/jsp/jstl/core"
+      xmlns:r="http://richfaces.org/core">
 
 <body>
     <ui:composition template="/templates/template.xhtml">
@@ -30,15 +34,15 @@
         </pre>
 
             <h:form>
-                <pn:accordion switchType="ajax" id="acc">
-                    <pn:accordionItem header="Overview:" id="i1">
+                <r:accordion switchType="ajax" id="acc">
+                    <r:accordionItem header="Overview:" id="i1">
                         <h:inputText value="#{RF9851.name}" />
-                    </pn:accordionItem>
-                    <pn:accordionItem header="JSF 2 and RichFaces 4:" id="i2">
+                    </r:accordionItem>
+                    <r:accordionItem header="JSF 2 and RichFaces 4:" id="i2">
                         <h:inputText value="#{RF9851.email}" />
 
-                    </pn:accordionItem>
-                </pn:accordion>
+                    </r:accordionItem>
+                </r:accordion>
                 <h:commandButton />
                 <h:outputText value="#{RF9851.name}" />
                 <h:outputText value="#{RF9851.email}" />

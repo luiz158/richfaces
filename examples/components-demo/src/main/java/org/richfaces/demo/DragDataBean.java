@@ -1,4 +1,4 @@
-package org.demo;
+package org.richfaces.demo;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -8,7 +8,7 @@ import javax.faces.bean.SessionScoped;
 
 @ManagedBean
 @SessionScoped
-public class DataBean {
+public class DragDataBean {
     private List<String> dropValues = new ArrayList<String>();
     private String dragValue1 = "dragValue 1";
     private String dragValue2 = "dragValue 2";

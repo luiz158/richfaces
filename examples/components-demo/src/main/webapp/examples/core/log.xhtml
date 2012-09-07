@@ -1,7 +1,11 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:f="http://java.sun.com/jsf/core" xmlns:h="http://java.sun.com/jsf/html"
-    xmlns:ui="http://java.sun.com/jsf/facelets" xmlns:a4j="http://richfaces.org/a4j"
-    xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:demo="http://java.sun.com/jsf/composite/demo">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:c="http://java.sun.com/jsp/jstl/core"
+      xmlns:r="http://richfaces.org/core">
+
 <ui:composition template="/layout/template.xhtml">
     <ui:param name="title" value="Log" />
     <!-- content -->
@@ -32,7 +36,7 @@
         </select>
         <input type="button" value="Log"
             onclick="eval('RichFaces.log.' + jQuery('#select').val() + '(\'' + jQuery('#input').val() + '\')')" />
-        <a4j:log level="debug" style="border: solid red 1px" styleClass="log" hotkey="#{logBean.hotkey}" mode="#{logBean.mode}" />
+        <r:log level="debug" style="border: solid red 1px" styleClass="log" hotkey="#{logBean.hotkey}" mode="#{logBean.mode}" />
     </ui:define>
 </ui:composition>
 </html>

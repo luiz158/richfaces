@@ -1,6 +1,10 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:h="http://java.sun.com/jsf/html" xmlns:f="http://java.sun.com/jsf/core"
-    xmlns:ui="http://java.sun.com/jsf/facelets" xmlns:pn="http://richfaces.org/output" xmlns:a4j="http://richfaces.org/a4j">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:c="http://java.sun.com/jsp/jstl/core"
+      xmlns:r="http://richfaces.org/core">
 
 <body>
     <ui:composition template="/templates/template.xhtml">
@@ -12,36 +16,36 @@
 
             <h:form>
                 <h:selectBooleanCheckbox value="#{sessionScope.showCustomer}">
-                    <a4j:ajax render="panel" />
+                    <r:ajax render="panel" />
                 </h:selectBooleanCheckbox>
             </h:form>
 
-            <a4j:outputPanel id="panel">
+            <r:outputPanel id="panel">
                 <h:outputText value="#{sessionScope.showCustomer}" />
 
                 <h:panelGroup rendered="#{sessionScope.showCustomer}" layout="block">
 
                     <h:form>
-                        <pn:tabPanel id="customerTabPanel" switchType="ajax" headerPosition="top" headerLocation="center">
+                        <r:tabPanel id="customerTabPanel" switchType="ajax" headerPosition="top" headerLocation="center">
 
-                            <pn:tab id="customerList" header="&rsaquo; Search">
-                            </pn:tab>
+                            <r:tab id="customerList" header="&rsaquo; Search">
+                            </r:tab>
 
-                            <pn:tab id="customerDetail" header="&rsaquo; Customer">
-                            </pn:tab>
+                            <r:tab id="customerDetail" header="&rsaquo; Customer">
+                            </r:tab>
 
-                            <pn:tab id="vehicleDetail" header="&rsaquo; Vehicle">
-                            </pn:tab>
+                            <r:tab id="vehicleDetail" header="&rsaquo; Vehicle">
+                            </r:tab>
 
-                            <pn:tab id="subscriptionDetail" header="&rsaquo; Subscription">
-                            </pn:tab>
+                            <r:tab id="subscriptionDetail" header="&rsaquo; Subscription">
+                            </r:tab>
 
-                            <pn:tab id="history" header="&rsaquo; History">
-                            </pn:tab>
-                        </pn:tabPanel>
+                            <r:tab id="history" header="&rsaquo; History">
+                            </r:tab>
+                        </r:tabPanel>
                     </h:form>
                 </h:panelGroup>
-            </a4j:outputPanel>
+            </r:outputPanel>
 
 
         </ui:define>

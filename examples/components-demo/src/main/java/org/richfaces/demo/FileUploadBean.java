@@ -36,7 +36,6 @@ import java.util.List;
 
 /**
  * @author Konstantin Mishin
- *
  */
 @ManagedBean
 @SessionScoped
@@ -127,11 +126,11 @@ public class FileUploadBean {
     public void setMaxFilesQuantity(Integer maxFilesQuantity) {
         this.maxFilesQuantity = maxFilesQuantity;
     }
-    
+
     public boolean isImmediateUpload() {
         return immediateUpload;
     }
-    
+
     public void setImmediateUpload(boolean immediateUpload) {
         this.immediateUpload = immediateUpload;
     }

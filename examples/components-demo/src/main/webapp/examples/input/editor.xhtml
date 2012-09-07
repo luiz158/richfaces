@@ -1,7 +1,11 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:h="http://java.sun.com/jsf/html" xmlns:f="http://java.sun.com/jsf/core"
-      xmlns:ui="http://java.sun.com/jsf/facelets" xmlns:in="http://richfaces.org/input"
-      xmlns:a4j="http://richfaces.org/a4j">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:c="http://java.sun.com/jsp/jstl/core"
+      xmlns:r="http://richfaces.org/core">
+
 <ui:composition template="/layout/template.xhtml">
     <ui:param name="title" value="Editor" />
 
@@ -12,7 +16,7 @@
     <legend>Configuration</legend>
 
     <h:form id="form9">
-        <in:editor id="editor9" value="#{editor.value}">
+        <r:editor id="editor9" value="#{editor.value}">
             <f:facet name="config">
                 toolbar: "MyToolbar",
                 toolbar_MyToolbar:
@@ -30,7 +34,7 @@
                 { name: 'tools', items : [ 'Maximize','-','About' ] }
                 ]
             </f:facet>
-        </in:editor>
+        </r:editor>
     </h:form>
 </fieldset>
 
@@ -38,11 +42,11 @@
     <legend>Render All</legend>
 
     <h:form id="form8a">
-        <in:editor id="editor8a" value="#{editor.value}"/>
+        <r:editor id="editor8a" value="#{editor.value}"/>
     </h:form>
 
     <h:form id="form8b">
-        <a4j:commandButton value="Update All" render="@all"/>
+        <r:commandButton value="Update All" render="@all"/>
     </h:form>
 </fieldset>
 
@@ -52,7 +56,7 @@
     <h:messages for="editor7"/>
 
     <h:form id="form7">
-        <in:editor id="editor7" value="#{editor.value}" required="true"/>
+        <r:editor id="editor7" value="#{editor.value}" required="true"/>
 
         <h:commandButton value="Validate"/>
     </h:form>
@@ -63,8 +67,8 @@
     <legend>Attributes</legend>
 
     <h:form id="form6">
-        <a4j:outputPanel id="panel6">
-            <in:editor id="editor6" value="#{editor.value}" title="#{editor.title}"
+        <r:outputPanel id="panel6">
+            <r:editor id="editor6" value="#{editor.value}" title="#{editor.title}"
                        readonly="#{editor.readonly}" width="#{editor.width}" height="#{editor.height}"
                        rendered="#{editor.rendered}" toolbar="#{editor.toolbar}" skin="#{editor.skin}"
                        lang="#{editor.lang}"
@@ -74,7 +78,7 @@
                        styleClass="#{editor.styleClass}" style="#{editor.style}"
                        editorClass="#{editor.editorClass}" editorStyle="#{editor.editorStyle}"
                        textareaClass="#{editor.textareaClass}" textareaStyle="#{editor.textareaStyle}"/>
-        </a4j:outputPanel>
+        </r:outputPanel>
     </h:form>
 
     <h:form>
@@ -94,13 +98,13 @@
             <h:outputLabel value="Toolbar:"/>
             <h:inputText value="#{editor.toolbar}"/>
 
-            <h:outputLabel value="Skin:"/>
+            <h:outputLabel value="Skr:"/>
             <h:inputText value="#{editor.skin}"/>
 
             <h:outputLabel value="Lang:"/>
             <h:inputText value="#{editor.lang}"/>
 
-            <h:outputLabel value="oninit:"/>
+            <h:outputLabel value="oninr:"/>
             <h:inputText value="#{editor.oninit}"/>
 
             <h:outputLabel value="onfocus:"/>
@@ -136,9 +140,9 @@
             <h:outputLabel value="title:"/>
             <h:inputText value="#{editor.title}"/>
 
-            <a4j:commandButton value="Rerender" render="editor6 inplace6"/>
+            <r:commandButton value="Rerender" render="editor6 inplace6"/>
             <h:commandButton value="Post"/>
-            <a4j:commandButton value="Rerender Panel" render="panel6"/>
+            <r:commandButton value="Rerender Panel" render="panel6"/>
         </h:panelGrid>
     </h:form>
 </fieldset>
@@ -147,7 +151,7 @@
     <legend>JavaScript API</legend>
 
     <h:form id="form5">
-        <in:editor id="editor5" value="#{editor.value}" toolbar="full"
+        <r:editor id="editor5" value="#{editor.value}" toolbar="full"
                    ondirty="document.title = parseInt(document.title) + 1"/>
 
         <input type="button" value="setReadOnly(true)"
@@ -181,12 +185,12 @@
     <legend>Events</legend>
 
     <h:form id="form4">
-        <in:editor id="editor4" value="#{editor.value}">
-            <a4j:ajax event="dirty">
-                <a4j:attachQueue requestDelay="500"/>
-            </a4j:ajax>
-            <a4j:ajax event="change"/>
-        </in:editor>
+        <r:editor id="editor4" value="#{editor.value}">
+            <r:ajax event="dirty">
+                <r:attachQueue requestDelay="500"/>
+            </r:ajax>
+            <r:ajax event="change"/>
+        </r:editor>
     </h:form>
 </fieldset>
 
@@ -194,13 +198,13 @@
     <legend>Rereender Editor</legend>
 
     <h:form id="form3a">
-        <in:editor id="editor3a" value="#{editor.value}"/>
+        <r:editor id="editor3a" value="#{editor.value}"/>
     </h:form>
 
     <h:form id="form3b">
-        <in:editor id="editor3b" value="#{editor.value}"/>
+        <r:editor id="editor3b" value="#{editor.value}"/>
 
-        <a4j:commandButton id="commandButton" value="Update" process="@form" render="form3a"/>
+        <r:commandButton id="commandButton" value="Update" process="@form" render="form3a"/>
     </h:form>
 </fieldset>
 
@@ -208,13 +212,13 @@
     <legend>Update value</legend>
 
     <h:form id="form2a">
-        <in:editor id="editor2a" value="#{editor.value}"/>
+        <r:editor id="editor2a" value="#{editor.value}"/>
     </h:form>
 
     <h:form id="form2b">
-        <in:editor id="editor2b" value="#{editor.value}"/>
+        <r:editor id="editor2b" value="#{editor.value}"/>
 
-        <a4j:commandButton value="Update" process="@form" render="editor2a"/>
+        <r:commandButton value="Update" process="@form" render="editor2a"/>
     </h:form>
 </fieldset>
 
@@ -222,20 +226,20 @@
     <legend>Trivial submit/ajax</legend>
 
     <h:form id="form1">
-        <in:editor id="editor1" value="#{editor.value}"/>
+        <r:editor id="editor1" value="#{editor.value}"/>
 
         <h:commandButton value="Submit"/>
 
-        <a4j:commandButton value="Ajax" process="@form" render="output1"/>
+        <r:commandButton value="Ajax" process="@form" render="output1"/>
 
-        <a4j:outputPanel id="output1">
+        <r:outputPanel id="output1">
             #{editor.value}
-        </a4j:outputPanel>
+        </r:outputPanel>
     </h:form>
 </fieldset>
 
 
-<a4j:log mode="inline"/>
+<r:log mode="inline"/>
 </ui:define>
 </ui:composition>
 </html>

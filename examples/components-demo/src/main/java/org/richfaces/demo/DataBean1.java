@@ -15,9 +15,9 @@ import org.richfaces.demo.utils.EmployeeUtils;
 import org.richfaces.event.SortingEvent;
 import org.richfaces.model.SelectionMode;
 
-@ManagedBean(name = "dataBean")
+@ManagedBean(name = "dataBean1")
 @SessionScoped
-public class DataBean {
+public class DataBean1 {
     DataComponentState dataTableState;
     Map<Object, Integer> stateMap = new HashMap<Object, Integer>();
     int page = 1;

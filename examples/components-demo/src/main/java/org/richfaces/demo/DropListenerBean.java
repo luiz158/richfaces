@@ -1,4 +1,4 @@
-package org.demo;
+package org.richfaces.demo;
 
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.ManagedProperty;
@@ -12,9 +12,9 @@ import org.richfaces.event.DropListener;
 public class DropListenerBean implements DropListener {
     private DropEvent dropEvent;
     @ManagedProperty(value = "#{dataBean}")
-    private DataBean dataBean;
+    private DragDataBean dataBean;
 
-    public void setDataBean(DataBean dataBean) {
+    public void setDataBean(DragDataBean dataBean) {
         this.dataBean = dataBean;
     }
 

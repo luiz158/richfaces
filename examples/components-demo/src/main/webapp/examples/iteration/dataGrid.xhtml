@@ -1,13 +1,17 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:f="http://java.sun.com/jsf/core" xmlns:h="http://java.sun.com/jsf/html"
-    xmlns:ui="http://java.sun.com/jsf/facelets" xmlns:rich="http://richfaces.org/iteration" xmlns:a4j="http://richfaces.org/a4j"
-    xmlns:c="http://java.sun.com/jsp/jstl/core">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:c="http://java.sun.com/jsp/jstl/core"
+      xmlns:r="http://richfaces.org/core">
+
 <ui:composition template="/layout/template.xhtml">
     <ui:param name="title" value="Data Grid" />
     <!-- content -->
     <ui:define name="content">
         <h:form id="form1">
-            <rich:dataGrid id="dataGrid" columns="3" var="record" elements="8" value="#{dataBean.employeeList}">
+            <r:dataGrid id="dataGrid" columns="3" var="record" elements="8" value="#{dataBean1.employeeList}">
                 <f:facet name="header">
                     <h:outputText value="header" />
                 </f:facet>
@@ -21,10 +25,10 @@
                 <h:outputText value="#{record.EMail}" />
     
                 <f:facet name="footer">
-                    <rich:dataScroller id="scroller3" for="dataGrid" page="#{dataBean.page}" maxPages="7"></rich:dataScroller>
+                    <r:dataScroller id="scroller3" for="dataGrid" page="#{dataBean1.page}" maxPages="7"></r:dataScroller>
                 </f:facet>
     
-            </rich:dataGrid>
+            </r:dataGrid>
         </h:form>
     </ui:define>
 </ui:composition>

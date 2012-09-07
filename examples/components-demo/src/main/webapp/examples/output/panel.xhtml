@@ -1,29 +1,33 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:f="http://java.sun.com/jsf/core" xmlns:h="http://java.sun.com/jsf/html"
-    xmlns:ui="http://java.sun.com/jsf/facelets" xmlns:a4j="http://richfaces.org/a4j"
-    xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:rich="http://richfaces.org/output">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:c="http://java.sun.com/jsp/jstl/core"
+      xmlns:r="http://richfaces.org/core">
+
 <ui:composition template="/layout/template.xhtml">
     <ui:param name="title" value="Panel" />
     <!-- content -->
     <ui:define name="content">
-        <rich:panel>
+        <r:panel>
             <f:facet name="header">
             Test
         </f:facet>
-            <rich:panel>
+            <r:panel>
                 <f:facet name="header">
                 Test
             </f:facet>
-                <rich:panel>
+                <r:panel>
                     <f:facet name="header">
                     Test
                 </f:facet>
                 Body text
-            </rich:panel>
-            </rich:panel>
-        </rich:panel>
+            </r:panel>
+            </r:panel>
+        </r:panel>
         <br />
-        <rich:panel>
+        <r:panel>
             <f:facet name="header">
             Test<br />
             Test<br />
@@ -34,7 +38,7 @@
             <h:form>
                 <h:outputText value="inside the form" />
             </h:form>
-        </rich:panel>
+        </r:panel>
     </ui:define>
 </ui:composition>
 </html>

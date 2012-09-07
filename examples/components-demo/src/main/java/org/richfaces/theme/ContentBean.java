@@ -4,12 +4,16 @@
 package org.richfaces.theme;
 
 import javax.faces.FacesException;
+import javax.faces.bean.ManagedBean;
+import javax.faces.bean.NoneScoped;
 import javax.faces.context.FacesContext;
 
 /**
  * @author leo
  *
  */
+@ManagedBean
+@NoneScoped
 public class ContentBean {
     private static final String PRELUDE = "<html xmlns=\"http://www.w3.org/1999/xhtml\"\n"
             + " xmlns:f=\"http://java.sun.com/jsf/core\"\n" + " xmlns:h=\"http://java.sun.com/jsf/html\"\n"
