@@ -11,3 +11,4 @@ dependency-reduced-pom.xml
 .checkstyle
 rebel.xml
 *.faces-config.xml.jsfdia
+log.txt

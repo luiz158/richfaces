@@ -6,6 +6,8 @@ import static org.junit.Assert.assertNotNull;
 import java.io.IOException;
 
 import org.junit.Test;
+import org.richfaces.wait.Condition;
+import org.richfaces.wait.Wait;
 import org.xml.sax.SAXException;
 
 import com.gargoylesoftware.htmlunit.html.DomText;
@@ -39,8 +41,8 @@ public class InplaceInputRendererTest extends InplaceRendererTestBase {
 
     @Test
     public void testEditWithControls() throws Exception {
-        HtmlPage page = environment.getPage("//inplaceInputTest.jsf");
-        String withControlsComponentId = BASE_ID + WITH_CONTROLS;
+        final HtmlPage page = environment.getPage("//inplaceInputTest.jsf");
+        final String withControlsComponentId = BASE_ID + WITH_CONTROLS;
         edit(page, withControlsComponentId, "Another Test String");
 
         HtmlElement cancel = page.getFirstByXPath("//*[@id = '" + withControlsComponentId + "Cancelbtn']");
@@ -64,10 +66,15 @@ public class InplaceInputRendererTest extends InplaceRendererTestBase {
         text = page.getFirstByXPath("//*[@id = '" + withControlsComponentId + "Label']/text()");
         assertNotNull(text);
         assertEquals("Another Test String", text.getTextContent());
-
-        span = page.getFirstByXPath("//*[@id = '" + withControlsComponentId + "']");
-        assertNotNull(span);
-        assertEquals("rf-ii rf-ii-chng", span.getAttribute(HtmlConstants.CLASS_ATTRIBUTE));
+        
+        new Wait().failWith("span's class attribute hasn't changed to 'rf-ii rf-ii-chng'").until(new Condition() { 
+            @Override
+            public boolean isTrue() {
+                HtmlElement span = page.getFirstByXPath("//*[@id = '" + withControlsComponentId + "']");
+                assertNotNull(span);
+                return "rf-ii rf-ii-chng".equals(span.getAttribute(HtmlConstants.CLASS_ATTRIBUTE));
+            }
+        });
 
         edit(page, withControlsComponentId, "Test String");
 
