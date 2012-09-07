@@ -69,6 +69,7 @@
     </dependencies>
 
     <build>
+        <finalName>jpa-demo</finalName>
         <plugins>
             <plugin>
                 <artifactId>maven-checkstyle-plugin</artifactId>
