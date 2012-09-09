@@ -17,22 +17,151 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
+    <modelVersion>4.0.0</modelVersion>
+
     <parent>
-        <groupId>org.richfaces.core</groupId>
-        <artifactId>richfaces-core-parent</artifactId>
+        <groupId>org.richfaces</groupId>
+        <artifactId>richfaces-parent</artifactId>
         <version>4.3.0-SNAPSHOT</version>
-        <relativePath>../parent/pom.xml</relativePath>
     </parent>
 
-    <modelVersion>4.0.0</modelVersion>
-    <artifactId>richfaces-core-impl</artifactId>
-    <name>RichFaces Core Implementation</name>
+
+    <artifactId>richfaces</artifactId>
+    <name>RichFaces Framework</name>
 
     <description>
-        The RichFaces Core Implementation.
+        The RichFaces Framework and Component Suite.
+        
+        Contains all project specific sources.
     </description>
 
+    <properties>
+        <!-- Base Dependencies -->
+        <version.richfaces>4.3.0-SNAPSHOT</version.richfaces>
+        <version.cdk>4.3.0-SNAPSHOT</version.cdk>
+        <version.jboss-javaee>3.0.1.Final</version.jboss-javaee>
+        <version.myfaces>2.1.8</version.myfaces>
+
+        <!-- JSF Impls -->
+        <version.javax.faces-api>2.1</version.javax.faces-api>
+        <version.com.sun.faces.jsf-api>2.1.0</version.com.sun.faces.jsf-api>
+        <version.org.glassfish.javax.faces>2.1.7</version.org.glassfish.javax.faces>
+        <version.org.jboss.spec.javax.faces.jboss-jsf-api_2.1_spec>2.0.2.Final</version.org.jboss.spec.javax.faces.jboss-jsf-api_2.1_spec>
+        <version.org.jboss.javax.faces.jsf-impl>2.1.7-jbossorg-2</version.org.jboss.javax.faces.jsf-impl>
+        <version.myfaces>2.1.8</version.myfaces>
+        
+        <!-- Test Dependencies -->
+        <version.test-jsf>1.1.3-SNAPSHOT</version.test-jsf>
+        <version.easymock>2.5.2</version.easymock>
+        <version.mockito>1.8.5</version.mockito>
+        <version.junit>4.8.2</version.junit>
+        <version.xmlunit>1.2</version.xmlunit>
+        <version.hibernate-validator>4.2.0.Final</version.hibernate-validator>
+        
+        <!-- Integration Tests Versions -->
+        <version.arquillian.core>1.0.1.Final</version.arquillian.core>
+        <version.arquillian.drone>1.1.0.CR2</version.arquillian.drone>
+        <version.arquillian.warp>1.0.0.Alpha2-SNAPSHOT</version.arquillian.warp>
+        <version.arquillian.graphene>2.0.0-SNAPSHOT</version.arquillian.graphene>
+        <version.shrinkwrap.resolver>2.0.0-alpha-1</version.shrinkwrap.resolver>
+        <version.shrinkwrap.descriptors>2.0.0-alpha-3</version.shrinkwrap.descriptors>
+        
+        <!-- Container Versions -->
+        <version.jboss-as7>7.1.1.Final</version.jboss-as7>
+        <version.tomee>1.0.0</version.tomee>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.jboss.spec</groupId>
+                <artifactId>jboss-javaee-6.0</artifactId>
+                <version>${version.jboss-javaee}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            
+            <!-- RichFaces BOM Import -->
+            <dependency>
+                <groupId>org.richfaces</groupId>
+                <artifactId>richfaces-bom</artifactId>
+                <version>${version.richfaces}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <!-- Integration Tests - Version Management -->
+            <dependency>
+                <groupId>org.jboss.shrinkwrap.resolver</groupId>
+                <artifactId>shrinkwrap-resolver-bom</artifactId>
+                <version>${version.shrinkwrap.resolver}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.jboss.shrinkwrap.descriptors</groupId>
+                <artifactId>shrinkwrap-descriptors-bom</artifactId>
+                <version>${version.shrinkwrap.descriptors}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.jboss.arquillian.extension</groupId>
+                <artifactId>arquillian-warp-bom</artifactId>
+                <version>${version.arquillian.warp}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.jboss.arquillian.graphene</groupId>
+                <artifactId>graphene-webdriver</artifactId>
+                <version>${version.arquillian.graphene}</version>
+                <type>pom</type>
+            </dependency>
+            <dependency>
+                <groupId>org.jboss.arquillian.extension</groupId>
+                <artifactId>arquillian-drone-bom</artifactId>
+                <version>${version.arquillian.drone}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.jboss.arquillian</groupId>
+                <artifactId>arquillian-bom</artifactId>
+                <version>${version.arquillian.core}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+        </dependencies>
+    </dependencyManagement>
+
+
     <dependencies>
+
+        <!-- Java EE Web Profile -->
+        <dependency>
+            <groupId>org.jboss.spec</groupId>
+            <artifactId>jboss-javaee-6.0</artifactId>
+            <version>${version.jboss-javaee}</version>
+            <type>pom</type>
+            <scope>provided</scope>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.jboss.spec.javax.faces</groupId>
+                    <artifactId>jboss-jsf-api_2.1_spec</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        
+        <!-- CDK -->
+        <dependency>
+            <groupId>org.richfaces.cdk</groupId>
+            <artifactId>annotations</artifactId>
+            <version>${version.cdk}</version>
+            <scope>provided</scope>
+        </dependency>
+
         <!-- Runtime Dependencies -->
         <dependency>
             <groupId>net.sourceforge.cssparser</groupId>
@@ -43,34 +172,14 @@
             <artifactId>guava</artifactId>
         </dependency>
 
-        <!-- Provided Dependencies -->
+        <!-- Push dependencies -->
         <dependency>
-            <groupId>javax.el</groupId>
-            <artifactId>el-api</artifactId>
-            <scope>provided</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.jboss.spec.javax.servlet</groupId>
-            <artifactId>jboss-servlet-api_3.0_spec</artifactId>
-            <scope>provided</scope>
-        </dependency>
-        <dependency>
-            <groupId>javax.servlet.jsp</groupId>
-            <artifactId>jsp-api</artifactId>
-            <scope>provided</scope>
-        </dependency>
-        <dependency>
-            <groupId>javax.servlet.jsp.jstl</groupId>
-            <artifactId>jstl-api</artifactId>
-            <scope>provided</scope>
-        </dependency>
-        <dependency>
-            <groupId>javax.enterprise</groupId>
-            <artifactId>cdi-api</artifactId>
-            <scope>provided</scope>
+            <groupId>org.atmosphere</groupId>
+            <artifactId>atmosphere-runtime</artifactId>
+            <optional>true</optional>
         </dependency>
 
-        <!-- Cache Impls -->
+        <!-- Optional dependencies -->
         <dependency>
             <groupId>org.jboss.cache</groupId>
             <artifactId>jbosscache-core</artifactId>
@@ -92,30 +201,26 @@
             <artifactId>oscache</artifactId>
             <optional>true</optional>
         </dependency>
-
-        <!-- Push dependencies -->
-        <dependency>
-            <groupId>org.atmosphere</groupId>
-            <artifactId>atmosphere-runtime</artifactId>
-            <optional>true</optional>
-        </dependency>
-        <dependency>
-            <groupId>javax.jms</groupId>
-            <artifactId>jms-api</artifactId>
-            <optional>true</optional>
-        </dependency>
         
-        <!-- CDK -->
+        <!-- For MyFaces specific resource loading (RF-11974) -->
         <dependency>
-            <groupId>org.richfaces.cdk</groupId>
-            <artifactId>annotations</artifactId>
+            <groupId>org.apache.myfaces.core</groupId>
+            <artifactId>myfaces-impl</artifactId>
+            <version>${version.myfaces}</version>
             <scope>provided</scope>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.apache.myfaces.core</groupId>
+                    <artifactId>myfaces-api</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
 
         <!-- Test Dependencies -->
         <dependency>
             <groupId>org.jboss.test-jsf</groupId>
             <artifactId>htmlunit-client</artifactId>
+            <version>${version.test-jsf}</version>
             <scope>test</scope>
             <exclusions>
                 <exclusion>
@@ -127,50 +232,52 @@
         <dependency>
             <groupId>org.jboss.test-jsf</groupId>
             <artifactId>jsf-mock</artifactId>
+            <version>${version.test-jsf}</version>
             <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>org.easymock</groupId>
             <artifactId>easymock</artifactId>
+            <version>${version.easymock}</version>
             <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>org.easymock</groupId>
             <artifactId>easymockclassextension</artifactId>
+            <version>${version.easymock}</version>
             <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>org.jboss.test-jsf</groupId>
             <artifactId>jsf-mockito</artifactId>
+            <version>${version.test-jsf}</version>
             <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>org.mockito</groupId>
             <artifactId>mockito-all</artifactId>
+            <version>${version.mockito}</version>
             <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>org.jboss.test-jsf</groupId>
             <artifactId>jsf-test-scriptunit</artifactId>
+            <version>${version.test-jsf}</version>
             <scope>test</scope>
         </dependency>
 
         <dependency>
             <groupId>xmlunit</groupId>
             <artifactId>xmlunit</artifactId>
+            <version>${version.xmlunit}</version>
             <scope>test</scope>
         </dependency>
 
-        <dependency>
-            <groupId>javax.validation</groupId>
-            <artifactId>validation-api</artifactId>
-            <scope>provided</scope>
-            <optional>true</optional>
-        </dependency>
         <!-- tests -->
         <dependency>
             <groupId>org.hibernate</groupId>
             <artifactId>hibernate-validator</artifactId>
+            <version>${version.hibernate-validator}</version>
             <scope>test</scope>
         </dependency>
 
@@ -211,18 +318,6 @@
                     <timestampFormat>{0,date,MM/dd/yyyy h:mm:ss a}</timestampFormat>
                 </configuration>
             </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-jar-plugin</artifactId>
-                <configuration>
-                    <archive>
-                        <manifestEntries>
-                            <SCM-Revision>${buildNumber}</SCM-Revision>
-                            <SCM-Timestamp>${timestamp}</SCM-Timestamp>
-                        </manifestEntries>
-                    </archive>
-                </configuration>
-            </plugin>
 
             <!-- CDK -->
             <plugin>
@@ -240,6 +335,7 @@
             <plugin>
                 <groupId>org.richfaces.cdk</groupId>
                 <artifactId>maven-cdk-plugin</artifactId>
+                <version>${version.richfaces}</version>
                 <executions>
                     <execution>
                         <id>cdk-generate-sources</id>
@@ -249,6 +345,13 @@
                         </goals>
                     </execution>
                 </executions>
+                <dependencies>
+                    <dependency>
+                        <groupId>org.jboss.spec.javax.faces</groupId>
+                        <artifactId>jboss-jsf-api_2.1_spec</artifactId>
+                        <version>2.0.2.Final</version>
+                    </dependency>
+                </dependencies>
             </plugin>
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
@@ -287,6 +390,106 @@
 
     <profiles>
         <profile>
+            <id>jsf_ri</id>
+            <activation>
+                <property>
+                    <name>!jsf_profile</name>
+                </property>
+            </activation>
+            <dependencies>
+                <dependency>
+                    <groupId>com.sun.faces</groupId>
+                    <artifactId>jsf-api</artifactId>
+                    <version>${version.com.sun.faces.jsf-api}</version>
+                    <scope>compile</scope>
+                    <optional>true</optional>
+                </dependency>
+                <dependency>
+                    <groupId>org.glassfish</groupId>
+                    <artifactId>javax.faces</artifactId>
+                    <version>${version.org.glassfish.javax.faces}</version>
+                    <scope>test</scope>
+                </dependency>
+                
+                <!-- For MyFaces specific resource loading (RF-11974) -->
+                <dependency>
+                    <groupId>org.apache.myfaces.core</groupId>
+                    <artifactId>myfaces-impl</artifactId>
+                    <version>${version.myfaces}</version>
+                    <scope>provided</scope>
+                    <exclusions>
+                        <exclusion>
+                            <groupId>org.apache.myfaces.core</groupId>
+                            <artifactId>myfaces-api</artifactId>
+                        </exclusion>
+                    </exclusions>
+                </dependency>
+            </dependencies>
+        </profile>
+        <profile>
+            <id>jsf_jboss</id>
+            <activation>
+                <property>
+                    <name>jsf_profile</name>
+                    <value>jboss</value>
+                </property>
+            </activation>
+            <dependencies>
+                <dependency>
+                    <groupId>org.jboss.spec.javax.faces</groupId>
+                    <artifactId>jboss-jsf-api_2.1_spec</artifactId>
+                    <version>${version.org.jboss.spec.javax.faces.jboss-jsf-api_2.1_spec}</version>
+                    <scope>compile</scope>
+                    <optional>true</optional>
+                </dependency>
+                <dependency>
+                    <groupId>com.sun.faces</groupId>
+                    <artifactId>jsf-impl</artifactId>
+                    <version>${version.org.jboss.javax.faces.jsf-impl}</version>
+                    <scope>test</scope>
+                </dependency>
+                
+                <!-- For MyFaces specific resource loading (RF-11974) -->
+                <dependency>
+                    <groupId>org.apache.myfaces.core</groupId>
+                    <artifactId>myfaces-impl</artifactId>
+                    <version>${version.myfaces}</version>
+                    <scope>provided</scope>
+                    <exclusions>
+                        <exclusion>
+                            <groupId>org.apache.myfaces.core</groupId>
+                            <artifactId>myfaces-api</artifactId>
+                        </exclusion>
+                    </exclusions>
+                </dependency>
+            </dependencies>
+        </profile>
+        <profile>
+            <id>myfaces</id>
+            <activation>
+                <property>
+                    <name>jsf_profile</name>
+                    <value>myfaces</value>
+                </property>
+            </activation>
+            <dependencies>
+                <dependency>
+                    <groupId>org.apache.myfaces.core</groupId>
+                    <artifactId>myfaces-api</artifactId>
+                    <version>${version.myfaces}</version>
+                    <scope>compile</scope>
+                    <optional>true</optional>
+                </dependency>
+                <dependency>
+                    <groupId>org.apache.myfaces.core</groupId>
+                    <artifactId>myfaces-impl</artifactId>
+                    <version>${version.myfaces}</version>
+                    <scope>provided</scope>
+                </dependency>
+            </dependencies>
+        </profile>
+
+        <profile>
             <id>integration-tests</id>
             <activation>
                 <property>
@@ -319,11 +522,13 @@
                 <dependency>
                     <groupId>org.jboss.shrinkwrap.resolver</groupId>
                     <artifactId>shrinkwrap-resolver-depchain</artifactId>
+                    <version>${version.shrinkwrap.resolver}</version>
                     <type>pom</type>
                 </dependency>
                 <dependency>
                     <groupId>org.jboss.shrinkwrap.descriptors</groupId>
                     <artifactId>shrinkwrap-descriptors-depchain</artifactId>
+                    <version>${version.shrinkwrap.descriptors}</version>
                     <type>pom</type>
                 </dependency>
                 <dependency>
@@ -397,6 +602,7 @@
                 <dependency>
                     <groupId>org.jboss.as</groupId>
                     <artifactId>jboss-as-arquillian-container-managed</artifactId>
+                    <version>${version.jboss-as7}</version>
                     <scope>test</scope>
                 </dependency>
             </dependencies>
@@ -453,6 +659,7 @@
                 <dependency>
                     <groupId>org.jboss.as</groupId>
                     <artifactId>jboss-as-arquillian-container-remote</artifactId>
+                    <version>${version.jboss-as7}</version>
                 </dependency>
             </dependencies>
         </profile>
@@ -468,6 +675,7 @@
                 <dependency>
                     <groupId>org.apache.openejb</groupId>
                     <artifactId>arquillian-tomee-remote</artifactId>
+                    <version>${version.tomee}</version>
                     <scope>test</scope>
                 </dependency>
             </dependencies>
@@ -546,10 +754,4 @@
             </build>
         </profile>
     </profiles>
-
-    <scm>
-        <connection>scm:git:git://github.com/richfaces/core.git</connection>
-        <developerConnection>scm:git:git@github.com:richfaces/core.git</developerConnection>
-        <url>https://github.com/richfaces/core</url>
-    </scm>
 </project>

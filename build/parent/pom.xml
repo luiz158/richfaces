@@ -139,13 +139,6 @@
                 <artifactId>weld-servlet</artifactId>
                 <version>${version.weld}</version>
             </dependency>
-
-            <!-- Validation -->
-            <dependency>
-                <groupId>org.hibernate</groupId>
-                <artifactId>hibernate-validator</artifactId>
-                <version>${version.hibernate-validator}</version>
-            </dependency>
             
             <!-- Persistence -->
             <dependency>
