@@ -26,7 +26,7 @@
     </parent>
 
 
-    <artifactId>richfaces</artifactId>
+    <artifactId>richfaces-framework</artifactId>
     <name>RichFaces Framework</name>
 
     <description>
