@@ -204,7 +204,7 @@
                             <pluginExecutions>
                                 <pluginExecution>
                                     <pluginExecutionFilter>
-                                        <groupId>org.richfaces.cdk</groupId>
+                                        <groupId>org.richfaces</groupId>
                                         <artifactId>maven-richfaces-resources-plugin</artifactId>
                                         <versionRange>[4.3.0-SNAPSHOT,)</versionRange>
                                         <goals>

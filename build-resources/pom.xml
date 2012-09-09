@@ -9,7 +9,7 @@
         <version>4.3.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>richfaces-build</artifactId>
-    <name>RichFaces Build</name>
+    <artifactId>richfaces-build-resources</artifactId>
+    <name>RichFaces Build Resources</name>
 
 </project>
