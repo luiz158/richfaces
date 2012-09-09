@@ -50,9 +50,9 @@
     <properties>
         <version.richfaces>4.3.0-SNAPSHOT</version.richfaces>
         <version.google-guava>11.0.2</version.google-guava>
-        
+
         <version.atmosphere>1.0.0.beta5</version.atmosphere>
-        
+
         <version.cssparser>0.9.5</version.cssparser>
         <version.oscache>2.3</version.oscache>
         <version.jbosscache>3.2.5.GA</version.jbosscache>
@@ -61,10 +61,10 @@
         <!-- Release repositories -->
         <jboss.releases.repo.url>https://repository.jboss.org/nexus/service/local/staging/deploy/maven2/</jboss.releases.repo.url>
         <jboss.snapshots.repo.url>https://repository.jboss.org/nexus/content/repositories/snapshots/</jboss.snapshots.repo.url>
-        
+
         <maven.min.version>3.0</maven.min.version>
     </properties>
-    
+
     <prerequisites>
         <maven>${maven.min.version}</maven>
     </prerequisites>
@@ -72,6 +72,18 @@
     <!-- Runtime dependency management -->
     <dependencyManagement>
         <dependencies>
+            <!-- RichFaces -->
+            <dependency>
+                <groupId>org.richfaces</groupId>
+                <artifactId>richfaces-framework</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.richfaces</groupId>
+                <artifactId>richfaces-optimized-resources</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
             <!-- Project Versions -->
             <dependency>
                 <groupId>com.google.guava</groupId>

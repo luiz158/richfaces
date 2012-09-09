@@ -8,6 +8,7 @@ import java.net.URL;
 import java.util.Collections;
 import java.util.Enumeration;
 import java.util.Map;
+import java.util.Set;
 
 import javax.faces.FacesException;
 import javax.xml.bind.JAXB;
@@ -24,6 +25,7 @@ import com.google.common.collect.ImmutableMap;
 import com.google.common.collect.ImmutableMap.Builder;
 import com.google.common.collect.Iterables;
 import com.google.common.collect.Maps;
+import com.google.common.collect.Sets;
 
 /**
  * @author asmirnov
@@ -43,9 +45,13 @@ public final class ClientServiceConfigParser {
         Builder<Class<?>, LibraryFunction> resultBuilder = ImmutableMap.builder();
         try {
             Enumeration<URL> resources = loader.getResources(name);
+            Set<URL> loaded = Sets.newHashSet();
             while (resources.hasMoreElements()) {
                 URL url = (URL) resources.nextElement();
-                resultBuilder.putAll(parse(loader, url));
+                if (!loaded.contains(url)) {
+                    resultBuilder.putAll(parse(loader, url));
+                    loaded.add(url);
+                }
             }
         } catch (IOException e) {
             return Collections.emptyMap();
