@@ -24,8 +24,9 @@
 
     <parent>
         <groupId>org.richfaces</groupId>
-        <artifactId>richfaces-parent</artifactId>
+        <artifactId>richfaces-build</artifactId>
         <version>4.3.0-SNAPSHOT</version>
+        <relativePath>../build</relativePath>
     </parent>
 
     <artifactId>richfaces-optimized-resources</artifactId>
@@ -41,7 +42,6 @@
         <dependency>
             <groupId>org.richfaces</groupId>
             <artifactId>richfaces-framework</artifactId>
-            <version>${project.version}</version>
         </dependency>
     </dependencies>
 
@@ -49,7 +49,7 @@
         <plugins>
             <plugin>
                 <groupId>org.richfaces</groupId>
-                <artifactId>maven-richfaces-resources-plugin</artifactId>
+                <artifactId>richfaces-resources-maven-plugin</artifactId>
                 <version>${project.version}</version>
                 <configuration>
                     <skins>
@@ -205,7 +205,7 @@
                                 <pluginExecution>
                                     <pluginExecutionFilter>
                                         <groupId>org.richfaces</groupId>
-                                        <artifactId>maven-richfaces-resources-plugin</artifactId>
+                                        <artifactId>richfaces-resources-maven-plugin</artifactId>
                                         <versionRange>[4.3.0-SNAPSHOT,)</versionRange>
                                         <goals>
                                             <goal>process</goal>

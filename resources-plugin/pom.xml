@@ -4,8 +4,9 @@
 
     <parent>
         <groupId>org.richfaces</groupId>
-        <artifactId>richfaces-parent</artifactId>
+        <artifactId>richfaces-build</artifactId>
         <version>4.3.0-SNAPSHOT</version>
+        <relativePath>../build</relativePath>
     </parent>
 
     <artifactId>richfaces-resources-maven-plugin</artifactId>
@@ -13,82 +14,39 @@
     <name>RichFaces Resources Maven Plugin</name>
     <description>Maven plugin for packaging resources with web application</description>
 
-    <properties>
-        <!-- Base -->
-        <version.reflections>0.9.5</version.reflections>
-        <version.yuicompressor>2.3.6</version.yuicompressor>
-        <version.jboss-el>1.0_02.CR6</version.jboss-el>
-        
-        <!-- Maven -->
-        <version.maven-core>3.0.4</version.maven-core>
-        <version.maven-archiver>2.4</version.maven-archiver>
-        <version.maven-file-management>1.2.1</version.maven-file-management>
-        <version.plexus-utils>1.5.15</version.plexus-utils>
-        <version.plexus-velocity>1.1.2</version.plexus-velocity>
-    </properties>
-
-    <dependencyManagement>
-        <dependencies>
-
-            <dependency>
-                <groupId>org.richfaces</groupId>
-                <artifactId>richfaces-bom</artifactId>
-                <version>${version.richfaces}</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
-
-            <dependency>
-                <groupId>org.jboss.spec</groupId>
-                <artifactId>jboss-javaee-6.0</artifactId>
-                <version>${version.jboss-javaee}</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
-        </dependencies>
-    </dependencyManagement>
-
     <dependencies>
         <!-- Compile dependencies -->
         <dependency>
             <groupId>org.apache.maven</groupId>
             <artifactId>maven-artifact</artifactId>
-            <version>${version.maven-core}</version>
         </dependency>
         <dependency>
             <groupId>org.apache.maven</groupId>
             <artifactId>maven-plugin-api</artifactId>
-            <version>${version.maven-core}</version>
         </dependency>
         <dependency>
             <groupId>org.apache.maven</groupId>
             <artifactId>maven-core</artifactId>
-            <version>${version.maven-core}</version>
         </dependency>
         <dependency>
             <groupId>org.apache.maven</groupId>
             <artifactId>maven-archiver</artifactId>
-            <version>${version.maven-archiver}</version>
         </dependency>
         <dependency>
             <groupId>org.apache.maven.shared</groupId>
             <artifactId>file-management</artifactId>
-            <version>${version.maven-file-management}</version>
         </dependency>
         <dependency>
             <groupId>org.codehaus.plexus</groupId>
             <artifactId>plexus-utils</artifactId>
-            <version>${version.plexus-utils}</version>
         </dependency>
         <dependency>
             <groupId>org.codehaus.plexus</groupId>
             <artifactId>plexus-velocity</artifactId>
-            <version>${version.plexus-velocity}</version>
         </dependency>
         <dependency>
             <groupId>org.reflections</groupId>
             <artifactId>reflections</artifactId>
-            <version>${version.reflections}</version>
             <exclusions>
                 <exclusion>
                     <groupId>com.google.collections</groupId>
@@ -107,7 +65,6 @@
         <dependency>
             <groupId>org.jboss.el</groupId>
             <artifactId>jboss-el</artifactId>
-            <version>${version.jboss-el}</version>
         </dependency>
         <dependency>
             <groupId>org.jboss.spec.javax.faces</groupId>
@@ -120,14 +77,12 @@
         <dependency>
             <groupId>com.yahoo.platform.yui</groupId>
             <artifactId>yuicompressor</artifactId>
-            <version>${version.yuicompressor}</version>
         </dependency>
         
         <!-- Test dependencies -->
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
-            <version>${version.junit}</version>
             <scope>test</scope>
         </dependency>
     </dependencies>
