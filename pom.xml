@@ -39,7 +39,7 @@
     <modules>
         <module>build</module>
         <module>bom</module>
-        <module>impl</module>
+        <module>framework</module>
     </modules>
 
     <url>http://richfaces.org</url>
