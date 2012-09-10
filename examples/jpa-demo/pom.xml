@@ -29,8 +29,8 @@
         <relativePath>../../pom.xml</relativePath>
     </parent>
 
-    <artifactId>jpa-demo</artifactId>
     <groupId>org.richfaces.examples</groupId>
+    <artifactId>jpa-demo</artifactId>
     <packaging>war</packaging>
     <name>RichFaces Examples JPA</name>
     
@@ -64,17 +64,18 @@
         </dependency>
 
         <dependency>
+            <groupId>org.richfaces</groupId>
+            <artifactId>richfaces-framework</artifactId>
+        </dependency>
+
+        <dependency>
             <groupId>org.richfaces.examples</groupId>
-            <artifactId>components-demo</artifactId>
+            <artifactId>template</artifactId>
             <version>4.3.0-SNAPSHOT</version>
             <type>war</type>
             <scope>runtime</scope>
         </dependency>
 
-        <dependency>
-            <groupId>org.richfaces</groupId>
-            <artifactId>richfaces-framework</artifactId>
-        </dependency>
     </dependencies>
 
     <build>
@@ -82,27 +83,6 @@
         <plugins>
             <plugin>
                 <artifactId>maven-checkstyle-plugin</artifactId>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-war-plugin</artifactId>
-                <version>2.2</version>
-                <configuration>
-                    <overlays>
-                        <overlay>
-                            <groupId>org.richfaces.examples</groupId>
-                            <artifactId>components-demo</artifactId>
-                            <includes>
-                                <include>WEB-INF/classes/org/richfaces/theme/*</include>
-                                <include>WEB-INF/web.xml</include>
-                                <include>index.jsf</include>
-                                <include>index.xhtml</include>
-                                <include>layout/*</include>
-                                <include>resources/org.richfaces.template/*</include>
-                            </includes>
-                        </overlay>
-                    </overlays>
-                </configuration>
             </plugin>
         </plugins>
     </build>

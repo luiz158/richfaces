@@ -68,6 +68,14 @@
             <artifactId>richfaces-framework</artifactId>
         </dependency>
 
+        <dependency>
+            <groupId>org.richfaces.examples</groupId>
+            <artifactId>template</artifactId>
+            <type>war</type>
+            <version>${project.version}</version>
+            <scope>runtime</scope>
+        </dependency>
+
         <!-- Support of additional constrains, e.g. @NotEmpty - won't work on MyFaces -->
         <dependency>
             <groupId>org.hibernate</groupId>
