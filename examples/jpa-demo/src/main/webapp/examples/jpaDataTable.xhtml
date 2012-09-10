@@ -13,16 +13,16 @@
     <ui:define name="content">
     
     <h:form id="form">
-        <r:dataTable keepSaved="true" id="richTable" var="record" value="#{personBean.dataModel}" rows="20">
-            <ui:include src="jpaColumn.xhtml">
+        <r:dataTable keepSaved="true" id="richTable" var="record" value="#{personBean.dataModel}" rows="20">z
+            <ui:include src="/resources/jpaColumn.xhtml">
                 <ui:param name="bean" value="#{personBean}" />
                 <ui:param name="property" value="name" />
             </ui:include>
-            <ui:include src="jpaColumn.xhtml">
+            <ui:include src="/resources/jpaColumn.xhtml">
                 <ui:param name="bean" value="#{personBean}" />
                 <ui:param name="property" value="surname" />
             </ui:include>
-            <ui:include src="jpaColumn.xhtml">
+            <ui:include src="/resources/jpaColumn.xhtml">
                 <ui:param name="bean" value="#{personBean}" />
                 <ui:param name="property" value="email" />
             </ui:include>
