@@ -43,6 +43,11 @@
             <groupId>org.richfaces</groupId>
             <artifactId>richfaces-framework</artifactId>
         </dependency>
+        
+        <dependency>
+            <groupId>org.richfaces</groupId>
+            <artifactId>richfaces-optimized-resources</artifactId>
+        </dependency>
 
         <!-- Examples -->
         <!-- <dependency>
@@ -69,6 +74,16 @@
                             <goal>copy-dependencies</goal>
                         </goals>
                         <phase>package</phase>
+                    </execution>
+                    <execution>
+                        <id>copy-optimized-resources</id>
+                        <goals>
+                            <goal>copy-dependencies</goal>
+                        </goals>
+                        <phase>package</phase>
+                        <configuration>
+                            <includeArtifactIds>richfaces-optimized-resources</includeArtifactIds>
+                        </configuration>
                     </execution>
                     <execution>
                         <id>copy-sources</id>

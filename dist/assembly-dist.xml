@@ -46,7 +46,7 @@
             <directory>target/dependency</directory>
             <outputDirectory>lib</outputDirectory>
             <includes>
-                <include>richfaces-framework-*.jar</include>
+                <include>richfaces-*.jar</include>
             </includes>
         </fileSet>
 
