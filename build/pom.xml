@@ -160,7 +160,21 @@
 
     <dependencyManagement>
         <dependencies>
-            <!-- Base -->
+            <!-- Java EE -->
+            <dependency>
+                <groupId>org.jboss.spec</groupId>
+                <artifactId>jboss-javaee-6.0</artifactId>
+                <version>${version.jboss-javaee}</version>
+                <type>pom</type>
+            </dependency>
+
+            <dependency>
+                <groupId>org.jboss.spec</groupId>
+                <artifactId>jboss-javaee-web-6.0</artifactId>
+                <version>${version.jboss-javaee}</version>
+                <type>pom</type>
+            </dependency>
+            
             <dependency>
                 <groupId>org.jboss.spec</groupId>
                 <artifactId>jboss-javaee-6.0</artifactId>
@@ -177,7 +191,7 @@
                 <scope>import</scope>
             </dependency>
             
-            <!-- RichFaces BOM Import -->
+            <!-- RichFaces -->
             <dependency>
                 <groupId>org.richfaces</groupId>
                 <artifactId>richfaces-bom</artifactId>
