@@ -1,4 +1,4 @@
-package demo;
+package org.richfaces.examples.push;
 
 import java.util.Date;
 
