@@ -602,6 +602,16 @@
         <profile>
             <id>vdldoc</id>
             <build>
+                <resources>
+                    <resource>
+                        <directory>src/main/vdldoc</directory>
+                        <targetPath>${project.build.directory}/vdldoc-assembly</targetPath>
+                        <includes>
+                            <include>assembly-vdldoc.xml</include>
+                        </includes>
+                        <filtering>true</filtering>
+                    </resource>
+                </resources>
                 <plugins>
                     <!-- VDL DOC -->
                     <plugin>
@@ -643,6 +653,24 @@
                                 <version>8.7</version>
                             </dependency>
                         </dependencies>
+                    </plugin>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-assembly-plugin</artifactId>
+                        <executions>
+                            <execution>
+                                <id>make-assembly</id>
+                                <phase>package</phase>
+                                <goals>
+                                    <goal>single</goal>
+                                </goals>
+                                <configuration>
+                                    <descriptors>
+                                        <descriptor>${project.build.directory}/vdldoc-assembly/assembly-vdldoc.xml</descriptor>
+                                    </descriptors>
+                                </configuration>
+                            </execution>
+                        </executions>
                     </plugin>
                 </plugins>
             </build>
