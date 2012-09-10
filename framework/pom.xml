@@ -602,6 +602,17 @@
         <profile>
             <id>vdldoc</id>
             <build>
+
+                <plugins>
+
+                </plugins>
+            </build>
+        </profile>
+        
+        <!-- Release -->
+        <profile>
+            <id>release</id>
+            <build>
                 <resources>
                     <resource>
                         <directory>src/main/vdldoc</directory>
@@ -613,6 +624,21 @@
                     </resource>
                 </resources>
                 <plugins>
+                    <!-- JavaDoc -->
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-javadoc-plugin</artifactId>
+                        <executions>
+                            <execution>
+                                <id>generate-javadoc</id>
+                                <phase>package</phase>
+                                <goals>
+                                    <goal>jar</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
+                    
                     <!-- VDL DOC -->
                     <plugin>
                         <groupId>org.codehaus.mojo</groupId>
@@ -672,24 +698,12 @@
                             </execution>
                         </executions>
                     </plugin>
-                </plugins>
-            </build>
-        </profile>
-        
-        <!-- Release -->
-        <profile>
-            <id>release</id>
-            <!-- TODO need to centralize - need to research first -->
-            <build>
-                <plugins>
+
+                    <!-- JSDoc -->
                     <plugin>
-                        <!--
-                                  TODO - this can go to central, but should check settings. This is
-                                  also related to docs so perhaps add to a doc profile Configure
-                                  JavaScript Doc Tool
-                              -->
                         <groupId>gr.abiss.mvn.plugins</groupId>
                         <artifactId>maven-jstools-plugin</artifactId>
+                        <version>0.7</version>
                         <executions>
                             <execution>
                                 <id>jsdoc</id>

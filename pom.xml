@@ -43,6 +43,7 @@
         <module>framework</module>
         <module>resources-plugin</module>
         <module>optimized-resources</module>
+        <module>dist</module>
     </modules>
 
     <url>http://richfaces.org</url>

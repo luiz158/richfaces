@@ -32,86 +32,53 @@
             <source>release-notes.txt</source>
         </file>
         <file>
-            <source>readme-ui.txt</source>
-            <destName>readme.txt</destName>
+            <source>readme.txt</source>
         </file>
-        <file>
+        <!-- <file>
             <source>readme-examples.txt</source>
             <destName>examples/readme.txt</destName>
-        </file>
+        </file> -->
     </files>
 
     <fileSets>
         <!-- bin & sources -->
         <fileSet>
             <directory>target/dependency</directory>
-            <outputDirectory>artifacts/framework</outputDirectory>
+            <outputDirectory>lib</outputDirectory>
             <includes>
-                <include>richfaces-core-*.jar</include>
-                <include>richfaces-commons-*.jar</include>
-            </includes>
-        </fileSet>
-        <fileSet>
-            <directory>target/dependency</directory>
-            <outputDirectory>artifacts/ui</outputDirectory>
-            <includes>
-                <include>richfaces-components-*.jar</include>
+                <include>richfaces-framework-*.jar</include>
             </includes>
         </fileSet>
 
         <!-- javadocs -->
         <fileSet>
-            <directory>target/dependency/richfaces-core-api-javadoc-java-source</directory>
-            <outputDirectory>docs/javadocs/richfaces-core-api/</outputDirectory>
-        </fileSet>
-        <fileSet>
-            <directory>target/dependency/richfaces-core-impl-javadoc-java-source</directory>
-            <outputDirectory>docs/javadocs/richfaces-core-impl/</outputDirectory>
-        </fileSet>
-        <fileSet>
-            <directory>target/dependency/richfaces-commons-api-javadoc-java-source</directory>
-            <outputDirectory>docs/javadocs/richfaces-commons-api/</outputDirectory>
-        </fileSet>
-        <fileSet>
-            <directory>target/dependency/richfaces-components-api-javadoc-java-source</directory>
-            <outputDirectory>docs/javadocs/richfaces-components-api/</outputDirectory>
-        </fileSet>
-        <fileSet>
-            <directory>target/dependency/richfaces-components-impl-javadoc-java-source</directory>
-            <outputDirectory>docs/javadocs/richfaces-components-impl/</outputDirectory>
-        </fileSet>
-        <fileSet>
-            <directory>target/dependency/richfaces-components-ui-javadoc-java-source</directory>
-            <outputDirectory>docs/javadocs/richfaces-components-ui/</outputDirectory>
+            <directory>target/dependency/richfaces-framework-javadoc-java-source</directory>
+            <outputDirectory>docs/javadoc/</outputDirectory>
         </fileSet>
 
         <!-- jsdoc -->
         <fileSet>
-            <directory>target/dependency/richfaces-core-impl-jsdoc-java-source</directory>
-            <outputDirectory>docs/jsdoc/richfaces-core-impl/</outputDirectory>
+            <directory>target/dependency/richfaces-framework-jsdoc-java-source</directory>
+            <outputDirectory>docs/jsdoc/</outputDirectory>
         </fileSet>
-        <!--        <fileSet>
-            <directory>target/dependency/richfaces-components-ui-jsdoc-java-source</directory>
-            <outputDirectory>docs/jsdoc/richfaces-components-ui/</outputDirectory>
-        </fileSet>-->
 
         <!-- Examples -->
-        <fileSet>
+        <!-- <fileSet>
             <directory>target/dependency/richfaces-showcase-sources-java-source</directory>
             <outputDirectory>examples/richfaces-showcase/</outputDirectory>
             <excludes>
                 <exclude>/META-INF/**</exclude>
             </excludes>
-        </fileSet>
+        </fileSet> -->
 
         <!-- Archetypes -->
-        <fileSet>
+        <!-- <fileSet>
             <directory>target/dependency/richfaces-archetype-simpleapp-jar</directory>
             <outputDirectory>archetypes/</outputDirectory>
         </fileSet>
         <fileSet>
             <directory>target/dependency/richfaces-archetype-kitchensink-jar</directory>
             <outputDirectory>archetypes/</outputDirectory>
-        </fileSet>
+        </fileSet> -->
     </fileSets>
 </assembly>
