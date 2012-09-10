@@ -1,10 +1,10 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:h="http://java.sun.com/jsf/html" xmlns:f="http://java.sun.com/jsf/core"
-    xmlns:ui="http://java.sun.com/jsf/facelets" xmlns:rich="http://richfaces.org/rich" xmlns:a4j="http://richfaces.org/a4j">
+    xmlns:ui="http://java.sun.com/jsf/facelets" xmlns:r="http://richfaces.org/core" >
 
 <ui:composition>
     <p>
-        If basic <b>toolbar setup</b> or <b>look &amp; feel</b> of rich:editor does not suit your needs, there are Editor's
+        If basic <b>toolbar setup</b> or <b>look &amp; feel</b> of r:editor does not suit your needs, there are Editor's
         attributes which can help you.
     </p>
 
@@ -34,24 +34,24 @@
     </h:outputStylesheet>
     
     <h:form>
-        <a4j:ajax render="editor">
-            <rich:panel header="Toolbar Configuration">
+        <r:ajax render="editor">
+            <r:panel header="Toolbar Configuration">
                 <h:selectOneRadio id="toolbarSelection" value="#{editorBean.toolbar}">
                     <f:selectItem itemLabel="Basic" itemValue="basic" />
                     <f:selectItem itemLabel="Full" itemValue="full" />
                     <f:selectItem itemLabel="Custom" itemValue="custom" />                
                 </h:selectOneRadio>
-            </rich:panel>
+            </r:panel>
             
-            <rich:panel header="Editor Skin">
+            <r:panel header="Editor Skin">
                 <h:selectOneRadio id="skinSelection" value="#{editorBean.skin}">
                     <f:selectItem itemLabel="richfaces" itemValue="richfaces" />
                     <f:selectItem itemLabel="kama" itemValue="kama" />
                     <f:selectItem itemLabel="v2" itemValue="v2" />
                     <f:selectItem itemLabel="office2003" itemValue="office2003" />
                 </h:selectOneRadio>
-            </rich:panel>
-        </a4j:ajax>
+            </r:panel>
+        </r:ajax>
     </h:form>
 
 
@@ -64,11 +64,11 @@
     </ui:include>
     
     <h:form>
-        <a4j:outputPanel style="display:none">
-            <rich:editor skin="kama" />
-            <rich:editor skin="v2" />
-            <rich:editor skin="office2003" />
-        </a4j:outputPanel>
+        <r:outputPanel style="display:none">
+            <r:editor skin="kama" />
+            <r:editor skin="v2" />
+            <r:editor skin="office2003" />
+        </r:outputPanel>
     </h:form>
 </ui:composition>
 

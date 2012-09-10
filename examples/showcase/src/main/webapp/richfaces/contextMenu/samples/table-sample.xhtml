@@ -2,50 +2,50 @@
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <ui:composition xmlns="http://www.w3.org/1999/xhtml" xmlns:h="http://java.sun.com/jsf/html"
                 xmlns:f="http://java.sun.com/jsf/core" xmlns:ui="http://java.sun.com/jsf/facelets"
-                xmlns:a4j="http://richfaces.org/a4j"
-                xmlns:rich="http://richfaces.org/rich">
+                
+                xmlns:r="http://richfaces.org/core">
         <h:form id="form">
-            <rich:extendedDataTable value="#{extTableSelectionBean.inventoryItems}" var="car"
+            <r:extendedDataTable value="#{extTableSelectionBean.inventoryItems}" var="car"
                                     selection="#{extTableSelectionBean.selection}" id="table" frozenColumns="2"
                                     style="height:300px; width:310px;">
-                <a4j:ajax execute="@form" event="selectionchange" listener="#{extTableSelectionBean.selectionListener}"
+                <r:ajax execute="@form" event="selectionchange" listener="#{extTableSelectionBean.selectionListener}"
                           render=":res"/>
                 <f:facet name="header">
                     <h:outputText value="Cars marketplace"/>
                 </f:facet>
-                <rich:column>
+                <r:column>
                     <f:facet name="header">
                         <h:outputText value="Vendor"/>
                     </f:facet>
                     <h:outputText value="#{car.vendor}"/>
-                </rich:column>
-                <rich:column>
+                </r:column>
+                <r:column>
                     <f:facet name="header">
                         <h:outputText value="Model"/>
                     </f:facet>
                     <h:outputText value="#{car.model}"/>
-                </rich:column>
-                <rich:column>
+                </r:column>
+                <r:column>
                     <f:facet name="header">
                         <h:outputText value="Price"/>
                     </f:facet>
                     <h:outputText value="#{car.price}"/>
-                </rich:column>
-            </rich:extendedDataTable>
+                </r:column>
+            </r:extendedDataTable>
 
-            <rich:contextMenu target="table" mode="ajax">
-                <rich:menuItem label="View" render="popupContent" oncomplete="#{rich:component('popup')}.show();"
+            <r:contextMenu target="table" mode="ajax">
+                <r:menuItem label="View" render="popupContent" oncomplete="#{r:component('popup')}.show();"
                                mode="ajax" icon="/images/icons/open.gif"/>
-            </rich:contextMenu>
+            </r:contextMenu>
 
         </h:form>
 
-        <rich:popupPanel id="popup" modal="true" autosized="true" resizeable="false">
+        <r:popupPanel id="popup" modal="true" autosized="true" resizeable="false">
             <f:facet name="header">
                 <h:outputText value="Car details"/>
             </f:facet>
             <f:facet name="controls">
-                <h:outputLink value="#" onclick="#{rich:component('popup')}.hide(); return false;">X</h:outputLink>
+                <h:outputLink value="#" onclick="#{r:component('popup')}.hide(); return false;">X</h:outputLink>
             </f:facet>
             <h:panelGrid columns="2" id="popupContent" columnClasses="col1, col2">
                 <h:outputText value="Vendor"/>
@@ -71,6 +71,6 @@
                              value="#{extTableSelectionBean.selectionItem.daysLive}"/>
             </h:panelGrid>
             <br />
-            <h:button value="Close" onclick="#{rich:component('popup')}.hide(); return false;"/>
-        </rich:popupPanel>
+            <h:button value="Close" onclick="#{r:component('popup')}.hide(); return false;"/>
+        </r:popupPanel>
 </ui:composition>

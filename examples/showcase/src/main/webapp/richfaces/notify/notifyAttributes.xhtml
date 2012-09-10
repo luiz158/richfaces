@@ -1,6 +1,6 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:h="http://java.sun.com/jsf/html" xmlns:f="http://java.sun.com/jsf/core"
-    xmlns:ui="http://java.sun.com/jsf/facelets" xmlns:a4j="http://richfaces.org/a4j" xmlns:rich="http://richfaces.org/rich">
+    xmlns:ui="http://java.sun.com/jsf/facelets"  xmlns:r="http://richfaces.org/core">
 
 <ui:composition>
     <p>There are lot of attributes which serves for notification's behavior redefinition:</p>
@@ -16,11 +16,11 @@
     </ul>
     
     <h:form>
-        <a4j:ajax execute="@form">
-            <a4j:outputPanel ajaxRendered="true">
+        <r:ajax execute="@form">
+            <r:outputPanel ajaxRendered="true">
                 <h:panelGrid columns="2">
                     <h:outputLabel for="stayTime" value="Stay time:" />
-                    <rich:inputNumberSlider id="stayTime" value="#{notifyBean.stayTime}" minValue="500" maxValue="3500" step="500"
+                    <r:inputNumberSlider id="stayTime" value="#{notifyBean.stayTime}" minValue="500" maxValue="3500" step="500"
                         showArrows="true" disabled="#{notifyBean.sticky}" />
         
                     <h:outputLabel for="sticky" value="Sticky:" />
@@ -30,7 +30,7 @@
                     <h:selectBooleanCheckbox id="nonblocking" value="#{notifyBean.nonblocking}" disabled="#{notifyBean.sticky}" />
         
                     <h:outputLabel for="nonblockingOpacity" value="Non-blocking Opacity:" />
-                    <rich:inputNumberSlider id="nonblockingOpacity" value="#{notifyBean.nonblockingOpacity}" step="0.1" maxValue="1" showArrows="true" disabled="#{notifyBean.sticky || not notifyBean.nonblocking}" />
+                    <r:inputNumberSlider id="nonblockingOpacity" value="#{notifyBean.nonblockingOpacity}" step="0.1" maxValue="1" showArrows="true" disabled="#{notifyBean.sticky || not notifyBean.nonblocking}" />
         
                     <h:outputLabel for="showShadow" value="Show Shadow:" />
                     <h:selectBooleanCheckbox id="showShadow" value="#{notifyBean.showShadow}" disabled="#{notifyBean.sticky}" />
@@ -38,16 +38,16 @@
                     <h:outputLabel for="showCloseButton" value="Show Close-Button:" />
                     <h:selectBooleanCheckbox id="showCloseButton" value="#{notifyBean.showCloseButton}" disabled="#{notifyBean.sticky or notifyBean.nonblocking}" />
                 </h:panelGrid>
-            </a4j:outputPanel>
-        </a4j:ajax>
+            </r:outputPanel>
+        </r:ajax>
         
-        <a4j:commandButton value="Show Notification" execute="@form" render="panel" />
+        <r:commandButton value="Show Notification" execute="@form" render="panel" />
     </h:form>
 
 
-    <a4j:outputPanel id="panel">
+    <r:outputPanel id="panel">
         <ui:include src="#{demoNavigator.sampleIncludeURI}" />
-    </a4j:outputPanel>
+    </r:outputPanel>
     
     <ui:include src="/templates/includes/source-view.xhtml">
         <ui:param name="src" value="#{demoNavigator.sampleIncludeURI}" />

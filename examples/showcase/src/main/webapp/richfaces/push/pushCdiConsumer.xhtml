@@ -1,6 +1,6 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:h="http://java.sun.com/jsf/html" xmlns:f="http://java.sun.com/jsf/core"
-    xmlns:ui="http://java.sun.com/jsf/facelets" xmlns:a4j="http://richfaces.org/a4j" xmlns:rich="http://richfaces.org/rich">
+    xmlns:ui="http://java.sun.com/jsf/facelets"  xmlns:r="http://richfaces.org/core">
 
 
 
@@ -24,13 +24,13 @@
         </h:outputStylesheet>
         <div id="page">
             <div id="page-content">
-                <rich:tabPanel switchType="client" styleClass="navigation">
-                    <rich:tab>
+                <r:tabPanel switchType="client" styleClass="navigation">
+                    <r:tab>
                         <f:facet name="header">Message Consumer</f:facet>
                         
                         <ui:include src="samples/pushCdiConsumer-sample.xhtml" />
-                    </rich:tab>
-                </rich:tabPanel>
+                    </r:tab>
+                </r:tabPanel>
 
                 
             </div>
