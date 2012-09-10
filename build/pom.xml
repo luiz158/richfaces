@@ -176,20 +176,6 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
-
-            <dependency>
-                <groupId>org.jboss.spec</groupId>
-                <artifactId>jboss-javaee-6.0</artifactId>
-                <version>${version.jboss-javaee}</version>
-                <type>pom</type>
-            </dependency>
-
-            <dependency>
-                <groupId>org.jboss.spec</groupId>
-                <artifactId>jboss-javaee-web-6.0</artifactId>
-                <version>${version.jboss-javaee}</version>
-                <type>pom</type>
-            </dependency>
             
             <!-- RichFaces BOM Import -->
             <dependency>

@@ -273,7 +273,7 @@
                 </configuration>
             </plugin>
         </plugins>
-        
+
         <pluginManagement>
             <plugins>
                 <plugin>
@@ -597,6 +597,55 @@
             <properties>
                 <arquillian.drone.reusable>true</arquillian.drone.reusable>
             </properties>
+        </profile>
+
+        <profile>
+            <id>vdldoc</id>
+            <build>
+                <plugins>
+                    <!-- VDL DOC -->
+                    <plugin>
+                        <groupId>org.codehaus.mojo</groupId>
+                        <artifactId>xml-maven-plugin</artifactId>
+                        <version>1.0</version>
+                        <executions>
+                            <execution>
+                                <goals>
+                                    <goal>transform</goal>
+                                </goals>
+                                <phase>package</phase>
+                            </execution>
+                        </executions>
+                        <configuration>
+                            <transformationSets>
+                                <transformationSet>
+                                    <dir>${basedir}/src/main/vdldoc/properties</dir>
+                                    <stylesheet>${basedir}/src/main/vdldoc/xsl/common.xsl</stylesheet>
+                                    <parameters>
+                                        <parameter>
+                                            <name>output-dir</name>
+                                            <value>${project.build.directory}/vdldoc/</value>
+                                        </parameter>
+                                    </parameters>
+                                    <fileMappers>
+                                        <fileMapper implementation="org.codehaus.plexus.components.io.filemappers.RegExpFileMapper">
+                                            <pattern>^(.*)\.(.*)$</pattern>
+                                            <replacement>all.txt</replacement>
+                                        </fileMapper>
+                                    </fileMappers>
+                                </transformationSet>
+                            </transformationSets>
+                        </configuration>
+                        <dependencies>
+                            <dependency>
+                                <groupId>net.sf.saxon</groupId>
+                                <artifactId>saxon</artifactId>
+                                <version>8.7</version>
+                            </dependency>
+                        </dependencies>
+                    </plugin>
+                </plugins>
+            </build>
         </profile>
         
         <!-- Release -->
