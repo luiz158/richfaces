@@ -65,9 +65,10 @@
 
         <dependency>
             <groupId>org.richfaces.examples</groupId>
-            <artifactId>template</artifactId>
+            <artifactId>components-demo</artifactId>
             <version>4.3.0-SNAPSHOT</version>
             <type>war</type>
+            <scope>runtime</scope>
         </dependency>
 
         <dependency>
@@ -81,6 +82,27 @@
         <plugins>
             <plugin>
                 <artifactId>maven-checkstyle-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-war-plugin</artifactId>
+                <version>2.2</version>
+                <configuration>
+                    <overlays>
+                        <overlay>
+                            <groupId>org.richfaces.examples</groupId>
+                            <artifactId>components-demo</artifactId>
+                            <includes>
+                                <include>WEB-INF/classes/org/richfaces/theme/*</include>
+                                <include>WEB-INF/web.xml</include>
+                                <include>index.jsf</include>
+                                <include>index.xhtml</include>
+                                <include>layout/*</include>
+                                <include>resources/org.richfaces.template/*</include>
+                            </includes>
+                        </overlay>
+                    </overlays>
+                </configuration>
             </plugin>
         </plugins>
     </build>

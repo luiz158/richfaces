@@ -3,6 +3,7 @@
  */
 package org.richfaces.theme;
 
+import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
@@ -32,7 +33,8 @@ import javax.faces.context.FacesContext;
 public class Pages {
     public static final String DEFAULT_TITLE_PATTERN = "<ui\\:param\\s+name=\"title\"\\s+value=\"([^\"]*)\"";
     private static final Pattern XHTML_PATTERN = Pattern.compile(".*\\.xhtml");
-    private static final Pattern FOLDER_PATTERN = Pattern.compile("(/.*/.*/).*\\.xhtml");
+    private static final Pattern PARENT_FOLDER_PATTERN = Pattern.compile("(/.*/.*/).*\\.xhtml");
+    private static final Pattern FOLDER_PATTERN = Pattern.compile(".*/$");
     private static final String EXAMPLE_PATH = "/examples";
     private Pattern titlePattern = compilePattern(DEFAULT_TITLE_PATTERN);
     private Map<String, List<PageDescriptionBean>> pageFolderMap;
@@ -49,9 +51,13 @@ public class Pages {
         indexPages = new ArrayList<PageDescriptionBean>(resourcePaths.size());
         for (Iterator<String> iterator = resourcePaths.iterator(); iterator.hasNext();) {
             String folderPath = iterator.next();
-            pageFolderMap.put(folderPath, getPagesByPattern(XHTML_PATTERN, folderPath));
-            indexPages.add(new PageDescriptionBean(folderPath + "index.jsf", folderPath));
+            File folder = new File(folderPath);
+            if (FOLDER_PATTERN.matcher(folderPath).matches()) {
+                pageFolderMap.put(folderPath, getPagesByPattern(XHTML_PATTERN, folderPath));
+                indexPages.add(new PageDescriptionBean(folderPath + "index.jsf", folderPath));
+            }
         }
+        indexPages.addAll(getPagesByPattern(XHTML_PATTERN, EXAMPLE_PATH));
     }
 
     private ExternalContext getExternalContext() {
@@ -66,7 +72,7 @@ public class Pages {
 
     public List<PageDescriptionBean> getXhtmlPages() {
         String viewId = FacesContext.getCurrentInstance().getViewRoot().getViewId();
-        Matcher m = FOLDER_PATTERN.matcher(viewId);
+        Matcher m = PARENT_FOLDER_PATTERN.matcher(viewId);
         String path;
         if (m.find()) {
             path = m.group(1);
