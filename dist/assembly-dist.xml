@@ -54,12 +54,24 @@
         <fileSet>
             <directory>target/dependency/richfaces-framework-javadoc-java-source</directory>
             <outputDirectory>docs/javadoc/</outputDirectory>
+            <excludes>
+                <exclude>META-INF/</exclude>
+            </excludes>
         </fileSet>
 
         <!-- jsdoc -->
         <fileSet>
             <directory>target/dependency/richfaces-framework-jsdoc-java-source</directory>
             <outputDirectory>docs/jsdoc/</outputDirectory>
+            <excludes>
+                <exclude>META-INF/</exclude>
+            </excludes>
+        </fileSet>
+        
+        <!-- vdldoc -->
+        <fileSet>
+            <directory>target/dependency/richfaces-framework-vdldoc-java-source/richfaces-vdldoc-${version.richfaces}</directory>
+            <outputDirectory>docs/vdldoc/</outputDirectory>
         </fileSet>
 
         <!-- Examples -->

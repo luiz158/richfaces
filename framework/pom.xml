@@ -598,16 +598,6 @@
                 <arquillian.drone.reusable>true</arquillian.drone.reusable>
             </properties>
         </profile>
-
-        <profile>
-            <id>vdldoc</id>
-            <build>
-
-                <plugins>
-
-                </plugins>
-            </build>
-        </profile>
         
         <!-- Release -->
         <profile>
