@@ -26,7 +26,7 @@ import java.util.Comparator;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.SessionScoped;
 
-import org.richfaces.component.SortOrder;
+import org.richfaces.ui.iteration.SortOrder;
 import org.richfaces.demo.model.Employee;
 import org.richfaces.model.Filter;
 

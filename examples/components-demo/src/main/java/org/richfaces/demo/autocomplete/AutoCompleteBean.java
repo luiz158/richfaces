@@ -30,7 +30,7 @@ import javax.faces.bean.SessionScoped;
 import javax.faces.component.UIComponent;
 import javax.faces.context.FacesContext;
 
-import org.richfaces.component.AutocompleteMode;
+import org.richfaces.ui.input.AutocompleteMode;
 import org.richfaces.demo.CountriesBean;
 import org.richfaces.demo.Country;
 

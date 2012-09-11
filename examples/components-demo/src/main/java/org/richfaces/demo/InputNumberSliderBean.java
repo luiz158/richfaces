@@ -26,7 +26,7 @@ import java.util.Date;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.SessionScoped;
 
-import org.richfaces.component.InputNumberSliderInputPosition;
+import org.richfaces.ui.input.InputNumberSliderInputPosition;
 
 @ManagedBean(name = "inputNumberSliderBean")
 @SessionScoped

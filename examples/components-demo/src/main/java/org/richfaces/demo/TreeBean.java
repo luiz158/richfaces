@@ -40,9 +40,9 @@ import javax.faces.event.AjaxBehaviorEvent;
 import javax.faces.event.FacesEvent;
 import javax.swing.tree.TreeNode;
 
-import org.richfaces.component.AbstractTree;
-import org.richfaces.component.AbstractTreeNode;
-import org.richfaces.component.SwitchType;
+import org.richfaces.ui.iteration.AbstractTree;
+import org.richfaces.ui.iteration.AbstractTreeNode;
+import org.richfaces.ui.common.SwitchType;
 import org.richfaces.convert.SequenceRowKeyConverter;
 import org.richfaces.demo.model.tree.DataHolderTreeNodeImpl;
 import org.richfaces.event.TreeSelectionChangeEvent;
