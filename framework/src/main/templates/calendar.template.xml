@@ -20,7 +20,7 @@
         <cdk:superclass>org.richfaces.renderkit.CalendarRendererBase
         </cdk:superclass>
         <cdk:renderer-type>org.richfaces.CalendarRenderer</cdk:renderer-type>
-        <cdk:import package="org.richfaces.component" names="Positioning" />
+        <cdk:import package="org.richfaces.ui.common" names="Positioning" />
     </cc:interface>
     <cc:implementation>
         <span id="#{clientId}" class="#{component.attributes['styleClass']}" style="#{component.attributes['style']}">
@@ -69,7 +69,7 @@
                             attributes="onchange ondateselect onbeforedateselect onbeforecurrentdateselect onhide onshow ondatemouseover ondatemouseout onclean ontimeselect onbeforetimeselect"
                             wrapper="eventHandler" />
                         <cdk:scriptOption name="mode" value="#{getModeOrDefault(component)}"
-                            defaultValue="org.richfaces.component.AbstractCalendar.Mode.client" />
+                            defaultValue="org.richfaces.ui.input.AbstractCalendar.Mode.client" />
                         <cdk:scriptOption name="todayControlMode" value="#{getTodayControlModeOrDefault(component)}"
                             defaultValue='"select"' />
                         <cdk:scriptOption name="direction" value="#{getDirection(component)}" defaultValue="Positioning.DEFAULT.getValue()" />

@@ -31,7 +31,7 @@ import javax.faces.component.UIComponent;
 import javax.faces.component.UIViewRoot;
 import javax.faces.context.FacesContext;
 
-import org.richfaces.component.UIScripts;
+import org.richfaces.ui.core.UIScripts;
 
 /**
  * <p class="changed_added_4_0">

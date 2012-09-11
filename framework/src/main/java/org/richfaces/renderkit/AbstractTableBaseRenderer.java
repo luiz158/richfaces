@@ -30,8 +30,9 @@ import javax.faces.component.UIComponent;
 import javax.faces.context.FacesContext;
 import javax.faces.context.ResponseWriter;
 
-import org.richfaces.component.Row;
-import org.richfaces.component.UIDataTableBase;
+import org.richfaces.ui.iteration.Row;
+import org.richfaces.ui.iteration.UIDataTableBase;
+import org.richfaces.ui.iteration.AbstractColumn;
 
 /**
  * @author Anton Belevich
@@ -50,7 +51,7 @@ public abstract class AbstractTableBaseRenderer extends SortingFilteringRowsRend
         throws IOException {
         String parentId = rowHolder.getParentClientId();
 
-        if (component instanceof org.richfaces.component.AbstractColumn) {
+        if (component instanceof AbstractColumn) {
             Map<String, Object> attributes = component.getAttributes();
             if (Boolean.TRUE.equals(attributes.get(BREAK_ROW_BEFORE)) && rowHolder.getProcessCell() != 0) {
                 encodeRowEnd(writer);
@@ -94,7 +95,7 @@ public abstract class AbstractTableBaseRenderer extends SortingFilteringRowsRend
         encodeStyleClass(writer, context, component, HtmlConstants.STYLE_CLASS_ATTR, cellClass);
         encodeStyle(writer, context, component, null);
 
-        if (component instanceof org.richfaces.component.AbstractColumn) {
+        if (component instanceof AbstractColumn) {
             Map<String, Object> attributes = component.getAttributes();
 
             Integer rowspan = (Integer) attributes.get(HtmlConstants.ROWSPAN_ATTRIBUTE);
@@ -240,7 +241,7 @@ public abstract class AbstractTableBaseRenderer extends SortingFilteringRowsRend
                         count = currentLength;
                     }
                     currentLength = 0;
-                } else if (component instanceof org.richfaces.component.AbstractColumn) {
+                } else if (component instanceof AbstractColumn) {
                     // For new row, save length of previsous.
                     Map<String, Object> attributes = component.getAttributes();
                     if (Boolean.TRUE.equals(attributes.get(BREAK_ROW_BEFORE))) {

@@ -33,9 +33,9 @@ import javax.faces.context.ResponseWriter;
 
 import org.ajax4jsf.model.DataVisitResult;
 import org.richfaces.cdk.annotations.JsfRenderer;
-import org.richfaces.component.AbstractDataGrid;
-import org.richfaces.component.Row;
-import org.richfaces.component.UIDataTableBase;
+import org.richfaces.ui.iteration.AbstractDataGrid;
+import org.richfaces.ui.iteration.Row;
+import org.richfaces.ui.iteration.UIDataTableBase;
 
 /**
  * @author Anton Belevich

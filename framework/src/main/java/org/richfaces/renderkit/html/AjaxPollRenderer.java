@@ -36,7 +36,7 @@ import org.ajax4jsf.javascript.JSFunction;
 import org.ajax4jsf.javascript.JSFunctionDefinition;
 import org.ajax4jsf.javascript.JSReference;
 import org.richfaces.cdk.annotations.JsfRenderer;
-import org.richfaces.component.AbstractPoll;
+import org.richfaces.ui.ajax.AbstractPoll;
 import org.richfaces.renderkit.HtmlConstants;
 import org.richfaces.renderkit.RenderKitUtils;
 import org.richfaces.renderkit.RendererBase;

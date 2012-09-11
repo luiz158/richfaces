@@ -82,7 +82,7 @@
                         <cdk:scriptObject name="options">
                             <cdk:scriptOption name="params"
                                 value="${RendererUtils.getInstance().createParametersMap(facesContext, component)}" />
-                            <cdk:scriptOption name="mode" value="#{getSubmitMode(component)}" defaultValue="org.richfaces.component.Mode.server" />
+                            <cdk:scriptOption name="mode" value="#{getSubmitMode(component)}" defaultValue="org.richfaces.ui.common.Mode.server" />
                             <cdk:scriptOption name="cssRoot" value="#{cssRoot}" defaultValue='"ddm"' />
                             <cdk:scriptOption name="onClickHandler" value="#{getOnClick(facesContext, component)}"
                                 wrapper="eventHandler" />

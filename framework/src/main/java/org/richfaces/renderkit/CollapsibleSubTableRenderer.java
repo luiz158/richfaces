@@ -36,10 +36,10 @@ import javax.faces.event.AbortProcessingException;
 
 import org.ajax4jsf.javascript.JSFunction;
 import org.richfaces.cdk.annotations.JsfRenderer;
-import org.richfaces.component.AbstractCollapsibleSubTable;
-import org.richfaces.component.AbstractDataTable;
-import org.richfaces.component.Row;
-import org.richfaces.component.UIDataTableBase;
+import org.richfaces.ui.iteration.AbstractCollapsibleSubTable;
+import org.richfaces.ui.iteration.AbstractDataTable;
+import org.richfaces.ui.iteration.Row;
+import org.richfaces.ui.iteration.UIDataTableBase;
 import org.richfaces.event.CollapsibleSubTableToggleEvent;
 import org.richfaces.renderkit.util.AjaxRendererUtils;
 

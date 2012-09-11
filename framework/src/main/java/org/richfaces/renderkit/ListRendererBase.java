@@ -35,10 +35,10 @@ import javax.faces.render.Renderer;
 
 import org.ajax4jsf.model.DataVisitResult;
 import org.ajax4jsf.model.DataVisitor;
-import org.richfaces.component.AbstractList;
-import org.richfaces.component.ListType;
-import org.richfaces.component.UISequence;
-import org.richfaces.component.util.HtmlUtil;
+import org.richfaces.ui.iteration.AbstractList;
+import org.richfaces.ui.iteration.ListType;
+import org.richfaces.ui.iteration.UISequence;
+import org.richfaces.ui.util.HtmlUtil;
 import org.richfaces.log.RichfacesLogger;
 import org.richfaces.renderkit.util.RendererUtils;
 

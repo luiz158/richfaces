@@ -1,11 +1,11 @@
 package org.richfaces.renderkit.html;
 
-import org.richfaces.component.AbstractContextMenu;
-import org.richfaces.component.AbstractMenuGroup;
-import org.richfaces.component.AbstractMenuItem;
-import org.richfaces.component.AbstractMenuSeparator;
-import org.richfaces.component.Mode;
-import org.richfaces.component.Positioning;
+import org.richfaces.ui.menu.AbstractContextMenu;
+import org.richfaces.ui.menu.AbstractMenuGroup;
+import org.richfaces.ui.menu.AbstractMenuItem;
+import org.richfaces.ui.menu.AbstractMenuSeparator;
+import org.richfaces.ui.common.Mode;
+import org.richfaces.ui.common.Positioning;
 import org.richfaces.renderkit.RenderKitUtils;
 import org.richfaces.renderkit.RenderKitUtils.ScriptHashVariableWrapper;
 import org.richfaces.renderkit.RendererBase;

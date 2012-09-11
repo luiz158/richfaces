@@ -30,8 +30,8 @@ import javax.faces.context.FacesContext;
 
 import org.ajax4jsf.javascript.JSObject;
 import org.richfaces.cdk.annotations.JsfRenderer;
-import org.richfaces.component.AbstractAccordion;
-import org.richfaces.component.util.HtmlUtil;
+import org.richfaces.ui.output.AbstractAccordion;
+import org.richfaces.ui.util.HtmlUtil;
 
 /**
  * @author akolonitsky

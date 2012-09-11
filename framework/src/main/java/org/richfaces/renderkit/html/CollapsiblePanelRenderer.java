@@ -38,8 +38,8 @@ import javax.faces.context.ResponseWriter;
 
 import org.ajax4jsf.javascript.JSObject;
 import org.richfaces.cdk.annotations.JsfRenderer;
-import org.richfaces.component.AbstractCollapsiblePanel;
-import org.richfaces.component.AbstractTogglePanel;
+import org.richfaces.ui.output.AbstractCollapsiblePanel;
+import org.richfaces.ui.output.AbstractTogglePanel;
 import org.richfaces.renderkit.util.PanelIcons;
 
 /**

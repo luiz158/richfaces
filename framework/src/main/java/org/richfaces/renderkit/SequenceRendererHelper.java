@@ -21,8 +21,8 @@
  */
 package org.richfaces.renderkit;
 
-import org.richfaces.component.UISequence;
-import org.richfaces.component.util.HtmlUtil;
+import org.richfaces.ui.iteration.UISequence;
+import org.richfaces.ui.util.HtmlUtil;
 
 /**
  * @author Nick Belaevski

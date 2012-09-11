@@ -43,7 +43,7 @@ import org.jboss.test.faces.FacesEnvironment.FacesRequest;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
-import org.richfaces.component.AbstractAttachQueue;
+import org.richfaces.ui.ajax.AbstractAttachQueue;
 import org.richfaces.renderkit.util.AjaxRendererUtils;
 
 /**

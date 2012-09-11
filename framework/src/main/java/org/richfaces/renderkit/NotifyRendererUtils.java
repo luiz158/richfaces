@@ -31,8 +31,8 @@ import javax.faces.component.UIComponent;
 import javax.faces.context.FacesContext;
 import javax.faces.context.ResponseWriter;
 
-import org.richfaces.component.AbstractNotifyStack;
-import org.richfaces.component.NotifyAttributes;
+import org.richfaces.ui.message.AbstractNotifyStack;
+import org.richfaces.ui.message.NotifyAttributes;
 import org.richfaces.renderkit.util.RendererUtils;
 
 /**

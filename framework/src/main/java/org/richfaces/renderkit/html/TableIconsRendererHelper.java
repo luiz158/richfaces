@@ -1,6 +1,6 @@
 package org.richfaces.renderkit.html;
 
-import static org.richfaces.component.util.HtmlUtil.concatClasses;
+import static org.richfaces.ui.util.HtmlUtil.concatClasses;
 import static org.richfaces.renderkit.HtmlConstants.ALT_ATTRIBUTE;
 import static org.richfaces.renderkit.HtmlConstants.CLASS_ATTRIBUTE;
 import static org.richfaces.renderkit.HtmlConstants.DIV_ELEM;

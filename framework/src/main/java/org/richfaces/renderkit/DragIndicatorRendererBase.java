@@ -26,7 +26,7 @@ import javax.faces.application.ResourceDependency;
 import javax.faces.component.UIComponent;
 import javax.faces.context.FacesContext;
 
-import org.richfaces.component.AbstractDragSource;
+import org.richfaces.ui.drag.AbstractDragSource;
 
 /**
  * @author abelevich

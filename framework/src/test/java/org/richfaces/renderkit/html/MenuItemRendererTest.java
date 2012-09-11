@@ -31,7 +31,7 @@ import java.net.URISyntaxException;
 import org.jboss.test.faces.htmlunit.HtmlUnitEnvironment;
 import org.junit.Ignore;
 import org.junit.Test;
-import org.richfaces.component.DropDownMenuBean;
+import org.richfaces.ui.menu.DropDownMenuBean;
 import org.xml.sax.SAXException;
 
 import com.gargoylesoftware.htmlunit.html.HtmlDivision;

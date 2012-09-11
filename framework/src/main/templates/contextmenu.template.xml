@@ -34,12 +34,12 @@
 
                 <script type="text/javascript">
                     <cdk:scriptObject name="options">
-                        <cdk:scriptOption name="direction" value="#{getDirection(component).getValue()}" defaultValue="org.richfaces.component.Positioning.DEFAULT.getValue()" />
-                        <cdk:scriptOption name="jointPoint" value="#{getJointPoint(component).getValue()}" defaultValue="org.richfaces.component.Positioning.DEFAULT.getValue()" />
+                        <cdk:scriptOption name="direction" value="#{getDirection(component).getValue()}" defaultValue="org.richfaces.ui.common.Positioning.DEFAULT.getValue()" />
+                        <cdk:scriptOption name="jointPoint" value="#{getJointPoint(component).getValue()}" defaultValue="org.richfaces.ui.common.Positioning.DEFAULT.getValue()" />
                         <cdk:scriptOption name="showEvent" value="#{getShowEvent(component)}" defaultValue='this.DEFAULT_SHOWEVENT' />
                         <cdk:scriptOption name="target" value="#{getTarget(facesContext, component)}" defaultValue='""' />
                         <cdk:scriptOption name="attached" value="#{component.attributes['attached']}" defaultValue='true' />
-                        <cdk:scriptOption name="mode" value="#{getMode(component)}" defaultValue="org.richfaces.component.Mode.server" />
+                        <cdk:scriptOption name="mode" value="#{getMode(component)}" defaultValue="org.richfaces.ui.common.Mode.server" />
                         <cdk:scriptOption name="horizontalOffset" value="#{component.attributes['horizontalOffset']}" defaultValue='0' />
                         <cdk:scriptOption name="verticalOffset" value="#{component.attributes['verticalOffset']}" defaultValue='0' />
                         <cdk:scriptOption name="hideDelay" value="#{component.attributes['hideDelay']}" defaultValue='300' />

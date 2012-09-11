@@ -23,7 +23,7 @@ package org.richfaces.renderkit;
 
 import javax.faces.context.FacesContext;
 
-import org.richfaces.component.AbstractTree;
+import org.richfaces.ui.iteration.AbstractTree;
 
 /**
  * @author Nick Belaevski

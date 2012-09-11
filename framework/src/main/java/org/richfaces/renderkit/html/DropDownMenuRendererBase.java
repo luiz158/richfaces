@@ -11,12 +11,12 @@ import javax.faces.application.ResourceDependency;
 import javax.faces.component.UIComponent;
 import javax.faces.context.FacesContext;
 
-import org.richfaces.component.AbstractDropDownMenu;
-import org.richfaces.component.AbstractMenuGroup;
-import org.richfaces.component.AbstractMenuItem;
-import org.richfaces.component.AbstractMenuSeparator;
-import org.richfaces.component.Mode;
-import org.richfaces.component.Positioning;
+import org.richfaces.ui.menu.AbstractDropDownMenu;
+import org.richfaces.ui.menu.AbstractMenuGroup;
+import org.richfaces.ui.menu.AbstractMenuItem;
+import org.richfaces.ui.menu.AbstractMenuSeparator;
+import org.richfaces.ui.common.Mode;
+import org.richfaces.ui.common.Positioning;
 import org.richfaces.renderkit.RenderKitUtils;
 import org.richfaces.renderkit.RenderKitUtils.ScriptHashVariableWrapper;
 import org.richfaces.renderkit.RendererBase;
@@ -85,17 +85,17 @@ public abstract class DropDownMenuRendererBase extends RendererBase {
 
                 Positioning jointPoint = group.getJointPoint();
                 if (jointPoint == null) {
-                    jointPoint = org.richfaces.component.Positioning.DEFAULT;
+                    jointPoint = Positioning.DEFAULT;
                 }
                 RenderKitUtils.addToScriptHash(map, "jointPoint", jointPoint.getValue(),
-                        org.richfaces.component.Positioning.DEFAULT.getValue());
+                        Positioning.DEFAULT.getValue());
 
                 Positioning direction = group.getDirection();
                 if (direction == null) {
-                    direction = org.richfaces.component.Positioning.DEFAULT;
+                    direction = Positioning.DEFAULT;
                 }
                 RenderKitUtils.addToScriptHash(map, "direction", direction.getValue(),
-                        org.richfaces.component.Positioning.DEFAULT.getValue());
+                        Positioning.DEFAULT.getValue());
 
                 RenderKitUtils.addToScriptHash(map, "cssRoot", component.getAttributes().get("cssRoot"), "ddm");
 
@@ -124,7 +124,7 @@ public abstract class DropDownMenuRendererBase extends RendererBase {
     protected Positioning getJointPoint(UIComponent component) {
         Positioning jointPoint = ((AbstractDropDownMenu) component).getJointPoint();
         if (jointPoint == null) {
-            jointPoint = org.richfaces.component.Positioning.DEFAULT;
+            jointPoint = Positioning.DEFAULT;
         }
         return jointPoint;
     }
@@ -132,7 +132,7 @@ public abstract class DropDownMenuRendererBase extends RendererBase {
     protected Positioning getDirection(UIComponent component) {
         Positioning direction = ((AbstractDropDownMenu) component).getDirection();
         if (direction == null) {
-            direction = org.richfaces.component.Positioning.DEFAULT;
+            direction = Positioning.DEFAULT;
         }
         return direction;
     }

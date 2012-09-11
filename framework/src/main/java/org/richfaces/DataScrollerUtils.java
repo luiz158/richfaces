@@ -33,8 +33,8 @@ import javax.faces.component.NamingContainer;
 import javax.faces.component.UIComponent;
 import javax.faces.component.UIData;
 
-import org.richfaces.component.AbstractDataScroller;
-import org.richfaces.component.UIDataAdaptor;
+import org.richfaces.ui.iteration.AbstractDataScroller;
+import org.richfaces.ui.iteration.UIDataAdaptor;
 import org.richfaces.renderkit.util.RendererUtils;
 
 public final class DataScrollerUtils {

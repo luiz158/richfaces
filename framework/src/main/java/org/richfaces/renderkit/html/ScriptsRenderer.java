@@ -11,7 +11,7 @@ import javax.faces.context.FacesContext;
 import javax.faces.context.ResponseWriter;
 
 import org.ajax4jsf.javascript.ScriptUtils;
-import org.richfaces.component.UIScripts;
+import org.richfaces.ui.core.UIScripts;
 import org.richfaces.resource.ResourceKey;
 
 /**

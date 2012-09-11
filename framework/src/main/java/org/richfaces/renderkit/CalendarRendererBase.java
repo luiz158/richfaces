@@ -46,16 +46,16 @@ import javax.faces.convert.DateTimeConverter;
 
 import org.ajax4jsf.javascript.JSFunction;
 import org.ajax4jsf.javascript.JSReference;
-import org.richfaces.component.AbstractCalendar;
-import org.richfaces.component.MetaComponentResolver;
-import org.richfaces.component.Positioning;
-import org.richfaces.component.util.HtmlUtil;
-import org.richfaces.component.util.InputUtils;
-import org.richfaces.component.util.InputUtils.ConverterLookupStrategy;
-import org.richfaces.component.util.MessageUtil;
+import org.richfaces.ui.core.MetaComponentResolver;
+import org.richfaces.ui.input.AbstractCalendar;
+import org.richfaces.ui.common.Positioning;
+import org.richfaces.ui.util.HtmlUtil;
+import org.richfaces.ui.util.InputUtils;
+import org.richfaces.ui.util.InputUtils.ConverterLookupStrategy;
+import org.richfaces.ui.util.MessageUtil;
 import org.richfaces.context.ExtendedPartialViewContext;
 import org.richfaces.event.CurrentDateChangeEvent;
-import org.richfaces.utils.CalendarHelper;
+import org.richfaces.ui.util.CalendarHelper;
 
 /**
  * @author amarkhel

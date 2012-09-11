@@ -23,7 +23,7 @@ package org.richfaces.renderkit;
 
 import javax.faces.context.FacesContext;
 
-import org.richfaces.component.Row;
+import org.richfaces.ui.iteration.Row;
 
 public abstract class RowHolderBase {
     private FacesContext context;

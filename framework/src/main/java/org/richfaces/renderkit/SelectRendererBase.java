@@ -30,8 +30,8 @@ import javax.faces.component.UIComponent;
 import javax.faces.context.FacesContext;
 
 import org.ajax4jsf.javascript.JSReference;
-import org.richfaces.component.AbstractSelect;
-import org.richfaces.component.AbstractSelectComponent;
+import org.richfaces.ui.select.AbstractSelect;
+import org.richfaces.ui.select.AbstractSelectComponent;
 import org.richfaces.renderkit.util.HtmlDimensions;
 
 /**

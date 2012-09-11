@@ -30,9 +30,9 @@ import javax.faces.component.UIComponent;
 import javax.faces.context.FacesContext;
 import javax.faces.context.ResponseWriter;
 
-import org.richfaces.component.Row;
-import org.richfaces.component.UIDataTableBase;
-import org.richfaces.component.util.HtmlUtil;
+import org.richfaces.ui.iteration.Row;
+import org.richfaces.ui.iteration.UIDataTableBase;
+import org.richfaces.ui.util.HtmlUtil;
 
 /**
  * @author Anton Belevich

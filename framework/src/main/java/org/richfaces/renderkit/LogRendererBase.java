@@ -21,7 +21,7 @@
  */
 package org.richfaces.renderkit;
 
-import org.richfaces.component.LogMode;
+import org.richfaces.ui.core.LogMode;
 
 /**
  * @author Nick Belaevski

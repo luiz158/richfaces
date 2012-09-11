@@ -42,8 +42,8 @@ import org.ajax4jsf.javascript.JSObject;
 import org.richfaces.TooltipMode;
 import org.richfaces.application.ServiceTracker;
 import org.richfaces.cdk.annotations.JsfRenderer;
-import org.richfaces.component.AbstractTooltip;
-import org.richfaces.component.Positioning;
+import org.richfaces.ui.output.AbstractTooltip;
+import org.richfaces.ui.common.Positioning;
 import org.richfaces.context.ExtendedPartialViewContext;
 import org.richfaces.javascript.JavaScriptService;
 import org.richfaces.renderkit.HtmlConstants;
@@ -182,11 +182,11 @@ public class TooltipRenderer extends DivPanelRenderer implements MetaComponentRe
 
         Positioning jointPoint = tooltip.getJointPoint();
         if (jointPoint == null) {
-            jointPoint = org.richfaces.component.Positioning.DEFAULT;
+            jointPoint = Positioning.DEFAULT;
         }
         Positioning direction = tooltip.getDirection();
         if (direction == null) {
-            direction = org.richfaces.component.Positioning.DEFAULT;
+            direction = Positioning.DEFAULT;
         }
 
         RenderKitUtils.addToScriptHash(options, "jointPoint", jointPoint.getValue(), Positioning.DEFAULT.getValue());

@@ -29,9 +29,9 @@ import javax.faces.context.FacesContext;
 import javax.faces.context.ResponseWriter;
 
 import org.ajax4jsf.javascript.JSFunction;
-import org.richfaces.component.AbstractTree;
-import org.richfaces.component.AbstractTreeNode;
-import org.richfaces.component.util.HtmlUtil;
+import org.richfaces.ui.iteration.AbstractTree;
+import org.richfaces.ui.iteration.AbstractTreeNode;
+import org.richfaces.ui.util.HtmlUtil;
 import org.richfaces.context.ExtendedPartialViewContext;
 import org.richfaces.model.TreeDataModelTuple;
 import org.richfaces.model.TreeDataVisitor;

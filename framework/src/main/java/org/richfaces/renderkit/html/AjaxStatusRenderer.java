@@ -35,8 +35,8 @@ import javax.faces.context.ResponseWriter;
 
 import org.ajax4jsf.javascript.JSFunction;
 import org.richfaces.cdk.annotations.JsfRenderer;
-import org.richfaces.component.AbstractAjaxStatus;
-import org.richfaces.component.util.HtmlUtil;
+import org.richfaces.ui.ajax.AbstractAjaxStatus;
+import org.richfaces.ui.util.HtmlUtil;
 import org.richfaces.renderkit.HtmlConstants;
 import org.richfaces.renderkit.RenderKitUtils.ScriptHashVariableWrapper;
 import org.richfaces.renderkit.RendererBase;

@@ -6,8 +6,8 @@ import java.util.Map;
 import javax.faces.application.FacesMessage;
 
 import org.jboss.test.faces.mock.Mock;
-import org.richfaces.component.behavior.BehaviorTestBase;
-import org.richfaces.component.behavior.ClientValidatorBehavior;
+import org.richfaces.ui.behavior.BehaviorTestBase;
+import org.richfaces.ui.behavior.ClientValidatorBehavior;
 import org.richfaces.javascript.Message;
 import org.richfaces.resource.ResourceKey;
 

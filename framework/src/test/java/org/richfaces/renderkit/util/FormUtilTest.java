@@ -26,7 +26,7 @@ import javax.faces.component.UIOutput;
 import javax.faces.component.UIViewRoot;
 
 import org.jboss.test.faces.AbstractFacesTest;
-import org.richfaces.component.SwitchType;
+import org.richfaces.ui.common.SwitchType;
 
 /**
  * @author Nick Belaevski - nbelaevski@exadel.com created 11.04.2007

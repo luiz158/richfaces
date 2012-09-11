@@ -4,7 +4,7 @@
     xmlns:cdk="http://jboss.org/schema/richfaces/cdk/extensions" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <managed-bean>
         <managed-bean-name>test</managed-bean-name>
-        <managed-bean-class>org.richfaces.component.GraphBean</managed-bean-class>
+        <managed-bean-class>org.richfaces.ui.validator.GraphBean</managed-bean-class>
         <managed-bean-scope>request</managed-bean-scope>
     </managed-bean>
     <!--  validator>

@@ -37,10 +37,10 @@ import javax.faces.event.ActionEvent;
 
 import org.ajax4jsf.javascript.JSObject;
 import org.richfaces.cdk.annotations.JsfRenderer;
-import org.richfaces.component.AbstractTab;
-import org.richfaces.component.AbstractTabPanel;
-import org.richfaces.component.AbstractTogglePanelItemInterface;
-import org.richfaces.component.ComponentIterators;
+import org.richfaces.ui.core.ComponentIterators;
+import org.richfaces.ui.output.AbstractTab;
+import org.richfaces.ui.output.AbstractTabPanel;
+import org.richfaces.ui.output.AbstractTogglePanelItemInterface;
 import org.richfaces.context.ExtendedPartialViewContext;
 import org.richfaces.renderkit.HtmlConstants;
 

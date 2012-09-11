@@ -39,7 +39,7 @@ import org.jboss.test.faces.FacesEnvironment.FacesRequest;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
-import org.richfaces.component.MetaComponentResolver;
+import org.richfaces.ui.core.MetaComponentResolver;
 import org.richfaces.renderkit.AjaxConstants;
 
 /**

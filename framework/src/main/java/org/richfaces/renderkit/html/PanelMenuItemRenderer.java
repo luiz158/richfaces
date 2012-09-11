@@ -39,9 +39,9 @@ import javax.faces.event.ActionEvent;
 
 import org.ajax4jsf.javascript.JSObject;
 import org.richfaces.cdk.annotations.JsfRenderer;
-import org.richfaces.component.AbstractPanelMenu;
-import org.richfaces.component.AbstractPanelMenuItem;
-import org.richfaces.component.ComponentIterators;
+import org.richfaces.ui.core.ComponentIterators;
+import org.richfaces.ui.output.AbstractPanelMenu;
+import org.richfaces.ui.output.AbstractPanelMenuItem;
 import org.richfaces.context.ExtendedPartialViewContext;
 import org.richfaces.renderkit.HtmlConstants;
 import org.richfaces.renderkit.RenderKitUtils;
@@ -254,7 +254,7 @@ public class PanelMenuItemRenderer extends DivPanelRenderer {
 
     static boolean isParentPanelMenuDisabled(AbstractPanelMenuItem menuItem) {
         AbstractPanelMenu parentPanelMenu = (AbstractPanelMenu) ComponentIterators.getParent(menuItem,
-            PARENT_PANEL_MENU_PREDICATE);
+                PARENT_PANEL_MENU_PREDICATE);
         if (parentPanelMenu != null) {
             return parentPanelMenu.isDisabled();
         }

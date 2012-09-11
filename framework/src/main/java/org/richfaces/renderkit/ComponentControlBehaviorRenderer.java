@@ -42,8 +42,8 @@ import org.ajax4jsf.javascript.JSFunction;
 import org.ajax4jsf.javascript.JSFunctionDefinition;
 import org.ajax4jsf.javascript.JSReference;
 import org.ajax4jsf.javascript.ScriptUtils;
-import org.richfaces.component.UIHashParameter;
-import org.richfaces.component.behavior.ComponentControlBehavior;
+import org.richfaces.ui.behavior.ComponentControlBehavior;
+import org.richfaces.ui.misc.UIHashParameter;
 import org.richfaces.renderkit.util.RendererUtils;
 
 /**

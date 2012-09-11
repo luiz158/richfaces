@@ -44,7 +44,7 @@ import org.jboss.test.faces.AbstractFacesTest;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
-import org.richfaces.component.SortOrder;
+import org.richfaces.ui.iteration.SortOrder;
 
 /**
  * @author Konstantin Mishin

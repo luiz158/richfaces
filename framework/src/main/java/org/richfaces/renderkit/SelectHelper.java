@@ -33,10 +33,10 @@ import javax.faces.context.FacesContext;
 import javax.faces.context.ResponseWriter;
 import javax.faces.model.SelectItem;
 
-import org.richfaces.component.AbstractSelectComponent;
-import org.richfaces.component.util.HtmlUtil;
-import org.richfaces.component.util.InputUtils;
-import org.richfaces.component.util.SelectUtils;
+import org.richfaces.ui.select.AbstractSelectComponent;
+import org.richfaces.ui.util.HtmlUtil;
+import org.richfaces.ui.util.InputUtils;
+import org.richfaces.ui.util.SelectUtils;
 
 /**
  * @author abelevich

@@ -77,7 +77,7 @@
     </cc:interface>
 
     <cc:implementation>
-        <cdk:object type="org.richfaces.component.ListType" name="listType" value="#{getType(component)}" />
+        <cdk:object type="org.richfaces.ui.iteration.ListType" name="listType" value="#{getType(component)}" />
 
         <cdk:object name="styleClass" value="#{getStyleClass(component, listType)}" />
         <cdk:object name="elementId" value="#{getElementId(facesContext, component)}" />

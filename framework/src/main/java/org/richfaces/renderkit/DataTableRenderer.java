@@ -39,13 +39,14 @@ import javax.faces.context.ResponseWriter;
 
 import org.ajax4jsf.javascript.JSFunction;
 import org.richfaces.cdk.annotations.JsfRenderer;
-import org.richfaces.component.AbstractCollapsibleSubTable;
-import org.richfaces.component.AbstractDataTable;
-import org.richfaces.component.Row;
-import org.richfaces.component.UIDataAdaptor;
-import org.richfaces.component.UIDataTableBase;
-import org.richfaces.component.util.HtmlUtil;
+import org.richfaces.ui.iteration.AbstractCollapsibleSubTable;
+import org.richfaces.ui.iteration.AbstractDataTable;
+import org.richfaces.ui.iteration.Row;
+import org.richfaces.ui.iteration.UIDataAdaptor;
+import org.richfaces.ui.iteration.UIDataTableBase;
+import org.richfaces.ui.util.HtmlUtil;
 import org.richfaces.renderkit.util.AjaxRendererUtils;
+import org.richfaces.ui.iteration.AbstractColumn;
 
 /**
  * @author Anton Belevich
@@ -83,7 +84,7 @@ public class DataTableRenderer extends AbstractTableRenderer {
     private class RichHeaderEncodeStrategy implements EncodeStrategy {
         public void begin(ResponseWriter writer, FacesContext context, UIComponent component, Object[] params)
             throws IOException {
-            org.richfaces.component.AbstractColumn column = (org.richfaces.component.AbstractColumn) component;
+            AbstractColumn column = (AbstractColumn) component;
             writer.writeAttribute(HtmlConstants.ID_ATTRIBUTE, column.getClientId(context), null);
         }
 
@@ -341,7 +342,7 @@ public class DataTableRenderer extends AbstractTableRenderer {
     }
 
     public EncodeStrategy getHeaderEncodeStrategy(UIComponent column, String facetName) {
-        return (column instanceof org.richfaces.component.AbstractColumn && UIDataTableBase.HEADER.equals(facetName)) ? new RichHeaderEncodeStrategy()
+        return (column instanceof AbstractColumn && UIDataTableBase.HEADER.equals(facetName)) ? new RichHeaderEncodeStrategy()
             : new SimpleHeaderEncodeStrategy();
     }
 

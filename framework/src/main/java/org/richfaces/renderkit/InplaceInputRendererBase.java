@@ -30,9 +30,9 @@ import javax.faces.application.ResourceDependency;
 import javax.faces.component.UIComponent;
 import javax.faces.context.FacesContext;
 
-import org.richfaces.component.AbstractInplaceInput;
-import org.richfaces.component.InplaceComponent;
-import org.richfaces.component.InplaceState;
+import org.richfaces.ui.input.AbstractInplaceInput;
+import org.richfaces.ui.input.InplaceComponent;
+import org.richfaces.ui.input.InplaceState;
 import org.richfaces.renderkit.util.HtmlDimensions;
 
 /**

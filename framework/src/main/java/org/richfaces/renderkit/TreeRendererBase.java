@@ -21,7 +21,7 @@
  */
 package org.richfaces.renderkit;
 
-import static org.richfaces.component.AbstractTree.SELECTION_META_COMPONENT_ID;
+import static org.richfaces.ui.iteration.AbstractTree.SELECTION_META_COMPONENT_ID;
 
 import java.io.IOException;
 import java.util.Collection;
@@ -38,10 +38,10 @@ import javax.faces.context.ResponseWriter;
 
 import org.ajax4jsf.javascript.JSFunction;
 import org.ajax4jsf.javascript.JSReference;
-import org.richfaces.component.AbstractTree;
-import org.richfaces.component.AbstractTreeNode;
-import org.richfaces.component.MetaComponentResolver;
-import org.richfaces.component.SwitchType;
+import org.richfaces.ui.iteration.AbstractTree;
+import org.richfaces.ui.iteration.AbstractTreeNode;
+import org.richfaces.ui.core.MetaComponentResolver;
+import org.richfaces.ui.common.SwitchType;
 import org.richfaces.context.ExtendedPartialViewContext;
 import org.richfaces.event.TreeSelectionChangeEvent;
 import org.richfaces.log.Logger;

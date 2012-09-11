@@ -38,8 +38,8 @@ import javax.faces.context.ResponseWriter;
 
 import org.ajax4jsf.javascript.JSObject;
 import org.richfaces.cdk.annotations.JsfRenderer;
-import org.richfaces.component.AbstractAccordionItem;
-import org.richfaces.component.AbstractTogglePanelTitledItem;
+import org.richfaces.ui.output.AbstractAccordionItem;
+import org.richfaces.ui.output.AbstractTogglePanelTitledItem;
 import org.richfaces.renderkit.RenderKitUtils;
 
 /**

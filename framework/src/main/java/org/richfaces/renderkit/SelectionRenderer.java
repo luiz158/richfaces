@@ -33,8 +33,8 @@ import javax.faces.context.ResponseWriter;
 import org.ajax4jsf.model.DataVisitResult;
 import org.ajax4jsf.model.DataVisitor;
 import org.ajax4jsf.model.SequenceRange;
-import org.richfaces.component.AbstractExtendedDataTable;
-import org.richfaces.component.UIDataTableBase;
+import org.richfaces.ui.iteration.AbstractExtendedDataTable;
+import org.richfaces.ui.iteration.UIDataTableBase;
 
 /**
  * @author Konstantin Mishin

@@ -25,7 +25,7 @@ import javax.faces.component.UIComponent;
 import javax.faces.context.FacesContext;
 
 import org.richfaces.cdk.annotations.JsfRenderer;
-import org.richfaces.component.AbstractQueue;
+import org.richfaces.ui.ajax.AbstractQueue;
 import org.richfaces.renderkit.util.RendererUtils;
 
 /**

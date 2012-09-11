@@ -5,8 +5,8 @@ import java.io.IOException;
 import javax.faces.component.UIComponent;
 import javax.faces.context.FacesContext;
 
-import org.richfaces.component.AbstractDropDownMenu;
-import org.richfaces.component.AbstractMenuGroup;
+import org.richfaces.ui.menu.AbstractDropDownMenu;
+import org.richfaces.ui.menu.AbstractMenuGroup;
 import org.richfaces.renderkit.RendererBase;
 
 public abstract class MenuGroupRendererBase extends RendererBase {

@@ -29,8 +29,8 @@ import javax.faces.application.ResourceDependency;
 import javax.faces.component.UIComponent;
 import javax.faces.context.FacesContext;
 
-import org.richfaces.component.AbstractInplaceSelect;
-import org.richfaces.component.InplaceComponent;
+import org.richfaces.ui.select.AbstractInplaceSelect;
+import org.richfaces.ui.input.InplaceComponent;
 import org.richfaces.renderkit.util.HtmlDimensions;
 
 /**

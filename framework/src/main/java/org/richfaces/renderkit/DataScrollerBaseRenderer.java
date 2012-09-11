@@ -21,8 +21,8 @@
  */
 package org.richfaces.renderkit;
 
-import static org.richfaces.component.DataScrollerControlsMode.auto;
-import static org.richfaces.component.DataScrollerControlsMode.show;
+import static org.richfaces.ui.iteration.DataScrollerControlsMode.auto;
+import static org.richfaces.ui.iteration.DataScrollerControlsMode.show;
 
 import java.io.IOException;
 import java.util.HashMap;
@@ -38,8 +38,8 @@ import org.ajax4jsf.javascript.JSFunction;
 import org.ajax4jsf.javascript.JSFunctionDefinition;
 import org.ajax4jsf.javascript.JSLiteral;
 import org.ajax4jsf.javascript.JSReference;
-import org.richfaces.component.AbstractDataScroller;
-import org.richfaces.component.DataScrollerControlsMode;
+import org.richfaces.ui.iteration.AbstractDataScroller;
+import org.richfaces.ui.iteration.DataScrollerControlsMode;
 import org.richfaces.event.DataScrollEvent;
 import org.richfaces.renderkit.util.AjaxRendererUtils;
 

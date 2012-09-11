@@ -10,9 +10,9 @@ import java.io.IOException;
 import javax.faces.context.FacesContext;
 import javax.faces.context.ResponseWriter;
 
-import org.richfaces.component.AbstractAccordionItem;
-import org.richfaces.component.AbstractTogglePanelTitledItem;
-import org.richfaces.component.util.HtmlUtil;
+import org.richfaces.ui.output.AbstractAccordionItem;
+import org.richfaces.ui.output.AbstractTogglePanelTitledItem;
+import org.richfaces.ui.util.HtmlUtil;
 import org.richfaces.renderkit.util.PanelIcons;
 import org.richfaces.renderkit.util.PanelIcons.State;
 

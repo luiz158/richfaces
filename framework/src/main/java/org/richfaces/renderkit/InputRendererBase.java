@@ -28,7 +28,7 @@ import javax.faces.component.UIInput;
 import javax.faces.context.FacesContext;
 import javax.faces.convert.ConverterException;
 
-import org.richfaces.component.util.InputUtils;
+import org.richfaces.ui.util.InputUtils;
 
 /**
  * @author Nick Belaevski - nbelaevski@exadel.com created 23.01.2007

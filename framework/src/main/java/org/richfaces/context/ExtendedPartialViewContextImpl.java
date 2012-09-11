@@ -48,7 +48,7 @@ import javax.faces.event.PhaseId;
 
 import org.ajax4jsf.javascript.ScriptUtils;
 import org.richfaces.application.ServiceTracker;
-import org.richfaces.component.MetaComponentEncoder;
+import org.richfaces.ui.core.MetaComponentEncoder;
 import org.richfaces.javascript.JavaScriptService;
 import org.richfaces.javascript.ScriptsHolder;
 import org.richfaces.log.Logger;

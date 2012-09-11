@@ -42,7 +42,7 @@ import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.richfaces.application.ServicesFactory;
-import org.richfaces.component.UIScripts;
+import org.richfaces.ui.core.UIScripts;
 import org.richfaces.resource.ResourceKey;
 
 import com.google.common.collect.Iterables;

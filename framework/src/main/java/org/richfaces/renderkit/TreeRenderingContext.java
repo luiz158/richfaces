@@ -34,9 +34,9 @@ import org.ajax4jsf.javascript.JSFunction;
 import org.ajax4jsf.javascript.JSReference;
 import org.ajax4jsf.javascript.ScriptStringBase;
 import org.ajax4jsf.javascript.ScriptUtils;
-import org.richfaces.component.AbstractTree;
-import org.richfaces.component.AbstractTreeNode;
-import org.richfaces.component.SwitchType;
+import org.richfaces.ui.iteration.AbstractTree;
+import org.richfaces.ui.iteration.AbstractTreeNode;
+import org.richfaces.ui.common.SwitchType;
 
 /**
  * @author Nick Belaevski

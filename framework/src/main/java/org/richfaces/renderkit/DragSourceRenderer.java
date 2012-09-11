@@ -30,7 +30,7 @@ import javax.faces.component.UIComponent;
 import javax.faces.context.FacesContext;
 
 import org.richfaces.cdk.annotations.JsfRenderer;
-import org.richfaces.component.AbstractDragSource;
+import org.richfaces.ui.drag.AbstractDragSource;
 import org.richfaces.javascript.DnDScript;
 import org.richfaces.javascript.DragScript;
 

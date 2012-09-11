@@ -34,7 +34,7 @@ import javax.faces.component.UIComponent;
 import javax.faces.component.UIForm;
 import javax.faces.context.FacesContext;
 
-import org.richfaces.component.MetaComponentResolver;
+import org.richfaces.ui.core.MetaComponentResolver;
 import org.richfaces.context.ComponentIdResolver;
 import org.richfaces.context.ExtendedVisitContext;
 

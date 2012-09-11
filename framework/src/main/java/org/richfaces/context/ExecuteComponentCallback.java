@@ -27,7 +27,7 @@ import javax.faces.component.UIComponent;
 import javax.faces.context.FacesContext;
 
 import org.ajax4jsf.component.AjaxClientBehavior;
-import org.richfaces.component.AjaxContainer;
+import org.richfaces.ui.ajax.AjaxContainer;
 import org.richfaces.renderkit.AjaxConstants;
 import org.richfaces.renderkit.util.CoreRendererUtils;
 

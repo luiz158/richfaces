@@ -21,9 +21,9 @@
  */
 package org.richfaces.renderkit.html;
 
-import static org.richfaces.component.AbstractTogglePanelTitledItem.HeaderStates.active;
-import static org.richfaces.component.AbstractTogglePanelTitledItem.HeaderStates.disabled;
-import static org.richfaces.component.AbstractTogglePanelTitledItem.HeaderStates.inactive;
+import static org.richfaces.ui.output.AbstractTogglePanelTitledItem.HeaderStates.active;
+import static org.richfaces.ui.output.AbstractTogglePanelTitledItem.HeaderStates.disabled;
+import static org.richfaces.ui.output.AbstractTogglePanelTitledItem.HeaderStates.inactive;
 import static org.richfaces.renderkit.HtmlConstants.CLASS_ATTRIBUTE;
 import static org.richfaces.renderkit.HtmlConstants.DIV_ELEM;
 import static org.richfaces.renderkit.HtmlConstants.ID_ATTRIBUTE;
@@ -45,12 +45,12 @@ import javax.faces.context.ResponseWriter;
 
 import org.ajax4jsf.javascript.JSObject;
 import org.richfaces.cdk.annotations.JsfRenderer;
-import org.richfaces.component.AbstractTab;
-import org.richfaces.component.AbstractTabPanel;
-import org.richfaces.component.AbstractTogglePanel;
-import org.richfaces.component.AbstractTogglePanelItemInterface;
-import org.richfaces.component.AbstractTogglePanelTitledItem;
-import org.richfaces.component.util.HtmlUtil;
+import org.richfaces.ui.output.AbstractTab;
+import org.richfaces.ui.output.AbstractTabPanel;
+import org.richfaces.ui.output.AbstractTogglePanel;
+import org.richfaces.ui.output.AbstractTogglePanelItemInterface;
+import org.richfaces.ui.output.AbstractTogglePanelTitledItem;
+import org.richfaces.ui.util.HtmlUtil;
 import org.richfaces.context.ExtendedPartialViewContext;
 import org.richfaces.renderkit.HtmlConstants;
 import org.richfaces.renderkit.RenderKitUtils;

@@ -37,9 +37,9 @@ import javax.faces.context.ResponseWriter;
 
 import org.ajax4jsf.javascript.JSObject;
 import org.richfaces.cdk.annotations.JsfRenderer;
-import org.richfaces.component.AbstractTogglePanel;
-import org.richfaces.component.AbstractTogglePanelItem;
-import org.richfaces.component.AbstractTogglePanelItemInterface;
+import org.richfaces.ui.output.AbstractTogglePanel;
+import org.richfaces.ui.output.AbstractTogglePanelItem;
+import org.richfaces.ui.output.AbstractTogglePanelItemInterface;
 
 /**
  * @author akolonitsky

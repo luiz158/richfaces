@@ -28,8 +28,8 @@ import javax.faces.context.FacesContext;
 import javax.faces.context.ResponseWriter;
 
 import org.richfaces.cdk.annotations.JsfRenderer;
-import org.richfaces.component.AbstractOutputPanel;
-import org.richfaces.component.OutputPanelLayout;
+import org.richfaces.ui.output.AbstractOutputPanel;
+import org.richfaces.ui.output.OutputPanelLayout;
 import org.richfaces.renderkit.HtmlConstants;
 import org.richfaces.renderkit.RendererBase;
 

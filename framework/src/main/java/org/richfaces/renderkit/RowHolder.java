@@ -24,7 +24,7 @@ package org.richfaces.renderkit;
 import javax.faces.component.UIComponent;
 import javax.faces.context.FacesContext;
 
-import org.richfaces.component.Row;
+import org.richfaces.ui.iteration.Row;
 
 /**
  * @author Anton Belevich

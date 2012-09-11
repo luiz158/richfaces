@@ -35,8 +35,8 @@ import javax.faces.component.UIComponent;
 import javax.faces.context.FacesContext;
 import javax.faces.context.ResponseWriter;
 
-import org.richfaces.component.AbstractToolbar;
-import org.richfaces.component.AbstractToolbarGroup;
+import org.richfaces.ui.output.AbstractToolbar;
+import org.richfaces.ui.output.AbstractToolbarGroup;
 import org.richfaces.renderkit.ComponentAttribute;
 import org.richfaces.renderkit.HtmlConstants;
 import org.richfaces.renderkit.RenderKitUtils;

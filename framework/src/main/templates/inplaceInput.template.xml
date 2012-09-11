@@ -39,7 +39,7 @@ Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA
     </cc:interface>
 
     <cc:implementation>
-        <cdk:object type="org.richfaces.component.InplaceState" name="inplaceState" value="#{getInplaceState(component)}" />
+        <cdk:object type="org.richfaces.ui.input.InplaceState" name="inplaceState" value="#{getInplaceState(component)}" />
         <cdk:object type="java.lang.String" name="inplaceValue" value="#{getValue(facesContext, component)}" />
         <cdk:object type="java.lang.String" name="defaultLabel"
             value="#{inplaceValue != null and inplaceValue.length() != 0 ? inplaceValue : '&#160;&#160;&#160;'}" />

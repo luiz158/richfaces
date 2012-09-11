@@ -28,14 +28,14 @@ import javax.faces.component.behavior.ClientBehaviorContext;
 import javax.faces.render.ClientBehaviorRenderer;
 
 import org.richfaces.cdk.annotations.JsfBehaviorRenderer;
-import org.richfaces.component.behavior.ToggleControl;
+import org.richfaces.ui.behavior.ToggleControl;
 
 /**
  * @author akolonitsky
  *
  */
 @ResourceDependencies({ @ResourceDependency(name = "jquery.js"), @ResourceDependency(name = "richfaces.js") })
-@JsfBehaviorRenderer(type = "org.richfaces.component.behavior.ToggleControl")
+@JsfBehaviorRenderer(type = "org.richfaces.ui.behavior.ToggleControl")
 public class ToggleControlRenderer extends ClientBehaviorRenderer {
     @Override
     public String getScript(ClientBehaviorContext behaviorContext, ClientBehavior behavior) {

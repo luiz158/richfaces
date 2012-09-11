@@ -34,7 +34,7 @@ import javax.faces.view.facelets.TagAttribute;
 import javax.faces.view.facelets.TagAttributeException;
 
 import org.ajax4jsf.Messages;
-import org.richfaces.component.AbstractParameter;
+import org.richfaces.ui.ajax.AbstractParameter;
 
 /**
  * @author shura (latest modification by $Author: alexsmirnov $)

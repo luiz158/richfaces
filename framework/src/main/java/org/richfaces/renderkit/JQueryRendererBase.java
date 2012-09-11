@@ -27,7 +27,7 @@ import javax.faces.component.UIComponent;
 import javax.faces.context.FacesContext;
 import javax.faces.render.Renderer;
 
-import org.richfaces.component.util.HtmlUtil;
+import org.richfaces.ui.util.HtmlUtil;
 
 /**
  * @author nick

@@ -14,7 +14,7 @@ import javax.faces.application.ResourceDependency;
 import javax.faces.application.ResourceHandler;
 import javax.faces.context.FacesContext;
 
-import org.richfaces.component.util.Strings;
+import org.richfaces.ui.util.Strings;
 import org.richfaces.resource.ResourceKey;
 
 import com.google.common.base.Function;

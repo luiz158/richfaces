@@ -5,7 +5,7 @@
     <!--
      <behavior>
          <behavior-id>org.richfaces.behavior.ClientValidator</behavior-id>
-         <behavior-class>org.richfaces.component.behavior.ClientValidatorImpl</behavior-class>
+         <behavior-class>org.richfaces.ui.behavior.ClientValidatorImpl</behavior-class>
          <behavior-extension>
              <cdk:tag>
                  <cdk:tag-name>validator</cdk:tag-name>

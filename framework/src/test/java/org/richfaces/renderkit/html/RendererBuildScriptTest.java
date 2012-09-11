@@ -13,7 +13,7 @@ import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.richfaces.application.ServiceTracker;
-import org.richfaces.component.behavior.ClientValidatorBehavior;
+import org.richfaces.ui.behavior.ClientValidatorBehavior;
 import org.richfaces.javascript.JavaScriptService;
 
 @RunWith(MockTestRunner.class)

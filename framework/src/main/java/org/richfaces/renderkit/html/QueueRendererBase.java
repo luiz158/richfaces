@@ -40,7 +40,7 @@ import javax.faces.event.PreRemoveFromViewEvent;
 import javax.faces.render.Renderer;
 
 import org.richfaces.application.CommonComponentsConfiguration;
-import org.richfaces.component.QueueRegistry;
+import org.richfaces.ui.core.QueueRegistry;
 import org.richfaces.log.Logger;
 import org.richfaces.log.RichfacesLogger;
 

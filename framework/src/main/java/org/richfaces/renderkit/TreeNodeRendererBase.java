@@ -32,10 +32,10 @@ import javax.faces.context.FacesContext;
 import javax.faces.context.PartialViewContext;
 import javax.faces.context.ResponseWriter;
 
-import org.richfaces.component.AbstractTree;
-import org.richfaces.component.AbstractTreeNode;
-import org.richfaces.component.MetaComponentResolver;
-import org.richfaces.component.SwitchType;
+import org.richfaces.ui.core.MetaComponentResolver;
+import org.richfaces.ui.iteration.AbstractTree;
+import org.richfaces.ui.iteration.AbstractTreeNode;
+import org.richfaces.ui.common.SwitchType;
 import org.richfaces.event.TreeToggleEvent;
 
 import com.google.common.base.Strings;
