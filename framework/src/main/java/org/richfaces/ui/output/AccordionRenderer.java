@@ -30,8 +30,6 @@ import javax.faces.context.FacesContext;
 
 import org.ajax4jsf.javascript.JSObject;
 import org.richfaces.cdk.annotations.JsfRenderer;
-import org.richfaces.ui.output.TogglePanelRenderer;
-import org.richfaces.ui.output.AbstractAccordion;
 import org.richfaces.ui.util.HtmlUtil;
 
 /**

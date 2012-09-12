@@ -27,7 +27,6 @@ import javax.faces.component.UIComponent;
 import javax.faces.context.FacesContext;
 
 import org.richfaces.renderkit.RendererBase;
-import org.richfaces.ui.drag.AbstractDragSource;
 
 /**
  * @author abelevich

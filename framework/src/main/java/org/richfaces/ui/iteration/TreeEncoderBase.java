@@ -30,8 +30,6 @@ import javax.faces.context.ResponseWriter;
 
 import org.ajax4jsf.javascript.JSFunction;
 import org.richfaces.ui.core.HtmlConstants;
-import org.richfaces.ui.iteration.AbstractTree;
-import org.richfaces.ui.iteration.AbstractTreeNode;
 import org.richfaces.ui.util.HtmlUtil;
 import org.richfaces.context.ExtendedPartialViewContext;
 import org.richfaces.model.TreeDataModelTuple;

@@ -35,9 +35,6 @@ import javax.faces.model.SelectItem;
 
 import org.richfaces.ui.common.ComponentAttribute;
 import org.richfaces.ui.core.HtmlConstants;
-import org.richfaces.ui.select.AbstractSelectComponent;
-import org.richfaces.ui.select.ClientSelectItem;
-import org.richfaces.ui.select.PopupConstants;
 import org.richfaces.ui.util.HtmlUtil;
 import org.richfaces.ui.util.InputUtils;
 import org.richfaces.ui.util.SelectUtils;

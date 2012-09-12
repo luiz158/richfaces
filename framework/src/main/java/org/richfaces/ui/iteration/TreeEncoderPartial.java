@@ -28,7 +28,6 @@ import javax.faces.context.FacesContext;
 import javax.faces.context.PartialResponseWriter;
 
 import org.ajax4jsf.javascript.JSFunction;
-import org.richfaces.ui.iteration.AbstractTreeNode;
 
 /**
  * @author Nick Belaevski

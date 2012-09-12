@@ -1,9 +1,5 @@
 package org.richfaces.ui.menu;
 
-import org.richfaces.ui.menu.AbstractContextMenu;
-import org.richfaces.ui.menu.AbstractMenuGroup;
-import org.richfaces.ui.menu.AbstractMenuItem;
-import org.richfaces.ui.menu.AbstractMenuSeparator;
 import org.richfaces.ui.common.Mode;
 import org.richfaces.ui.common.Positioning;
 import org.richfaces.renderkit.RenderKitUtils;

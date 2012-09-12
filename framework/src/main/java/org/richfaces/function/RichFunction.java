@@ -44,7 +44,7 @@ public final class RichFunction {
     private static final RendererUtils RENDERER_UTILS = RendererUtils.getInstance();
 
     // EasyMock requires at least protected access for the interface for calls to be delegated to
-    protected static interface ComponentLocator {
+    protected interface ComponentLocator {
         UIComponent findComponent(FacesContext facesContext, UIComponent contextComponent, String id);
     }
 

@@ -1,7 +1,6 @@
 package org.richfaces.ui.input;
 
 import org.richfaces.ui.core.HtmlConstants;
-import org.richfaces.ui.input.AbstractAutocompleteLayoutStrategy;
 import org.richfaces.ui.util.HtmlUtil;
 
 import java.io.IOException;

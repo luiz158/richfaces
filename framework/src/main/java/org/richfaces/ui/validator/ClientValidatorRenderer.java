@@ -21,8 +21,6 @@ import javax.faces.render.ClientBehaviorRenderer;
 import org.ajax4jsf.javascript.JSReference;
 import org.ajax4jsf.javascript.ScriptUtils;
 import org.richfaces.application.ServiceTracker;
-import org.richfaces.ui.validator.LibraryScriptFunction;
-import org.richfaces.ui.validator.ValidatorScriptBase;
 import org.richfaces.ui.ajax.AjaxOnlyScript;
 import org.richfaces.ui.behavior.ClientValidatorBehavior;
 import org.richfaces.ui.behavior.ConverterNotFoundException;

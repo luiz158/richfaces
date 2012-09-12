@@ -27,7 +27,6 @@ import java.util.List;
 import java.util.Map;
 
 import junit.framework.TestCase;
-import org.richfaces.ui.util.renderkit.RendererUtils;
 
 /**
  * @author Nick Belaevski

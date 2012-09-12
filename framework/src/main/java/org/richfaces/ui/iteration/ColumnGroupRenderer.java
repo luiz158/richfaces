@@ -31,11 +31,6 @@ import javax.faces.context.ResponseWriter;
 import javax.faces.event.AbortProcessingException;
 
 import org.richfaces.cdk.annotations.JsfRenderer;
-import org.richfaces.ui.iteration.RowHolder;
-import org.richfaces.ui.iteration.RowHolderBase;
-import org.richfaces.ui.iteration.AbstractColumnGroup;
-import org.richfaces.ui.iteration.AbstractTableBaseRenderer;
-import org.richfaces.ui.iteration.UIDataTableBase;
 
 /**
  * @author Anton Belevich

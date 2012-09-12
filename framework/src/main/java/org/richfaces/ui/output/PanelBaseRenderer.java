@@ -27,7 +27,6 @@ import javax.faces.application.ResourceDependency;
 import javax.faces.component.UIComponent;
 import javax.faces.context.FacesContext;
 
-import org.richfaces.ui.output.AbstractPanel;
 import org.richfaces.renderkit.RendererBase;
 
 /**

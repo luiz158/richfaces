@@ -22,9 +22,6 @@
 package org.richfaces.ui.select;
 
 import com.google.common.collect.Iterators;
-import org.richfaces.ui.select.SelectManyHelper;
-import org.richfaces.ui.select.SelectManyRendererBase;
-import org.richfaces.ui.select.ClientSelectItem;
 
 import javax.faces.application.ResourceDependencies;
 import javax.faces.application.ResourceDependency;

@@ -45,11 +45,8 @@ import org.ajax4jsf.javascript.JSObject;
 import org.richfaces.PanelMenuMode;
 import org.richfaces.cdk.annotations.JsfRenderer;
 import org.richfaces.ui.iteration.TableIconsRendererHelper;
-import org.richfaces.ui.output.AbstractPanelMenuGroup;
-import org.richfaces.ui.output.AbstractPanelMenuItem;
 
 import com.google.common.base.Strings;
-import org.richfaces.ui.output.DivPanelRenderer;
 
 /**
  * @author akolonitsky

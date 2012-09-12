@@ -32,7 +32,6 @@ import javax.faces.context.ResponseWriter;
 
 import org.ajax4jsf.Messages;
 import org.richfaces.cdk.annotations.JsfRenderer;
-import org.richfaces.ui.output.AbstractMediaOutput;
 import org.richfaces.ui.core.HtmlConstants;
 import org.richfaces.renderkit.RendererBase;
 

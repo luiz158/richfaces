@@ -5,8 +5,6 @@ import java.util.Collection;
 import java.util.LinkedHashSet;
 
 import org.ajax4jsf.javascript.ScriptUtils;
-import org.richfaces.ui.validator.LibraryScriptFunction;
-import org.richfaces.ui.validator.ValidatorScriptBase;
 import org.richfaces.resource.ResourceKey;
 
 import com.google.common.collect.ImmutableList;

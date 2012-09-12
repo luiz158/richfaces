@@ -23,8 +23,6 @@ package org.richfaces.ui.iteration;
 
 import javax.faces.context.FacesContext;
 
-import org.richfaces.ui.iteration.Row;
-
 public abstract class RowHolderBase {
     private FacesContext context;
     private int currentRow;

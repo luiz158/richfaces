@@ -39,7 +39,6 @@ import javax.faces.context.ResponseWriter;
 import org.ajax4jsf.javascript.JSObject;
 import org.richfaces.cdk.annotations.JsfRenderer;
 import org.richfaces.ui.iteration.TableIconsRendererHelper;
-import org.richfaces.ui.output.TogglePanelItemRenderer;
 import org.richfaces.renderkit.RenderKitUtils;
 
 /**

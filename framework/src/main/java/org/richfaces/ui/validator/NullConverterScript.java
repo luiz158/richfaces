@@ -8,7 +8,6 @@ import java.util.Collections;
 import org.ajax4jsf.javascript.JSLiteral;
 import org.ajax4jsf.javascript.ScriptWithDependencies;
 import org.richfaces.resource.ResourceKey;
-import org.richfaces.ui.validator.ClientValidatorRenderer;
 
 /**
  * This class represents "dummy" converter call ( just refference to "value" variable )

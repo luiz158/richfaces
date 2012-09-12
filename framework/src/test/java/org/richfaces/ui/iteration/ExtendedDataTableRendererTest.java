@@ -40,9 +40,6 @@ import org.jboss.test.faces.htmlunit.HtmlUnitEnvironment;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
-import org.richfaces.ui.iteration.AbstractExtendedDataTable;
-import org.richfaces.ui.iteration.ExtendedDataTableRenderer;
-import org.richfaces.ui.iteration.SortOrder;
 
 import com.gargoylesoftware.htmlunit.html.HtmlElement;
 import com.gargoylesoftware.htmlunit.html.HtmlPage;

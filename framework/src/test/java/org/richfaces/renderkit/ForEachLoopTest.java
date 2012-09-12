@@ -31,7 +31,6 @@ import java.util.Set;
 import java.util.TreeSet;
 
 import org.junit.Test;
-import org.richfaces.renderkit.ForEachLoop;
 import org.richfaces.renderkit.ForEachLoop.Status;
 
 /**

@@ -23,8 +23,6 @@ package org.richfaces.ui.iteration;
 
 import javax.faces.context.FacesContext;
 
-import org.richfaces.ui.iteration.AbstractTree;
-
 /**
  * @author Nick Belaevski
  *

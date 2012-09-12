@@ -36,8 +36,6 @@ import org.ajax4jsf.javascript.ScriptStringBase;
 import org.ajax4jsf.javascript.ScriptUtils;
 import org.richfaces.ui.common.ComponentAttribute;
 import org.richfaces.renderkit.RenderKitUtils;
-import org.richfaces.ui.iteration.AbstractTree;
-import org.richfaces.ui.iteration.AbstractTreeNode;
 import org.richfaces.ui.common.SwitchType;
 
 /**

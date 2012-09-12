@@ -36,8 +36,6 @@ import org.richfaces.cdk.annotations.JsfRenderer;
 import org.richfaces.ui.core.HtmlConstants;
 import org.richfaces.ui.core.MetaComponentRenderer;
 import org.richfaces.renderkit.RenderKitUtils;
-import org.richfaces.ui.iteration.RowHolder;
-import org.richfaces.ui.iteration.RowHolderBase;
 
 /**
  * @author Anton Belevich

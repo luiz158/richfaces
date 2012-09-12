@@ -27,8 +27,6 @@ import javax.faces.component.UIViewRoot;
 
 import org.jboss.test.faces.AbstractFacesTest;
 import org.richfaces.ui.common.SwitchType;
-import org.richfaces.ui.util.renderkit.EnclosingFormRequiredException;
-import org.richfaces.ui.util.renderkit.FormUtil;
 
 /**
  * @author Nick Belaevski - nbelaevski@exadel.com created 11.04.2007

@@ -23,8 +23,6 @@ package org.richfaces.ui.input;
 
 import javax.faces.component.UIComponent;
 
-import org.richfaces.ui.input.InputNumberSliderInputPosition;
-
 /**
  * @author Nick Belaevski
  *

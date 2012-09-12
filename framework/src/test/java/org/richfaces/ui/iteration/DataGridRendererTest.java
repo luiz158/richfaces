@@ -14,11 +14,9 @@ import org.jboss.test.faces.htmlunit.HtmlUnitEnvironment;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
-import org.richfaces.ui.iteration.AbstractDataGrid;
 
 import com.gargoylesoftware.htmlunit.html.HtmlElement;
 import com.gargoylesoftware.htmlunit.html.HtmlPage;
-import org.richfaces.ui.iteration.DataGridRenderer;
 
 public class DataGridRendererTest {
     private HtmlUnitEnvironment environment;

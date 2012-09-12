@@ -6,7 +6,6 @@ import javax.faces.context.FacesContext;
 import javax.faces.context.ResponseWriter;
 
 import org.richfaces.ui.iteration.TableIconsRendererHelper;
-import org.richfaces.ui.output.AbstractPanelMenuGroup;
 import org.richfaces.ui.util.HtmlUtil;
 import org.richfaces.ui.util.renderkit.PanelIcons;
 import org.richfaces.ui.util.renderkit.PanelIcons.State;

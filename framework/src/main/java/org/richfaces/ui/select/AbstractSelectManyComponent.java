@@ -24,7 +24,6 @@ package org.richfaces.ui.select;
 import com.google.common.collect.Iterators;
 import org.richfaces.cdk.annotations.Attribute;
 import org.richfaces.cdk.annotations.EventName;
-import org.richfaces.ui.select.SelectManyHelper;
 import org.richfaces.ui.util.SelectItemsInterface;
 
 import javax.faces.component.UIColumn;

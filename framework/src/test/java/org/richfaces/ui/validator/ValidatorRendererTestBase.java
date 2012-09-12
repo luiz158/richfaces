@@ -12,7 +12,6 @@ import org.richfaces.javascript.Message;
 import org.richfaces.resource.ResourceKey;
 
 import com.google.common.collect.ImmutableMap;
-import org.richfaces.ui.validator.ClientValidatorRenderer;
 
 public class ValidatorRendererTestBase extends BehaviorTestBase {
     protected static final String CLIENT_VALIDATORS_JS = "clientValidators.js";

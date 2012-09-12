@@ -34,9 +34,6 @@ import javax.faces.FacesException;
 import javax.faces.component.UIComponent;
 import javax.faces.context.FacesContext;
 
-import org.richfaces.ui.iteration.AbstractRowsRenderer;
-import org.richfaces.ui.iteration.SortOrder;
-import org.richfaces.ui.iteration.UIDataTableBase;
 import org.richfaces.model.SortMode;
 
 /**

@@ -31,12 +31,6 @@ import javax.faces.context.FacesContext;
 import javax.faces.context.ResponseWriter;
 
 import org.richfaces.ui.core.HtmlConstants;
-import org.richfaces.ui.iteration.RowHolder;
-import org.richfaces.ui.iteration.RowHolderBase;
-import org.richfaces.ui.iteration.SortingFilteringRowsRenderer;
-import org.richfaces.ui.iteration.Row;
-import org.richfaces.ui.iteration.UIDataTableBase;
-import org.richfaces.ui.iteration.AbstractColumn;
 
 /**
  * @author Anton Belevich

@@ -40,12 +40,9 @@ import javax.faces.event.ActionEvent;
 import org.ajax4jsf.javascript.JSObject;
 import org.richfaces.cdk.annotations.JsfRenderer;
 import org.richfaces.ui.core.ComponentIterators;
-import org.richfaces.ui.output.AbstractPanelMenu;
-import org.richfaces.ui.output.AbstractPanelMenuItem;
 import org.richfaces.context.ExtendedPartialViewContext;
 import org.richfaces.ui.core.HtmlConstants;
 import org.richfaces.renderkit.RenderKitUtils;
-import org.richfaces.ui.output.DivPanelRenderer;
 import org.richfaces.ui.util.renderkit.PanelIcons;
 import org.richfaces.ui.util.renderkit.PanelIcons.State;
 

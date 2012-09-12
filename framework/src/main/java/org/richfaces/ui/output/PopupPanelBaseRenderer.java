@@ -15,7 +15,6 @@ import javax.faces.component.UIComponent;
 import javax.faces.context.ExternalContext;
 import javax.faces.context.FacesContext;
 
-import org.richfaces.ui.output.AbstractPopupPanel;
 import org.richfaces.json.JSONException;
 import org.richfaces.json.JSONMap;
 import org.richfaces.renderkit.RendererBase;

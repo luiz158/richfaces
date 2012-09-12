@@ -3,7 +3,6 @@ package org.richfaces.ui.validator;
 import java.io.IOException;
 import java.util.Collection;
 
-import org.richfaces.ui.validator.LibraryScriptFunction;
 import org.richfaces.resource.ResourceKey;
 
 import com.google.common.collect.ImmutableSet;

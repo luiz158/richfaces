@@ -42,14 +42,12 @@ import org.ajax4jsf.javascript.JSObject;
 import org.richfaces.TooltipMode;
 import org.richfaces.application.ServiceTracker;
 import org.richfaces.cdk.annotations.JsfRenderer;
-import org.richfaces.ui.output.AbstractTooltip;
 import org.richfaces.ui.common.Positioning;
 import org.richfaces.context.ExtendedPartialViewContext;
 import org.richfaces.javascript.JavaScriptService;
 import org.richfaces.ui.core.HtmlConstants;
 import org.richfaces.ui.core.MetaComponentRenderer;
 import org.richfaces.renderkit.RenderKitUtils;
-import org.richfaces.ui.output.DivPanelRenderer;
 import org.richfaces.ui.util.renderkit.RendererUtils;
 
 /**

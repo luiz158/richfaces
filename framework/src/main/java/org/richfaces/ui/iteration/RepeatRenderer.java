@@ -30,7 +30,6 @@ import javax.faces.render.Renderer;
 import org.ajax4jsf.model.DataVisitResult;
 import org.ajax4jsf.model.DataVisitor;
 import org.richfaces.cdk.annotations.JsfRenderer;
-import org.richfaces.ui.iteration.UIRepeat;
 
 /**
  * @author Nick Belaevski

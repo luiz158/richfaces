@@ -21,7 +21,6 @@
  */
 package org.richfaces.ui.iteration;
 
-import org.richfaces.ui.iteration.UISequence;
 import org.richfaces.ui.util.HtmlUtil;
 
 /**

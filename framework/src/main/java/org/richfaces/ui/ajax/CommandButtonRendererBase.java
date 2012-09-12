@@ -27,8 +27,6 @@ import javax.faces.component.UIComponent;
 import javax.faces.context.FacesContext;
 import javax.faces.context.ResponseWriter;
 
-import org.richfaces.ui.ajax.AjaxCommandRendererBase;
-
 import com.google.common.base.Strings;
 
 /**

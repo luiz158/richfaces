@@ -21,8 +21,6 @@
  */
 package org.richfaces.ui.input;
 
-import org.richfaces.ui.input.InputRendererBase;
-
 import javax.faces.application.Resource;
 import javax.faces.application.ResourceDependencies;
 import javax.faces.application.ResourceDependency;

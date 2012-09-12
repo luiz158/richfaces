@@ -22,7 +22,6 @@
 package org.richfaces.ui.iteration;
 
 import static org.richfaces.renderkit.RenderKitUtils.getFirstNonEmptyAttribute;
-import static org.richfaces.ui.iteration.TreeRendererBase.getToggleTypeOrDefault;
 
 import java.io.IOException;
 import java.util.Map;
@@ -37,8 +36,6 @@ import org.richfaces.renderkit.RendererBase;
 import org.richfaces.ui.core.HtmlConstants;
 import org.richfaces.ui.core.MetaComponentRenderer;
 import org.richfaces.ui.core.MetaComponentResolver;
-import org.richfaces.ui.iteration.AbstractTree;
-import org.richfaces.ui.iteration.AbstractTreeNode;
 import org.richfaces.ui.common.SwitchType;
 import org.richfaces.event.TreeToggleEvent;
 

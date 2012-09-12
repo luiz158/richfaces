@@ -6,9 +6,6 @@ import javax.faces.component.UIComponent;
 import javax.faces.component.UIForm;
 import javax.faces.context.FacesContext;
 
-import org.richfaces.ui.menu.AbstractMenuContainer;
-import org.richfaces.ui.menu.AbstractMenuGroup;
-import org.richfaces.ui.menu.AbstractMenuItem;
 import org.richfaces.ui.common.Mode;
 import org.richfaces.ui.ajax.AjaxCommandRendererBase;
 import org.richfaces.ui.util.renderkit.HandlersChain;

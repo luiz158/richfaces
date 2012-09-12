@@ -5,7 +5,6 @@ import java.io.IOException;
 import org.ajax4jsf.javascript.JSFunction;
 import org.ajax4jsf.javascript.JSFunctionDefinition;
 import org.ajax4jsf.javascript.JSReference;
-import org.richfaces.ui.validator.ComponentValidatorScript;
 
 public abstract class ValidatorScriptBase extends JSFunctionDefinition implements ComponentValidatorScript {
     public static final String ELEMENT = "e";

@@ -27,8 +27,6 @@ import javax.faces.component.UIComponent;
 import javax.faces.context.FacesContext;
 import javax.faces.context.ResponseWriter;
 
-import org.richfaces.ui.output.AbstractProgressBar;
-import org.richfaces.ui.output.NumberUtils;
 import org.richfaces.ui.util.HtmlUtil;
 import org.richfaces.ui.core.HtmlConstants;
 

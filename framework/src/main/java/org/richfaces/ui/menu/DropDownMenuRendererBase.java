@@ -11,10 +11,6 @@ import javax.faces.application.ResourceDependency;
 import javax.faces.component.UIComponent;
 import javax.faces.context.FacesContext;
 
-import org.richfaces.ui.menu.AbstractDropDownMenu;
-import org.richfaces.ui.menu.AbstractMenuGroup;
-import org.richfaces.ui.menu.AbstractMenuItem;
-import org.richfaces.ui.menu.AbstractMenuSeparator;
 import org.richfaces.ui.common.Mode;
 import org.richfaces.ui.common.Positioning;
 import org.richfaces.renderkit.RenderKitUtils;

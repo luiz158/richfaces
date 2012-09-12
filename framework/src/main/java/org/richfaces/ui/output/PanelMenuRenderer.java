@@ -36,8 +36,6 @@ import javax.faces.context.ResponseWriter;
 
 import org.ajax4jsf.javascript.JSObject;
 import org.richfaces.cdk.annotations.JsfRenderer;
-import org.richfaces.ui.output.AbstractPanelMenu;
-import org.richfaces.ui.output.DivPanelRenderer;
 import org.richfaces.ui.util.HtmlUtil;
 import org.richfaces.ui.core.HtmlConstants;
 

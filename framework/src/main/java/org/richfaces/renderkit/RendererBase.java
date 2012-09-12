@@ -28,7 +28,6 @@ import javax.faces.context.ResponseWriter;
 import javax.faces.render.Renderer;
 
 import org.ajax4jsf.Messages;
-import org.richfaces.renderkit.RenderKitUtils;
 import org.richfaces.ui.util.HtmlUtil;
 import org.richfaces.log.Logger;
 import org.richfaces.log.RichfacesLogger;

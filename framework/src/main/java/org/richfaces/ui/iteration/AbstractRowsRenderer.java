@@ -38,9 +38,6 @@ import org.richfaces.ui.common.ComponentAttribute;
 import org.richfaces.ui.core.HtmlConstants;
 import org.richfaces.renderkit.RenderKitUtils;
 import org.richfaces.renderkit.RendererBase;
-import org.richfaces.ui.iteration.RowHolderBase;
-import org.richfaces.ui.iteration.Row;
-import org.richfaces.ui.iteration.UIDataTableBase;
 
 /**
  * @author Anton Belevich
