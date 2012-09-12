@@ -108,10 +108,7 @@ public class RepeatTest {
 
         environment = new HtmlUnitEnvironment();
 
-        environment.withResource("/WEB-INF/classes/faces-config.xml",
-            getClass().getResource("/org/richfaces/component/RepeatTest.faces-config.xml"));
-
-        environment.withResource("/test.xhtml", getClass().getResource("/org/richfaces/component/RepeatTest.xhtml"));
+        environment.withResource("/test.xhtml", getClass().getResource("/org/richfaces/ui/iteration/RepeatTest.xhtml"));
 
         environment.start();
 

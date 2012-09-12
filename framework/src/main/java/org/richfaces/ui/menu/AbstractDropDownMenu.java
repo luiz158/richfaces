@@ -5,7 +5,6 @@ import org.richfaces.cdk.annotations.Facet;
 import org.richfaces.cdk.annotations.JsfComponent;
 import org.richfaces.cdk.annotations.JsfRenderer;
 import org.richfaces.cdk.annotations.Tag;
-import org.richfaces.renderkit.html.DropDownMenuRendererBase;
 
 /**
  * The &lt;rich:dropDownMenu&gt; component is used for creating a drop-down, hierarchical menu. It can be used with the

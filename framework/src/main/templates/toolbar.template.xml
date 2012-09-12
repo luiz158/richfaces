@@ -6,7 +6,7 @@
 
     <cc:interface>
         <cdk:class>org.richfaces.renderkit.html.ToolbarRenderer</cdk:class>
-        <cdk:superclass>org.richfaces.renderkit.html.ToolbarRendererBase</cdk:superclass>
+        <cdk:superclass>org.richfaces.ui.output.ToolbarRendererBase</cdk:superclass>
         <cdk:component-family>org.richfaces.Toolbar</cdk:component-family>
         <cdk:renderer-type>org.richfaces.ToolbarRenderer</cdk:renderer-type>
     </cc:interface>

@@ -6,7 +6,7 @@
 
     <cc:interface>
         <cdk:class>org.richfaces.renderkit.html.ListRenderer</cdk:class>
-        <cdk:superclass>org.richfaces.renderkit.ListRendererBase</cdk:superclass>
+        <cdk:superclass>org.richfaces.ui.iteration.ListRendererBase</cdk:superclass>
         <cdk:component-family>org.richfaces.List</cdk:component-family>
         <cdk:renderer-type>org.richfaces.ListRenderer
         </cdk:renderer-type>

@@ -28,8 +28,8 @@ import javax.faces.context.FacesContext;
 
 import org.ajax4jsf.javascript.ScriptUtils;
 import org.richfaces.cdk.annotations.Function;
-import org.richfaces.renderkit.util.CoreAjaxRendererUtils;
-import org.richfaces.renderkit.util.RendererUtils;
+import org.richfaces.ui.util.renderkit.CoreAjaxRendererUtils;
+import org.richfaces.ui.util.renderkit.RendererUtils;
 
 /**
  * Created 20.03.2008

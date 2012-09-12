@@ -28,7 +28,6 @@ import org.richfaces.cdk.annotations.Facet;
 import org.richfaces.cdk.annotations.JsfComponent;
 import org.richfaces.cdk.annotations.JsfRenderer;
 import org.richfaces.cdk.annotations.Tag;
-import org.richfaces.renderkit.EditorRendererBase;
 
 import javax.faces.component.UIComponent;
 import javax.faces.component.UIInput;

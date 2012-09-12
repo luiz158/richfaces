@@ -25,7 +25,7 @@ import org.ajax4jsf.model.DataVisitor;
 import org.richfaces.cdk.annotations.JsfComponent;
 import org.richfaces.cdk.annotations.JsfRenderer;
 import org.richfaces.cdk.annotations.Tag;
-import org.richfaces.renderkit.RowHolderBase;
+import org.richfaces.ui.iteration.RowHolderBase;
 
 import javax.faces.component.UIComponent;
 import javax.faces.component.UIPanel;

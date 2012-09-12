@@ -6,8 +6,8 @@ import org.jboss.test.faces.mock.MockTestRunner;
 import org.jboss.test.faces.mock.Stub;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.richfaces.renderkit.html.ClientValidatorRenderer;
-import org.richfaces.renderkit.html.FormClientValidatorRenderer;
+import org.richfaces.ui.validator.ClientValidatorRenderer;
+import org.richfaces.ui.validator.FormClientValidatorRenderer;
 
 import javax.faces.FacesException;
 import javax.faces.component.UICommand;

@@ -31,7 +31,7 @@ import org.richfaces.cdk.annotations.TagType;
 import org.richfaces.event.ItemChangeEvent;
 import org.richfaces.event.ItemChangeListener;
 import org.richfaces.event.ItemChangeSource;
-import org.richfaces.renderkit.util.PanelIcons;
+import org.richfaces.ui.util.renderkit.PanelIcons;
 
 import javax.el.MethodExpression;
 import javax.el.ValueExpression;

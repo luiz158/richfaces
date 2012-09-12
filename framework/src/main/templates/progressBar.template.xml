@@ -6,7 +6,7 @@
 
     <cc:interface>
         <cdk:class>org.richfaces.renderkit.html.ProgressBarRenderer</cdk:class>
-        <cdk:superclass>org.richfaces.renderkit.html.ProgressBarBaseRenderer</cdk:superclass>
+        <cdk:superclass>org.richfaces.ui.output.ProgressBarBaseRenderer</cdk:superclass>
         <cdk:component-family>org.richfaces.ProgressBarRenderer</cdk:component-family>
         <cdk:renderer-type>org.richfaces.ProgressBarRenderer</cdk:renderer-type>
         <cdk:renders-children>true</cdk:renders-children>
@@ -16,8 +16,8 @@
 
         <div id="#{clientId}" cdk:passThroughWithExclusions="" class="#{concatClasses('rf-pb', component.attributes['styleClass'])}"
             style="#{component.attributes['style']}">
-            <cdk:object name="encoder" value="#{getEncoder(facesContext, component)}" type="ProgressBarStateEncoder" />
-            <cdk:object name="currentState" value="#{getCurrentState(facesContext, component)}" type="ProgressBarState" />
+            <cdk:object name="encoder" value="#{getEncoder(facesContext, component)}" type="org.richfaces.ui.output.ProgressBarStateEncoder" />
+            <cdk:object name="currentState" value="#{getCurrentState(facesContext, component)}" type="org.richfaces.ui.output.ProgressBarState" />
 
             <cdk:call>
                 encoder.encodeInitialState(facesContext, component, currentState);

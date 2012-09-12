@@ -22,8 +22,8 @@ package org.richfaces.ui.util;
 
 import com.google.common.base.Strings;
 import org.ajax4jsf.javascript.ScriptUtils;
-import org.richfaces.renderkit.util.HtmlDimensions;
-import org.richfaces.renderkit.util.RendererUtils;
+import org.richfaces.ui.util.renderkit.HtmlDimensions;
+import org.richfaces.ui.util.renderkit.RendererUtils;
 
 import javax.faces.component.UIComponent;
 import javax.faces.component.UIViewRoot;

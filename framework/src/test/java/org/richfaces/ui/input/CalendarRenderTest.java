@@ -7,7 +7,7 @@ import com.gargoylesoftware.htmlunit.html.HtmlTableDataCell;
 import org.jboss.test.faces.htmlunit.HtmlUnitEnvironment;
 import org.junit.Assert;
 import org.junit.Test;
-import org.richfaces.renderkit.html.RendererTestBase;
+import org.richfaces.renderkit.RendererTestBase;
 
 import java.io.File;
 import java.net.URISyntaxException;
@@ -23,7 +23,7 @@ public class CalendarRenderTest extends RendererTestBase {
     public void setUp() throws URISyntaxException {
         environment = new HtmlUnitEnvironment();
         environment.withWebRoot(new File(this.getClass().getResource(".").toURI()));
-        environment.withResource("/WEB-INF/faces-config.xml", "org/richfaces/component/faces-config.xml");
+        environment.withResource("/WEB-INF/faces-config.xml", "org/richfaces/ui/input/faces-config.xml");
         environment.start();
         environment.getWebClient().setJavaScriptEnabled(true);
     }

@@ -27,7 +27,6 @@ import org.richfaces.cdk.annotations.JsfComponent;
 import org.richfaces.cdk.annotations.JsfRenderer;
 import org.richfaces.cdk.annotations.Tag;
 import org.richfaces.cdk.annotations.TagType;
-import org.richfaces.renderkit.html.DivPanelRenderer;
 import org.richfaces.ui.ajax.AbstractActionComponent;
 import org.richfaces.ui.attribute.AjaxProps;
 import org.richfaces.ui.common.SwitchType;

@@ -42,7 +42,6 @@ public class NestedRepeatTest {
     public void setUp() throws Exception {
         environment = new HtmlUnitEnvironment();
         environment.withWebRoot(new File(this.getClass().getResource(".").toURI()));
-        environment.withResource("/WEB-INF/faces-config.xml", "org/richfaces/component/faces-config.xml");
         environment.start();
 
         environment.getServer().getSession().setAttribute("dataBean", new DataBean());

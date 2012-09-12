@@ -6,7 +6,6 @@ import org.richfaces.cdk.annotations.Facet;
 import org.richfaces.cdk.annotations.JsfComponent;
 import org.richfaces.cdk.annotations.JsfRenderer;
 import org.richfaces.cdk.annotations.Tag;
-import org.richfaces.renderkit.html.MenuGroupRendererBase;
 import org.richfaces.ui.common.Positioning;
 
 import javax.faces.component.UIOutput;

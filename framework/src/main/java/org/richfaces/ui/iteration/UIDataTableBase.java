@@ -42,7 +42,7 @@ import org.richfaces.model.ArrangeableStateDefaultImpl;
 import org.richfaces.model.FilterField;
 import org.richfaces.model.SortField;
 import org.richfaces.model.SortMode;
-import org.richfaces.renderkit.MetaComponentRenderer;
+import org.richfaces.ui.core.MetaComponentRenderer;
 import org.richfaces.ui.core.MetaComponentEncoder;
 import org.richfaces.ui.core.MetaComponentResolver;
 

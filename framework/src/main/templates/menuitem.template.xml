@@ -6,7 +6,7 @@
 
     <cc:interface>
         <cdk:class>org.richfaces.renderkit.html.MenuItemRenderer</cdk:class>
-        <cdk:superclass>org.richfaces.renderkit.html.MenuItemRendererBase</cdk:superclass>
+        <cdk:superclass>org.richfaces.ui.menu.MenuItemRendererBase</cdk:superclass>
         <cdk:component-family>org.richfaces.DropDownMenu</cdk:component-family>
         <cdk:renderer-type>org.richfaces.MenuItemRenderer</cdk:renderer-type>
         <cdk:renders-children>true</cdk:renders-children>
@@ -15,7 +15,7 @@
         <cdk:resource-dependency name="base-component.reslib" library="org.richfaces" />
         <cdk:resource-dependency name="richfaces-event.js" />
         <cdk:resource-dependency name="menuitem.js" library="org.richfaces" />
-        <cdk:import package="org.richfaces.renderkit.util" names="RendererUtils" />
+        <cdk:import package="org.richfaces.ui.util.renderkit" names="RendererUtils" />
     </cc:interface>
 
     <cc:implementation>

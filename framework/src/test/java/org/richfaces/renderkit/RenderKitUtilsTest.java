@@ -40,6 +40,7 @@ import java.util.TreeSet;
 import org.ajax4jsf.javascript.JSFunctionDefinition;
 import org.ajax4jsf.javascript.ScriptUtils;
 import org.junit.Test;
+import org.richfaces.renderkit.RenderKitUtils;
 import org.richfaces.renderkit.RenderKitUtils.ScriptHashVariableWrapper;
 
 /**

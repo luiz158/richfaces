@@ -24,7 +24,7 @@ package org.richfaces.cdk;
 import java.util.Collection;
 
 import org.richfaces.application.ServiceTracker;
-import org.richfaces.renderkit.html.ResourceLibraryRenderer;
+import org.richfaces.ui.core.ResourceLibraryRenderer;
 import org.richfaces.resource.ResourceKey;
 import org.richfaces.resource.ResourceLibrary;
 import org.richfaces.resource.ResourceLibraryFactory;

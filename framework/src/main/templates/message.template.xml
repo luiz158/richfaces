@@ -17,7 +17,7 @@
     xmlns:xi="http://www.w3.org/2001/XInclude">
     <cc:interface>
         <cdk:class>org.richfaces.renderkit.html.HtmlMessageRenderer</cdk:class>
-        <cdk:superclass>org.richfaces.renderkit.MessageRendererBase</cdk:superclass>
+        <cdk:superclass>org.richfaces.ui.message.MessageRendererBase</cdk:superclass>
         <cdk:component-family>javax.faces.Message</cdk:component-family>
         <cdk:renderer-type>org.richfaces.MessageRenderer</cdk:renderer-type>
         <cdk:resource-dependency library="org.richfaces" name="message.reslib" />

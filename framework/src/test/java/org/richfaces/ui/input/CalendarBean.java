@@ -1,5 +1,7 @@
 package org.richfaces.ui.input;
 
+import javax.faces.bean.ManagedBean;
+import javax.faces.bean.SessionScoped;
 import javax.faces.event.ValueChangeEvent;
 import java.util.Calendar;
 import java.util.Date;

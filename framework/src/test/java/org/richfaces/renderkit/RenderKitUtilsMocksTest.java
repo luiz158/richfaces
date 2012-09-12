@@ -54,6 +54,9 @@ import org.jboss.test.faces.mock.MockFacesEnvironment;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
+import org.richfaces.renderkit.RenderKitUtils;
+import org.richfaces.ui.common.ComponentAttribute;
+import org.richfaces.ui.common.MockClientBehaviorHolder;
 
 /**
  * @author Nick Belaevski

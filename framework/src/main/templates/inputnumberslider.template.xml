@@ -28,7 +28,7 @@ Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA
     xmlns:xi="http://www.w3.org/2001/XInclude">
     <cc:interface>
         <cdk:class>org.richfaces.renderkit.html.InputNumberSliderRenderer</cdk:class>
-        <cdk:superclass>org.richfaces.renderkit.InputNumberSliderRendererBase</cdk:superclass>
+        <cdk:superclass>org.richfaces.ui.input.InputNumberSliderRendererBase</cdk:superclass>
         <cdk:component-family>javax.faces.Input</cdk:component-family>
         <cdk:renderer-type>org.richfaces.InputNumberSliderRenderer</cdk:renderer-type>
         <cdk:resource-dependency library="org.richfaces" name="base-component.reslib" />

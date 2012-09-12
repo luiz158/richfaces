@@ -29,8 +29,8 @@ public abstract class ValidatorIntegrationTestBase {
     @Before
     public void setUp() {
         this.environment = new HtmlUnitEnvironment();
-        this.environment.withResource("/" + getPageName() + ".xhtml", "org/richfaces/component/" + getPageName() + ".xhtml")
-                .withResource("/WEB-INF/faces-config.xml", "org/richfaces/component/" + getFacesConfig());
+        this.environment.withResource("/" + getPageName() + ".xhtml", getResourcePath() + getPageName() + ".xhtml")
+                .withResource("/WEB-INF/faces-config.xml", getResourcePath() + getFacesConfig());
         setupEnvironment(environment);
         this.environment.start();
     }
@@ -42,6 +42,8 @@ public abstract class ValidatorIntegrationTestBase {
     protected abstract String getFacesConfig();
 
     protected abstract String getPageName();
+
+    protected abstract String getResourcePath();
 
     @Rule
     public MethodRule watchment = new TestWatchman() {

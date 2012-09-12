@@ -41,7 +41,7 @@ import org.richfaces.ui.ajax.AjaxContainer;
 import org.richfaces.ui.core.ComponentIterators;
 import org.richfaces.ui.core.MetaComponentResolver;
 import org.richfaces.context.IdParser.Node;
-import org.richfaces.renderkit.util.CoreRendererUtils;
+import org.richfaces.ui.util.renderkit.CoreRendererUtils;
 
 import com.google.common.base.Joiner;
 import com.google.common.base.Strings;

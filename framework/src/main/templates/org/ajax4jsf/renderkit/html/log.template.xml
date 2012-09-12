@@ -6,7 +6,7 @@
 
     <cc:interface>
         <cdk:class>org.richfaces.renderkit.html.AjaxLogRenderer</cdk:class>
-        <cdk:superclass>org.richfaces.renderkit.LogRendererBase</cdk:superclass>
+        <cdk:superclass>org.richfaces.ui.core.LogRendererBase</cdk:superclass>
         <cdk:component-family>org.richfaces.AjaxLog</cdk:component-family>
         <cdk:renderer-type>org.richfaces.AjaxLogRenderer</cdk:renderer-type>
 

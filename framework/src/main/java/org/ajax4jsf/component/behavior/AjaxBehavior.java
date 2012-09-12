@@ -47,7 +47,7 @@ import org.richfaces.cdk.annotations.Tag;
 import org.richfaces.cdk.annotations.TagType;
 import org.richfaces.ui.behavior.ClientBehavior;
 import org.richfaces.event.BypassUpdatesAjaxBehaviorEvent;
-import org.richfaces.renderkit.util.CoreAjaxRendererUtils;
+import org.richfaces.ui.util.renderkit.CoreAjaxRendererUtils;
 
 /**
  * <p>

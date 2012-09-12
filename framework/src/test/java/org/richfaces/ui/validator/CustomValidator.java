@@ -22,6 +22,7 @@
  */
 package org.richfaces.ui.validator;
 
+import javax.faces.validator.FacesValidator;
 import javax.faces.validator.LengthValidator;
 
 /**

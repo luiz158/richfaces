@@ -6,7 +6,7 @@
 
     <cc:interface>
         <cdk:class>org.richfaces.renderkit.html.CollapsibleSubTableTogglerRenderer</cdk:class>
-        <cdk:superclass>org.richfaces.renderkit.CollapsibleSubTableTogglerRendererBase</cdk:superclass>
+        <cdk:superclass>org.richfaces.ui.iteration.CollapsibleSubTableTogglerRendererBase</cdk:superclass>
         <cdk:component-family>org.richfaces.CollapsibleSubTableToggler</cdk:component-family>
         <cdk:renderer-type>org.richfaces.CollapsibleSubTableTogglerRenderer</cdk:renderer-type>
     </cc:interface>

@@ -26,7 +26,7 @@ import org.richfaces.cdk.annotations.EventName;
 import org.richfaces.cdk.annotations.JsfComponent;
 import org.richfaces.cdk.annotations.JsfRenderer;
 import org.richfaces.cdk.annotations.Tag;
-import org.richfaces.renderkit.html.ToolbarRendererBase;
+import org.richfaces.ui.output.ToolbarRendererBase;
 
 import javax.faces.component.UIComponentBase;
 

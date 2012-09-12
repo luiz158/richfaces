@@ -40,7 +40,7 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.richfaces.ui.core.MetaComponentResolver;
-import org.richfaces.renderkit.AjaxConstants;
+import org.richfaces.ui.ajax.AjaxConstants;
 
 /**
  * @author Nick Belaevski

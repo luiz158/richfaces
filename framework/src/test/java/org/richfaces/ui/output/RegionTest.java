@@ -43,9 +43,9 @@ import java.util.Iterator;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
-import static org.richfaces.renderkit.AjaxConstants.AJAX_COMPONENT_ID_PARAMETER;
-import static org.richfaces.renderkit.AjaxConstants.ALL;
-import static org.richfaces.renderkit.AjaxConstants.THIS;
+import static org.richfaces.ui.ajax.AjaxConstants.AJAX_COMPONENT_ID_PARAMETER;
+import static org.richfaces.ui.ajax.AjaxConstants.ALL;
+import static org.richfaces.ui.ajax.AjaxConstants.THIS;
 
 /**
  * Test page pseudo-code:

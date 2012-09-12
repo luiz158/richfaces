@@ -3,7 +3,6 @@ package org.richfaces.ui.core;
 import com.google.common.collect.ImmutableList;
 import com.google.common.collect.ImmutableSet;
 import com.google.common.collect.Iterators;
-import org.richfaces.renderkit.html.ScriptsRenderer;
 
 import javax.el.ValueExpression;
 import javax.faces.component.UIComponent;

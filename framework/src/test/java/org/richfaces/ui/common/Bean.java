@@ -9,6 +9,8 @@ import org.richfaces.javascript.JavaScriptService;
 import org.richfaces.resource.ResourceKey;
 import org.richfaces.resource.ResourceLibrary;
 
+import javax.faces.bean.ManagedBean;
+import javax.faces.bean.RequestScoped;
 import javax.faces.context.FacesContext;
 import java.util.Collections;
 
@@ -16,6 +18,8 @@ import java.util.Collections;
  * @author asmirnov
  *
  */
+@ManagedBean
+@RequestScoped
 public class Bean {
     private static final class TestScript extends JSLiteral implements ResourceLibrary {
         public TestScript() {

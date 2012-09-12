@@ -26,7 +26,7 @@ import org.richfaces.cdk.annotations.JsfBehavior;
 import org.richfaces.cdk.annotations.JsfBehaviorRenderer;
 import org.richfaces.cdk.annotations.Tag;
 import org.richfaces.cdk.annotations.TagType;
-import org.richfaces.renderkit.util.RendererUtils;
+import org.richfaces.ui.util.renderkit.RendererUtils;
 import org.richfaces.ui.core.ComponentIterators;
 import org.richfaces.ui.output.AbstractTogglePanel;
 

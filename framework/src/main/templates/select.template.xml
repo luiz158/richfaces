@@ -6,7 +6,7 @@
 
     <cc:interface>
         <cdk:class>org.richfaces.renderkit.html.SelectRenderer</cdk:class>
-        <cdk:superclass>org.richfaces.renderkit.SelectRendererBase</cdk:superclass>
+        <cdk:superclass>org.richfaces.ui.select.SelectRendererBase</cdk:superclass>
         <cdk:component-family>org.richfaces.Select</cdk:component-family>
         <cdk:renderer-type>org.richfaces.SelectRenderer</cdk:renderer-type>
         <cdk:renders-children>true</cdk:renders-children>
@@ -14,7 +14,7 @@
 
     <cc:implementation>
 
-        <cdk:object type="java.util.List" type-arguments="org.richfaces.renderkit.ClientSelectItem" name="clientSelectItems"
+        <cdk:object type="java.util.List" type-arguments="org.richfaces.ui.select.ClientSelectItem" name="clientSelectItems"
             value="#{getConvertedSelectItems(facesContext, component)}" />
 
         <cdk:object type="java.lang.Object" name="disabled" value="#{component.attributes['disabled']}" />

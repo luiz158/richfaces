@@ -48,7 +48,8 @@ import javax.faces.context.ResponseWriter;
 
 import org.ajax4jsf.javascript.JSFunctionDefinition;
 import org.ajax4jsf.javascript.ScriptUtils;
-import org.richfaces.renderkit.ComponentAttribute.Kind;
+import org.richfaces.ui.common.ComponentAttribute;
+import org.richfaces.ui.common.ComponentAttribute.Kind;
 
 /**
  * @author Nick Belaevski
@@ -58,11 +59,11 @@ public final class RenderKitUtils {
     /**
      *
      */
-    static final String BEHAVIOR_SOURCE_ID = "javax.faces.source";
+    public static final String BEHAVIOR_SOURCE_ID = "javax.faces.source";
     /**
      *
      */
-    static final String BEHAVIOR_EVENT_NAME = "javax.faces.behavior.event";
+    public static final String BEHAVIOR_EVENT_NAME = "javax.faces.behavior.event";
     /**
      *
      */
@@ -93,7 +94,7 @@ public final class RenderKitUtils {
          */
         noop {
             @Override
-            Object wrap(Object o) {
+            public Object wrap(Object o) {
                 return o;
             }
         },
@@ -102,7 +103,7 @@ public final class RenderKitUtils {
          */
         asArray {
             @Override
-            Object wrap(Object o) {
+            public Object wrap(Object o) {
                 return asArray(o);
             }
         },
@@ -123,7 +124,7 @@ public final class RenderKitUtils {
          */
         eventHandler {
             @Override
-            Object wrap(Object o) {
+            public Object wrap(Object o) {
                 return new JSFunctionDefinition("event").addToBody(o);
             }
         };
@@ -134,14 +135,14 @@ public final class RenderKitUtils {
          * @param o object to wrap
          * @return wrapped object
          */
-        abstract Object wrap(Object o);
+        public abstract Object wrap(Object o);
     }
 
     private RenderKitUtils() {
         // utility constructor
     }
 
-    static String[] asArray(Object object) {
+    public static String[] asArray(Object object) {
         if (object == null) {
             return null;
         }
@@ -201,7 +202,7 @@ public final class RenderKitUtils {
         return result;
     }
 
-    static boolean isDisabled(UIComponent component) {
+    public static boolean isDisabled(UIComponent component) {
         Object disabledAttributeValue = component.getAttributes().get(DISABLED_ATTRIBUTE_NAME);
         if (disabledAttributeValue == null) {
             return false;
@@ -214,7 +215,7 @@ public final class RenderKitUtils {
         return Boolean.valueOf(disabledAttributeValue.toString());
     }
 
-    static String escape(String s) {
+    public static String escape(String s) {
         StringBuilder sb = new StringBuilder(s.length());
         int start = 0;
         int end;
@@ -231,7 +232,7 @@ public final class RenderKitUtils {
         return sb.toString();
     }
 
-    static boolean chain(StringBuilder sb, Object object, boolean isChained) {
+    public static boolean chain(StringBuilder sb, Object object, boolean isChained) {
         if (object != null) {
             String objectString = object.toString().trim();
             if (objectString.length() != 0) {

@@ -30,7 +30,7 @@ import org.richfaces.cdk.annotations.Tag;
 import org.richfaces.cdk.annotations.TagType;
 import org.richfaces.context.ExtendedVisitContext;
 import org.richfaces.context.ExtendedVisitContextMode;
-import org.richfaces.renderkit.MetaComponentRenderer;
+import org.richfaces.ui.core.MetaComponentRenderer;
 import org.richfaces.ui.core.MetaComponentEncoder;
 import org.richfaces.ui.core.MetaComponentResolver;
 

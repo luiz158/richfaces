@@ -17,7 +17,7 @@
     xmlns:xi="http://www.w3.org/2001/XInclude">
     <cc:interface>
         <cdk:class>org.richfaces.renderkit.html.CalendarRenderer</cdk:class>
-        <cdk:superclass>org.richfaces.renderkit.CalendarRendererBase
+        <cdk:superclass>org.richfaces.ui.input.CalendarRendererBase
         </cdk:superclass>
         <cdk:renderer-type>org.richfaces.CalendarRenderer</cdk:renderer-type>
         <cdk:import package="org.richfaces.ui.common" names="Positioning" />

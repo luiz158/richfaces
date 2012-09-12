@@ -24,6 +24,11 @@ public class AjaxValidationTest extends ValidatorIntegrationTestBase {
         return "test";
     }
 
+    @Override
+    protected String getResourcePath() {
+        return "org/richfaces/ui/ajax/";
+    }
+
     @Test
     public void testRequest() throws Exception {
         HtmlPage page = requestPage();

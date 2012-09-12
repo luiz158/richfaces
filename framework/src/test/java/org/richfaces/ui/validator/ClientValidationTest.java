@@ -24,6 +24,11 @@ public class ClientValidationTest extends ValidatorIntegrationTestBase {
         return "client-test";
     }
 
+    @Override
+    protected String getResourcePath() {
+        return "org/richfaces/ui/validator/";
+    }
+
     @Test
     public void testRequest() throws Exception {
         HtmlPage page = requestPage();

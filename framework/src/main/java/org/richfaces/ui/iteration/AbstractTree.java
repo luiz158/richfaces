@@ -54,7 +54,7 @@ import org.richfaces.model.TreeDataModel;
 import org.richfaces.model.TreeDataModelTuple;
 import org.richfaces.model.TreeDataVisitor;
 import org.richfaces.model.TreeNode;
-import org.richfaces.renderkit.MetaComponentRenderer;
+import org.richfaces.ui.core.MetaComponentRenderer;
 import org.richfaces.ui.common.SwitchType;
 import org.richfaces.ui.core.MetaComponentEncoder;
 import org.richfaces.ui.core.MetaComponentResolver;

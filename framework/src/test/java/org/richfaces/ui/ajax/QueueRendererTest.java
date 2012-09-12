@@ -80,8 +80,8 @@ public class QueueRendererTest {
         facesEnvironment = new HtmlUnitEnvironment();
 
         ApplicationServer facesServer = facesEnvironment.getServer();
-        facesServer.addResource("/queue.xhtml", "org/richfaces/component/queue.xhtml");
-        facesServer.addResource("/nonQueue.xhtml", "org/richfaces/component/nonQueue.xhtml");
+        facesServer.addResource("/queue.xhtml", "org/richfaces/ui/ajax/queue.xhtml");
+        facesServer.addResource("/nonQueue.xhtml", "org/richfaces/ui/ajax/nonQueue.xhtml");
 
         facesEnvironment.getServer().addInitParameter("org.richfaces.queue.enabled", Boolean.toString(queueEnabled));
         facesEnvironment.start();

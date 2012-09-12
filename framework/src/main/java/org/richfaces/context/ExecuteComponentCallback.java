@@ -28,8 +28,8 @@ import javax.faces.context.FacesContext;
 
 import org.ajax4jsf.component.AjaxClientBehavior;
 import org.richfaces.ui.ajax.AjaxContainer;
-import org.richfaces.renderkit.AjaxConstants;
-import org.richfaces.renderkit.util.CoreRendererUtils;
+import org.richfaces.ui.ajax.AjaxConstants;
+import org.richfaces.ui.util.renderkit.CoreRendererUtils;
 
 /**
  * @author akolonitsky

@@ -27,6 +27,11 @@ public class GraphValidationTest extends ValidatorIntegrationTestBase {
         return "graph-test";
     }
 
+    @Override
+    protected String getResourcePath() {
+        return "org/richfaces/ui/validator/";
+    }
+
     @Test
     public void testRequest() throws Exception {
         HtmlPage page = requestPage();

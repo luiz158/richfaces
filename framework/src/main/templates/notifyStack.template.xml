@@ -29,7 +29,7 @@ Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA
 
     <cc:interface>
         <cdk:class>org.richfaces.renderkit.html.NotifyStackRenderer</cdk:class>
-        <cdk:superclass>org.richfaces.renderkit.html.NotifyStackRendererBase</cdk:superclass>
+        <cdk:superclass>org.richfaces.ui.message.NotifyStackRendererBase</cdk:superclass>
         <cdk:component-family>org.richfaces.NotifyStack</cdk:component-family>
         <cdk:renderer-type>org.richfaces.NotifyStackRenderer</cdk:renderer-type>
     </cc:interface>

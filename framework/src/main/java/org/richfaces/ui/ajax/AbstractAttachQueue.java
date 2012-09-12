@@ -27,7 +27,7 @@ import org.richfaces.cdk.annotations.JsfComponent;
 import org.richfaces.cdk.annotations.JsfRenderer;
 import org.richfaces.cdk.annotations.Tag;
 import org.richfaces.cdk.annotations.TagType;
-import org.richfaces.renderkit.util.AjaxRendererUtils;
+import org.richfaces.ui.util.renderkit.AjaxRendererUtils;
 
 import javax.faces.component.UIComponent;
 import javax.faces.component.UIComponentBase;

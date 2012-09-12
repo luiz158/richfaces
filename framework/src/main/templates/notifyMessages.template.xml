@@ -17,10 +17,10 @@
     xmlns:xi="http://www.w3.org/2001/XInclude">
     <cc:interface>
         <cdk:class>org.richfaces.renderkit.html.HtmlNotifyMessagesRenderer</cdk:class>
-        <cdk:superclass>org.richfaces.renderkit.NotifyMessageRendererBase</cdk:superclass>
+        <cdk:superclass>org.richfaces.ui.message.NotifyMessageRendererBase</cdk:superclass>
         <cdk:component-family>javax.faces.NotifyMessages</cdk:component-family>
         <cdk:renderer-type>org.richfaces.NotifyMessagesRenderer</cdk:renderer-type>
-        <cdk:import package="org.richfaces.renderkit" names="NotifyRendererUtils.addStackIdOption" static="true" />
+        <cdk:import package="org.richfaces.ui.message" names="NotifyRendererUtils.addStackIdOption" static="true" />
         <cdk:resource-dependency library="org.richfaces" name="notifyMessage.reslib" />
         <cdk:resource-dependency library="org.richfaces" name="notify.ecss" />
     </cc:interface>

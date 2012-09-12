@@ -7,7 +7,7 @@
     <cc:interface>
         <cdk:class>org.richfaces.renderkit.html.TreeNodeRenderer
         </cdk:class>
-        <cdk:superclass>org.richfaces.renderkit.TreeNodeRendererBase</cdk:superclass>
+        <cdk:superclass>org.richfaces.ui.iteration.TreeNodeRendererBase</cdk:superclass>
         <cdk:component-family>org.richfaces.TreeNode
         </cdk:component-family>
         <cdk:renderer-type>org.richfaces.TreeNodeRenderer
@@ -20,7 +20,7 @@
     </cc:interface>
 
     <cc:implementation>
-        <cdk:object name="nodeState" value="#{getNodeState(facesContext)}" type="org.richfaces.renderkit.TreeNodeState" />
+        <cdk:object name="nodeState" value="#{getNodeState(facesContext)}" type="org.richfaces.ui.iteration.TreeNodeState" />
         <cdk:object name="tree" value="#{getTreeComponent(component)}" type="UIComponent" />
 
         <cdk:call expression="addClientEventHandlers(facesContext, component)" />

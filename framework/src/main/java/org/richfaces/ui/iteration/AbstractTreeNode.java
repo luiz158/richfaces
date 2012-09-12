@@ -32,7 +32,7 @@ import org.richfaces.context.ExtendedVisitContextMode;
 import org.richfaces.event.TreeToggleEvent;
 import org.richfaces.event.TreeToggleListener;
 import org.richfaces.event.TreeToggleSource;
-import org.richfaces.renderkit.MetaComponentRenderer;
+import org.richfaces.ui.core.MetaComponentRenderer;
 import org.richfaces.ui.core.MetaComponentEncoder;
 import org.richfaces.ui.core.MetaComponentResolver;
 
