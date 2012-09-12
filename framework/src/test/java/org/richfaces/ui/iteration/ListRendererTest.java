@@ -34,7 +34,6 @@ import org.junit.Test;
 import com.gargoylesoftware.htmlunit.html.HtmlElement;
 import com.gargoylesoftware.htmlunit.html.HtmlPage;
 import org.richfaces.ui.core.HtmlConstants;
-import org.richfaces.ui.input.DataBean;
 
 /**
  * @author nick
@@ -48,7 +47,8 @@ public class ListRendererTest {
     public void setUp() {
         environment = new HtmlUnitEnvironment();
 
-        environment.withResource("/test.xhtml", "org/richfaces/renderkit/rendererTest.xhtml");
+        environment.withResource("/WEB-INF/faces-config.xml", "org/richfaces/ui/iteration/faces-config.xml");
+        environment.withResource("/test.xhtml", "org/richfaces/ui/iteration/rendererTest.xhtml");
 
         environment.start();
 

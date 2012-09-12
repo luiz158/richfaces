@@ -9,11 +9,6 @@
         <managed-bean-scope>application</managed-bean-scope>
     </managed-bean>
     <managed-bean>
-        <managed-bean-name>dataBean</managed-bean-name>
-        <managed-bean-class>org.richfaces.ui.input.DataBean</managed-bean-class>
-        <managed-bean-scope>request</managed-bean-scope>
-    </managed-bean>
-    <managed-bean>
         <managed-bean-name>inputBean</managed-bean-name>
         <managed-bean-class>org.richfaces.ui.input.InputBean</managed-bean-class>
         <managed-bean-scope>request</managed-bean-scope>
@@ -24,7 +19,7 @@
         <managed-bean-scope>session</managed-bean-scope>
     </managed-bean>
     <managed-bean>
-        <managed-bean-name>autocompleteBean</managed-bean-name>
+        <managed-bean-name>autoCompleteBean</managed-bean-name>
         <managed-bean-class>org.richfaces.ui.input.AutoCompleteBean</managed-bean-class>
         <managed-bean-scope>session</managed-bean-scope>
         <managed-property>

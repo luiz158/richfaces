@@ -26,7 +26,7 @@ public class AjaxValidationTest extends ValidatorIntegrationTestBase {
 
     @Override
     protected String getResourcePath() {
-        return "org/richfaces/ui/ajax/";
+        return "org/richfaces/ui/validator/";
     }
 
     @Test
