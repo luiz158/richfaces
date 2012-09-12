@@ -166,6 +166,7 @@
                 <artifactId>jboss-javaee-6.0</artifactId>
                 <version>${version.jboss-javaee}</version>
                 <type>pom</type>
+                <scope>import</scope>
             </dependency>
 
             <dependency>
@@ -173,6 +174,7 @@
                 <artifactId>jboss-javaee-web-6.0</artifactId>
                 <version>${version.jboss-javaee}</version>
                 <type>pom</type>
+                <scope>import</scope>
             </dependency>
             
             <dependency>
@@ -180,7 +182,6 @@
                 <artifactId>jboss-javaee-6.0</artifactId>
                 <version>${version.jboss-javaee}</version>
                 <type>pom</type>
-                <scope>import</scope>
             </dependency>
 
             <dependency>
@@ -188,7 +189,6 @@
                 <artifactId>jboss-javaee-web-6.0</artifactId>
                 <version>${version.jboss-javaee}</version>
                 <type>pom</type>
-                <scope>import</scope>
             </dependency>
             
             <!-- RichFaces -->
