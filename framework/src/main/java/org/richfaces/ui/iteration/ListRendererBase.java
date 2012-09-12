@@ -33,8 +33,8 @@ import javax.faces.context.FacesContext;
 import javax.faces.context.ResponseWriter;
 import javax.faces.render.Renderer;
 
-import org.ajax4jsf.model.DataVisitResult;
-import org.ajax4jsf.model.DataVisitor;
+import org.richfaces.model.DataVisitResult;
+import org.richfaces.model.DataVisitor;
 import org.richfaces.ui.common.ComponentAttribute;
 import org.richfaces.renderkit.RenderKitUtils;
 import org.richfaces.ui.core.HtmlConstants;

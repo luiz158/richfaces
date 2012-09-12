@@ -33,7 +33,7 @@ import javax.faces.component.UIComponent;
 import javax.faces.context.FacesContext;
 import javax.faces.context.ResponseWriter;
 
-import org.ajax4jsf.javascript.JSFunction;
+import org.richfaces.javascript.JSFunction;
 import org.richfaces.cdk.annotations.JsfRenderer;
 import org.richfaces.ui.util.HtmlUtil;
 import org.richfaces.ui.core.HtmlConstants;

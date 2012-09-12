@@ -21,7 +21,7 @@
  */
 package org.richfaces.ui.iteration;
 
-import org.ajax4jsf.component.IterationStateHolder;
+import org.richfaces.ui.core.IterationStateHolder;
 import org.richfaces.cdk.annotations.Attribute;
 import org.richfaces.cdk.annotations.EventName;
 import org.richfaces.cdk.annotations.JsfComponent;

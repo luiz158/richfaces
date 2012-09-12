@@ -46,8 +46,8 @@ import javax.faces.event.PostConstructApplicationEvent;
 import javax.faces.event.PreDestroyApplicationEvent;
 import javax.servlet.ServletContainerInitializer;
 
-import org.ajax4jsf.resource.util.URLToStreamHelper;
-import org.ajax4jsf.util.base64.Codec;
+import org.richfaces.util.URLToStreamHelper;
+import org.richfaces.util.base64.Codec;
 import org.apache.commons.io.IOUtils;
 import org.jboss.arquillian.container.test.spi.RemoteLoadableExtension;
 import org.jboss.shrinkwrap.api.ShrinkWrap;

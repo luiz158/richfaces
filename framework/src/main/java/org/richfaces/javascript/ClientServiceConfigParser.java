@@ -3,16 +3,12 @@
  */
 package org.richfaces.javascript;
 
-import java.io.IOException;
-import java.net.URL;
-import java.util.Collections;
-import java.util.Enumeration;
-import java.util.Map;
-import java.util.Set;
-
-import javax.faces.FacesException;
-import javax.xml.bind.JAXB;
-
+import com.google.common.base.Function;
+import com.google.common.collect.ImmutableMap;
+import com.google.common.collect.ImmutableMap.Builder;
+import com.google.common.collect.Iterables;
+import com.google.common.collect.Maps;
+import com.google.common.collect.Sets;
 import org.richfaces.log.Logger;
 import org.richfaces.log.RichfacesLogger;
 import org.richfaces.resource.ResourceKey;
@@ -20,12 +16,14 @@ import org.richfaces.validator.model.ClientSideScripts;
 import org.richfaces.validator.model.Component;
 import org.richfaces.validator.model.Resource;
 
-import com.google.common.base.Function;
-import com.google.common.collect.ImmutableMap;
-import com.google.common.collect.ImmutableMap.Builder;
-import com.google.common.collect.Iterables;
-import com.google.common.collect.Maps;
-import com.google.common.collect.Sets;
+import javax.faces.FacesException;
+import javax.xml.bind.JAXB;
+import java.io.IOException;
+import java.net.URL;
+import java.util.Collections;
+import java.util.Enumeration;
+import java.util.Map;
+import java.util.Set;
 
 /**
  * @author asmirnov

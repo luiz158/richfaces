@@ -3,9 +3,9 @@ package org.richfaces.ui.behavior;
 import com.google.common.base.Function;
 import com.google.common.collect.ImmutableList;
 import com.google.common.collect.Iterators;
-import org.ajax4jsf.javascript.JSFunction;
-import org.ajax4jsf.javascript.ScriptString;
-import org.ajax4jsf.javascript.ScriptStringBase;
+import org.richfaces.javascript.JSFunction;
+import org.richfaces.javascript.ScriptString;
+import org.richfaces.javascript.ScriptStringBase;
 import org.richfaces.javascript.Message;
 
 import javax.faces.application.FacesMessage;

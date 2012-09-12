@@ -36,7 +36,7 @@ import javax.faces.context.FacesContext;
 import javax.faces.context.ResponseWriter;
 import javax.faces.render.Renderer;
 
-import org.ajax4jsf.javascript.ScriptUtils;
+import org.richfaces.javascript.ScriptUtils;
 import org.richfaces.application.CommonComponentsConfiguration;
 import org.richfaces.cdk.annotations.JsfRenderer;
 import org.richfaces.ui.core.QueueRegistry;

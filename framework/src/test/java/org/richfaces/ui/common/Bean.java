@@ -3,7 +3,7 @@
  */
 package org.richfaces.ui.common;
 
-import org.ajax4jsf.javascript.JSLiteral;
+import org.richfaces.javascript.JSLiteral;
 import org.richfaces.application.ServiceTracker;
 import org.richfaces.javascript.JavaScriptService;
 import org.richfaces.resource.ResourceKey;

@@ -21,7 +21,7 @@
  */
 package org.richfaces.ui.common;
 
-import org.ajax4jsf.component.IterationStateHolder;
+import org.richfaces.ui.core.IterationStateHolder;
 import org.jboss.test.faces.mock.Mock;
 import org.jboss.test.faces.mock.MockTestRunner;
 import org.junit.After;

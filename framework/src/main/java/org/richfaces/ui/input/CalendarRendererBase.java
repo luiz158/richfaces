@@ -44,8 +44,8 @@ import javax.faces.convert.Converter;
 import javax.faces.convert.ConverterException;
 import javax.faces.convert.DateTimeConverter;
 
-import org.ajax4jsf.javascript.JSFunction;
-import org.ajax4jsf.javascript.JSReference;
+import org.richfaces.javascript.JSFunction;
+import org.richfaces.javascript.JSReference;
 import org.richfaces.ui.common.ComponentAttribute;
 import org.richfaces.ui.core.HtmlConstants;
 import org.richfaces.ui.core.MetaComponentRenderer;

@@ -21,7 +21,7 @@
  */
 package org.richfaces.ui.iteration;
 
-import org.ajax4jsf.model.DataVisitor;
+import org.richfaces.model.DataVisitor;
 import org.richfaces.cdk.annotations.JsfComponent;
 import org.richfaces.cdk.annotations.JsfRenderer;
 import org.richfaces.cdk.annotations.Tag;

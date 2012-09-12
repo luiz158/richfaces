@@ -1,6 +1,6 @@
 package org.richfaces.ui.validator;
 
-import org.ajax4jsf.javascript.FunctionDefWithDependencies;
+import org.richfaces.javascript.FunctionDefWithDependencies;
 
 public interface ComponentValidatorScript extends FunctionDefWithDependencies {
     /**

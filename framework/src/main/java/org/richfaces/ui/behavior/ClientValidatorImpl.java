@@ -23,7 +23,7 @@
 package org.richfaces.ui.behavior;
 
 import com.google.common.collect.Lists;
-import org.ajax4jsf.component.behavior.AjaxBehavior;
+import org.richfaces.ui.ajax.AjaxBehavior;
 import org.richfaces.application.ServiceTracker;
 import org.richfaces.cdk.annotations.JsfBehavior;
 import org.richfaces.cdk.annotations.Tag;

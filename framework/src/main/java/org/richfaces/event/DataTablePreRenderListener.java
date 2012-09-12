@@ -34,7 +34,7 @@ import javax.faces.event.AbortProcessingException;
 import javax.faces.event.SystemEvent;
 import javax.faces.event.SystemEventListener;
 
-import org.ajax4jsf.Messages;
+import org.richfaces.Messages;
 import org.richfaces.DataScrollerUtils;
 import org.richfaces.ui.iteration.AbstractDataScroller;
 import org.richfaces.ui.iteration.DataComponentsContextUtil;

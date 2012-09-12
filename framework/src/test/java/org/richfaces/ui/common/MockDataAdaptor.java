@@ -21,8 +21,8 @@
  */
 package org.richfaces.ui.common;
 
-import org.ajax4jsf.model.DataComponentState;
-import org.ajax4jsf.model.ExtendedDataModel;
+import org.richfaces.model.DataComponentState;
+import org.richfaces.model.ExtendedDataModel;
 import org.richfaces.ui.iteration.UIDataAdaptor;
 
 import javax.faces.context.FacesContext;

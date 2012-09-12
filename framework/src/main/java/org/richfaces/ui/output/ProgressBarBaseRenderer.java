@@ -36,7 +36,7 @@ import javax.faces.context.FacesContext;
 import javax.faces.context.PartialResponseWriter;
 import javax.faces.context.PartialViewContext;
 
-import org.ajax4jsf.javascript.JSReference;
+import org.richfaces.javascript.JSReference;
 import org.richfaces.ui.core.MetaComponentResolver;
 import org.richfaces.ui.common.SwitchType;
 import org.richfaces.context.ExtendedPartialViewContext;

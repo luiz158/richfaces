@@ -21,12 +21,12 @@
  */
 package org.richfaces.ui.iteration;
 
-import org.ajax4jsf.component.IterationStateHolder;
-import org.ajax4jsf.model.DataComponentState;
-import org.ajax4jsf.model.DataVisitResult;
-import org.ajax4jsf.model.DataVisitor;
-import org.ajax4jsf.model.ExtendedDataModel;
-import org.ajax4jsf.model.Range;
+import org.richfaces.ui.core.IterationStateHolder;
+import org.richfaces.model.DataComponentState;
+import org.richfaces.model.DataVisitResult;
+import org.richfaces.model.DataVisitor;
+import org.richfaces.model.ExtendedDataModel;
+import org.richfaces.model.Range;
 import org.richfaces.cdk.annotations.Attribute;
 import org.richfaces.context.ExtendedVisitContext;
 import org.richfaces.log.Logger;

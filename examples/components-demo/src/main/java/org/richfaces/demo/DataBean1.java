@@ -9,7 +9,7 @@ import java.util.Map;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.SessionScoped;
 
-import org.ajax4jsf.model.DataComponentState;
+import org.richfaces.model.DataComponentState;
 import org.richfaces.demo.model.Employee;
 import org.richfaces.demo.utils.EmployeeUtils;
 import org.richfaces.event.SortingEvent;

@@ -28,7 +28,7 @@ import javax.faces.FacesException;
 import javax.faces.context.FacesContext;
 import javax.faces.context.ResponseWriter;
 
-import org.ajax4jsf.javascript.JSFunction;
+import org.richfaces.javascript.JSFunction;
 import org.richfaces.ui.core.HtmlConstants;
 import org.richfaces.ui.util.HtmlUtil;
 import org.richfaces.context.ExtendedPartialViewContext;

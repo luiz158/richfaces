@@ -32,8 +32,8 @@ import javax.faces.component.UIComponent;
 import javax.faces.context.FacesContext;
 import javax.faces.context.ResponseWriter;
 
-import org.ajax4jsf.model.DataVisitResult;
-import org.ajax4jsf.model.DataVisitor;
+import org.richfaces.model.DataVisitResult;
+import org.richfaces.model.DataVisitor;
 import org.richfaces.ui.common.ComponentAttribute;
 import org.richfaces.ui.core.HtmlConstants;
 import org.richfaces.renderkit.RenderKitUtils;

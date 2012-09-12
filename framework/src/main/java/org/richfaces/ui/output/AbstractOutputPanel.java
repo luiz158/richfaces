@@ -20,7 +20,7 @@
  */
 package org.richfaces.ui.output;
 
-import org.ajax4jsf.component.AjaxOutput;
+import org.richfaces.ui.core.AjaxOutput;
 import org.richfaces.cdk.annotations.Attribute;
 import org.richfaces.cdk.annotations.EventName;
 import org.richfaces.cdk.annotations.JsfComponent;

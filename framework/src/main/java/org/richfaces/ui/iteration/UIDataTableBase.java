@@ -21,9 +21,9 @@
  */
 package org.richfaces.ui.iteration;
 
-import org.ajax4jsf.model.DataVisitor;
-import org.ajax4jsf.model.ExtendedDataModel;
-import org.ajax4jsf.model.Range;
+import org.richfaces.model.DataVisitor;
+import org.richfaces.model.ExtendedDataModel;
+import org.richfaces.model.Range;
 import org.richfaces.cdk.annotations.Attribute;
 import org.richfaces.cdk.annotations.EventName;
 import org.richfaces.cdk.annotations.Facet;

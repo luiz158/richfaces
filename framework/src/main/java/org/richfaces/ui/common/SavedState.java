@@ -21,7 +21,7 @@
  */
 package org.richfaces.ui.common;
 
-import org.ajax4jsf.component.IterationStateHolder;
+import org.richfaces.ui.core.IterationStateHolder;
 
 import javax.faces.component.EditableValueHolder;
 import javax.faces.component.StateHolder;

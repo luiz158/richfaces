@@ -21,7 +21,7 @@
  */
 package org.richfaces.ui.iteration;
 
-import org.ajax4jsf.model.DataVisitor;
+import org.richfaces.model.DataVisitor;
 
 import javax.faces.component.UIComponent;
 import javax.faces.context.FacesContext;

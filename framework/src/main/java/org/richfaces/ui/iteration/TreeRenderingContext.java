@@ -30,10 +30,10 @@ import java.util.Map;
 
 import javax.faces.context.FacesContext;
 
-import org.ajax4jsf.javascript.JSFunction;
-import org.ajax4jsf.javascript.JSReference;
-import org.ajax4jsf.javascript.ScriptStringBase;
-import org.ajax4jsf.javascript.ScriptUtils;
+import org.richfaces.javascript.JSFunction;
+import org.richfaces.javascript.JSReference;
+import org.richfaces.javascript.ScriptStringBase;
+import org.richfaces.javascript.ScriptUtils;
 import org.richfaces.ui.common.ComponentAttribute;
 import org.richfaces.renderkit.RenderKitUtils;
 import org.richfaces.ui.common.SwitchType;

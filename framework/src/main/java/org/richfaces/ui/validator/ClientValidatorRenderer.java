@@ -18,8 +18,8 @@ import javax.faces.event.AjaxBehaviorEvent;
 import javax.faces.event.PhaseId;
 import javax.faces.render.ClientBehaviorRenderer;
 
-import org.ajax4jsf.javascript.JSReference;
-import org.ajax4jsf.javascript.ScriptUtils;
+import org.richfaces.javascript.JSReference;
+import org.richfaces.javascript.ScriptUtils;
 import org.richfaces.application.ServiceTracker;
 import org.richfaces.ui.ajax.AjaxOnlyScript;
 import org.richfaces.ui.behavior.ClientValidatorBehavior;

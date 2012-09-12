@@ -30,7 +30,7 @@ import javax.faces.component.UIComponent;
 import javax.faces.context.FacesContext;
 import javax.faces.render.Renderer;
 
-import org.ajax4jsf.javascript.ScriptUtils;
+import org.richfaces.javascript.ScriptUtils;
 import org.richfaces.application.ServiceTracker;
 import org.richfaces.application.push.PushContext;
 import org.richfaces.application.push.PushContextFactory;

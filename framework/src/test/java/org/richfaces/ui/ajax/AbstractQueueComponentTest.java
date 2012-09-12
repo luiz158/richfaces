@@ -30,8 +30,8 @@ import net.sourceforge.htmlunit.corejs.javascript.NativeArray;
 import net.sourceforge.htmlunit.corejs.javascript.NativeObject;
 import net.sourceforge.htmlunit.corejs.javascript.ScriptableObject;
 import net.sourceforge.htmlunit.corejs.javascript.Undefined;
-import org.ajax4jsf.javascript.JSFunction;
-import org.ajax4jsf.javascript.JSFunctionDefinition;
+import org.richfaces.javascript.JSFunction;
+import org.richfaces.javascript.JSFunctionDefinition;
 import org.jboss.test.faces.ApplicationServer;
 import org.jboss.test.faces.htmlunit.HtmlUnitEnvironment;
 import org.junit.After;
@@ -94,9 +94,9 @@ public abstract class AbstractQueueComponentTest {
         facesEnvironment = new HtmlUnitEnvironment();
 
         ApplicationServer facesServer = facesEnvironment.getServer();
-        facesServer.addResource("/resources/" + SIMULATION_SCRIPT_NAME, "org/ajax4jsf/component/" + SIMULATION_SCRIPT_NAME);
-        facesServer.addResource("/resources/" + QUEUEAJAX_SCRIPT_NAME, "org/ajax4jsf/component/" + QUEUEAJAX_SCRIPT_NAME);
-        facesServer.addResource("/test.xhtml", "org/ajax4jsf/component/test.xhtml");
+        facesServer.addResource("/resources/" + SIMULATION_SCRIPT_NAME, "org/richfaces/ui/ajax/" + SIMULATION_SCRIPT_NAME);
+        facesServer.addResource("/resources/" + QUEUEAJAX_SCRIPT_NAME, "org/richfaces/ui/ajax/" + QUEUEAJAX_SCRIPT_NAME);
+        facesServer.addResource("/test.xhtml", "org/richfaces/ui/ajax/test.xhtml");
 
         facesEnvironment.start();
     }

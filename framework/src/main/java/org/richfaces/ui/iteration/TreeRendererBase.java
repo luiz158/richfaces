@@ -36,8 +36,8 @@ import javax.faces.context.PartialResponseWriter;
 import javax.faces.context.PartialViewContext;
 import javax.faces.context.ResponseWriter;
 
-import org.ajax4jsf.javascript.JSFunction;
-import org.ajax4jsf.javascript.JSReference;
+import org.richfaces.javascript.JSFunction;
+import org.richfaces.javascript.JSReference;
 import org.richfaces.renderkit.RendererBase;
 import org.richfaces.ui.ajax.AjaxFunction;
 import org.richfaces.ui.ajax.AjaxOptions;

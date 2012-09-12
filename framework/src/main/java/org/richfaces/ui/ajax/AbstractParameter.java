@@ -20,8 +20,8 @@
  */
 package org.richfaces.ui.ajax;
 
-import org.ajax4jsf.Messages;
-import org.ajax4jsf.component.JavaScriptParameter;
+import org.richfaces.Messages;
+import org.richfaces.ui.core.JavaScriptParameter;
 import org.richfaces.cdk.annotations.Attribute;
 import org.richfaces.cdk.annotations.JsfComponent;
 import org.richfaces.cdk.annotations.Tag;

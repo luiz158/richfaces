@@ -29,7 +29,7 @@ import javax.faces.application.ResourceDependency;
 import javax.faces.component.UIComponent;
 import javax.faces.context.FacesContext;
 
-import org.ajax4jsf.javascript.JSReference;
+import org.richfaces.javascript.JSReference;
 import org.richfaces.renderkit.RenderKitUtils;
 import org.richfaces.ui.core.HtmlConstants;
 import org.richfaces.ui.input.InputRendererBase;

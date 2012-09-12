@@ -35,7 +35,7 @@ import javax.faces.context.FacesContext;
 import javax.faces.context.ResponseWriter;
 import javax.faces.event.ActionEvent;
 
-import org.ajax4jsf.javascript.JSObject;
+import org.richfaces.javascript.JSObject;
 import org.richfaces.cdk.annotations.JsfRenderer;
 import org.richfaces.ui.core.ComponentIterators;
 import org.richfaces.context.ExtendedPartialViewContext;

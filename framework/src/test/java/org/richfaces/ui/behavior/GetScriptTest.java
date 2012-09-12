@@ -1,6 +1,6 @@
 package org.richfaces.ui.behavior;
 
-import org.ajax4jsf.component.behavior.AjaxBehavior;
+import org.richfaces.ui.ajax.AjaxBehavior;
 import org.jboss.test.faces.mock.Mock;
 import org.jboss.test.faces.mock.MockTestRunner;
 import org.jboss.test.faces.mock.Stub;

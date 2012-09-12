@@ -35,7 +35,7 @@ import javax.faces.component.UIComponent;
 import javax.faces.context.FacesContext;
 import javax.faces.context.ResponseWriter;
 
-import org.ajax4jsf.javascript.JSObject;
+import org.richfaces.javascript.JSObject;
 import org.richfaces.cdk.annotations.JsfRenderer;
 
 /**

@@ -21,12 +21,12 @@
  */
 package org.richfaces.ui.iteration;
 
-import org.ajax4jsf.model.DataComponentState;
-import org.ajax4jsf.model.ExtendedDataModel;
-import org.ajax4jsf.model.Range;
-import org.ajax4jsf.model.SequenceDataModel;
-import org.ajax4jsf.model.SequenceRange;
-import org.ajax4jsf.model.SequenceState;
+import org.richfaces.model.DataComponentState;
+import org.richfaces.model.ExtendedDataModel;
+import org.richfaces.model.Range;
+import org.richfaces.model.SequenceDataModel;
+import org.richfaces.model.SequenceRange;
+import org.richfaces.model.SequenceState;
 import org.richfaces.cdk.annotations.Attribute;
 import org.richfaces.ui.common.SequenceIterationStatus;
 

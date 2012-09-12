@@ -40,9 +40,9 @@ import javax.faces.component.behavior.ClientBehaviorHolder;
 import javax.faces.context.FacesContext;
 import javax.faces.context.ResponseWriter;
 
-import org.ajax4jsf.Messages;
-import org.ajax4jsf.component.JavaScriptParameter;
-import org.ajax4jsf.javascript.JSReference;
+import org.richfaces.Messages;
+import org.richfaces.ui.core.JavaScriptParameter;
+import org.richfaces.javascript.JSReference;
 import org.richfaces.ui.core.HtmlConstants;
 import org.richfaces.renderkit.RenderKitUtils;
 

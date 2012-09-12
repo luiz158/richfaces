@@ -27,8 +27,8 @@ import javax.faces.component.UIComponent;
 import javax.faces.context.FacesContext;
 import javax.faces.render.Renderer;
 
-import org.ajax4jsf.model.DataVisitResult;
-import org.ajax4jsf.model.DataVisitor;
+import org.richfaces.model.DataVisitResult;
+import org.richfaces.model.DataVisitor;
 import org.richfaces.cdk.annotations.JsfRenderer;
 
 /**

@@ -38,7 +38,7 @@ import javax.faces.context.FacesContext;
 import javax.faces.context.PartialResponseWriter;
 import javax.faces.context.ResponseWriter;
 
-import org.ajax4jsf.javascript.JSObject;
+import org.richfaces.javascript.JSObject;
 import org.richfaces.TooltipMode;
 import org.richfaces.application.ServiceTracker;
 import org.richfaces.cdk.annotations.JsfRenderer;

@@ -21,7 +21,7 @@
  */
 package org.richfaces.ui.iteration;
 
-import org.ajax4jsf.component.IterationStateHolder;
+import org.richfaces.ui.core.IterationStateHolder;
 import org.richfaces.DataScrollerUtils;
 import org.richfaces.application.FacesMessages;
 import org.richfaces.application.MessageFactory;

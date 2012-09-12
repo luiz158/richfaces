@@ -21,7 +21,7 @@
  */
 package org.richfaces.ui.iteration;
 
-import org.ajax4jsf.model.Range;
+import org.richfaces.model.Range;
 import org.richfaces.ui.common.SwitchType;
 
 /**

@@ -22,7 +22,7 @@
  */
 package org.richfaces.ui.message;
 
-import org.ajax4jsf.component.AjaxOutput;
+import org.richfaces.ui.core.AjaxOutput;
 import org.richfaces.cdk.annotations.Attribute;
 import org.richfaces.cdk.annotations.JsfComponent;
 import org.richfaces.cdk.annotations.JsfRenderer;

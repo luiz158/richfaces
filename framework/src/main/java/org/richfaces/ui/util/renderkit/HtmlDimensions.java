@@ -25,7 +25,7 @@ import java.text.NumberFormat;
 import java.text.ParseException;
 import java.util.regex.Pattern;
 
-import org.ajax4jsf.Messages;
+import org.richfaces.Messages;
 
 public final class HtmlDimensions {
     private static final Pattern PATTERN_NUMERIC = Pattern.compile("^[+-]?\\d+(\\.\\d+)?$");

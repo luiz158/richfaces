@@ -21,7 +21,6 @@
  */
 package org.richfaces.ui.ajax;
 
-import org.ajax4jsf.component.behavior.AjaxBehavior;
 import org.richfaces.cdk.annotations.Attribute;
 import org.richfaces.cdk.annotations.JsfComponent;
 import org.richfaces.cdk.annotations.JsfRenderer;

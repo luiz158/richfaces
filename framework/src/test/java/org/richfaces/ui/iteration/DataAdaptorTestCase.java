@@ -21,9 +21,9 @@
  */
 package org.richfaces.ui.iteration;
 
-import org.ajax4jsf.component.IterationStateHolder;
-import org.ajax4jsf.model.ExtendedDataModel;
-import org.ajax4jsf.model.SequenceDataModel;
+import org.richfaces.ui.core.IterationStateHolder;
+import org.richfaces.model.ExtendedDataModel;
+import org.richfaces.model.SequenceDataModel;
 import org.jboss.test.faces.AbstractFacesTest;
 import org.richfaces.ui.common.MockDataAdaptor;
 
