@@ -29,34 +29,22 @@
     <parent>
         <groupId>org.richfaces</groupId>
         <artifactId>richfaces-parent</artifactId>
-        <version>13</version>
-        <relativePath>../parent/pom.xml</relativePath>
+        <version>4.3.0-SNAPSHOT</version>
     </parent>
 
     <groupId>org.richfaces.examples</groupId>
-    <artifactId>examples-aggregator</artifactId>
-    <version>4.3.0-SNAPSHOT</version>
+    <artifactId>richfaces-examples-aggregator</artifactId>
     <packaging>pom</packaging>
+
     <name>RichFaces Examples Aggregator</name>
 
     <modules>
-        <module>parent</module>
-        <module>template</module>
-        <module>core-demo</module>
-        <module>misc-demo</module>
-        <module>output-demo</module>
-        <module>input-demo</module>
-        <module>iteration-demo</module>
-        <module>push-demo</module>
-        <module>validator-demo</module>
-        <module>dnd-demo</module>
+        <module>showcase</module>
+        <module>components-demo</module>
         <module>irc-client</module>
+        <module>jpa-demo</module>
+        <module>push-demo</module>
+        <module>resource-mapping-demo</module>
     </modules>
-
-    <scm>
-        <connection>scm:git:git://github.com/richfaces/dev-examples.git</connection>
-        <developerConnection>scm:git:git@github.com:richfaces/dev-examples.git</developerConnection>
-        <url>https://github.com/richfaces/dev-examples</url>
-    </scm>
 
 </project>

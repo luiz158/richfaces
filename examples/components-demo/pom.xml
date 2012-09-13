@@ -117,10 +117,4 @@
         </profile>
     </profiles>
 
-    <scm>
-        <connection>scm:git:git://github.com/richfaces/dev-examples.git</connection>
-        <developerConnection>scm:git:git@github.com:richfaces/dev-examples.git</developerConnection>
-        <url>https://github.com/richfaces/dev-examples</url>
-    </scm>
-
 </project>

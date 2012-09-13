@@ -797,10 +797,4 @@
             </build>
         </profile>
     </profiles>
-
-    <scm>
-        <connection>scm:git:git://github.com/richfaces/showcase.git</connection>
-        <developerConnection>scm:git:git@github.com:richfaces/showcase.git</developerConnection>
-        <url>https://github.com/richfaces/showcase</url>
-    </scm>
 </project>

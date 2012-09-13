@@ -145,9 +145,9 @@
     </build>
 
     <scm>
-        <connection>scm:git:git://github.com/richfaces/build.git</connection>
-        <developerConnection>scm:git:git@github.com:richfaces/build.git</developerConnection>
-        <url>https://github.com/richfaces/build</url>
+        <connection>scm:git:git://github.com/richfaces/richfaces.git</connection>
+        <developerConnection>scm:git:git@github.com:richfaces/richfaces.git</developerConnection>
+        <url>https://github.com/richfaces/richfaces</url>
     </scm>
 
     <distributionManagement>
