@@ -34,10 +34,10 @@
         <file>
             <source>readme.txt</source>
         </file>
-        <!-- <file>
+        <file>
             <source>readme-examples.txt</source>
             <destName>examples/readme.txt</destName>
-        </file> -->
+        </file>
     </files>
 
     <fileSets>
@@ -75,13 +75,13 @@
         </fileSet>
 
         <!-- Examples -->
-        <!-- <fileSet>
-            <directory>target/dependency/richfaces-showcase-sources-java-source</directory>
+        <fileSet>
+            <directory>target/dependency/richfaces-showcase-sources-jar</directory>
             <outputDirectory>examples/richfaces-showcase/</outputDirectory>
             <excludes>
                 <exclude>/META-INF/**</exclude>
             </excludes>
-        </fileSet> -->
+        </fileSet>
 
         <!-- Archetypes -->
         <!-- <fileSet>

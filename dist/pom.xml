@@ -43,20 +43,20 @@
             <groupId>org.richfaces</groupId>
             <artifactId>richfaces-framework</artifactId>
         </dependency>
-        
+
         <dependency>
             <groupId>org.richfaces</groupId>
             <artifactId>richfaces-optimized-resources</artifactId>
         </dependency>
 
         <!-- Examples -->
-        <!-- <dependency>
+        <dependency>
             <groupId>org.richfaces.examples</groupId>
             <artifactId>richfaces-showcase</artifactId>
             <version>${project.version}</version>
-            <type>war</type>
-            <classifier>tomcat6</classifier>
-        </dependency> -->
+            <type>jar</type>
+            <classifier>sources</classifier>
+        </dependency>
 
     </dependencies>
 
@@ -134,21 +134,19 @@
                         </configuration>
                     </execution>
 
-                    <!-- <execution>
+                    <execution>
                         <id>copy-examples</id>
                         <goals>
                             <goal>unpack-dependencies</goal>
                         </goals>
                         <phase>package</phase>
                         <configuration>
-                            <classifier>sources</classifier>
-
-                            <includeGroupIds>org.richfaces.examples</includeGroupIds>
-                            <failOnMissingClassifierArtifact>false</failOnMissingClassifierArtifact>
+                            <includeArtifactIds>richfaces-showcase</includeArtifactIds>
+                            <failOnMissingClassifierArtifact>true</failOnMissingClassifierArtifact>
                             <useSubDirectoryPerArtifact>true</useSubDirectoryPerArtifact>
                             <stripVersion>true</stripVersion>
                         </configuration>
-                    </execution> -->
+                    </execution>
                 </executions>
             </plugin>
 
