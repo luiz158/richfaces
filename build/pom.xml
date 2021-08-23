@@ -35,7 +35,7 @@
         <version.netty>3.2.5.Final</version.netty>
         <version.weld>1.1.4.Final</version.weld>
         <version.rewrite>1.0.4.Final</version.rewrite>
-        <version.jsoup>1.5.2</version.jsoup>
+        <version.jsoup>1.14.2</version.jsoup>
         
         <!-- Test Dependencies Versions -->
         <version.junit>4.8.2</version.junit>
